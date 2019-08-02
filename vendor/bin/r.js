@@ -1,0 +1,1 @@
+../npm-asset/requirejs/bin/r.js
