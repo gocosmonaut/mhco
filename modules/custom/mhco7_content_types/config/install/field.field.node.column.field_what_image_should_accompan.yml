@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_what_image_should_accompan
+    - node.type.column
+id: node.column.field_what_image_should_accompan
+field_name: field_what_image_should_accompan
+entity_type: node
+bundle: column
+label: 'What image should accompany this column?'
+description: 'Please select the image that will appear with this column. It''s necessary for the home page slideshow. Phil Querin is the default.'
+required: true
+translatable: false
+default_value:
+  -
+    tid: '190'
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

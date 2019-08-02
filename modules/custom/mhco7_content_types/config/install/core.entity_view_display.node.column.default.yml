@@ -1,0 +1,82 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.column.body
+    - field.field.node.column.field_author
+    - field.field.node.column.field_column_category
+    - field.field.node.column.field_column_icon
+    - field.field.node.column.field_column_image
+    - field.field.node.column.field_ct
+    - field.field.node.column.field_location_tags
+    - field.field.node.column.field_publication_date
+    - field.field.node.column.field_question_or_teaser
+    - field.field.node.column.field_should_this_be_featured_in
+    - field.field.node.column.field_what_image_should_accompan
+    - field.field.node.column.field_what_is_the_author_s_compa
+    - field.field.node.column.field_what_is_the_author_s_job_t
+    - node.type.column
+  module:
+    - datetime
+    - image
+    - text
+    - user
+id: node.column.default
+targetEntityType: node
+bundle: column
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 6
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_column_image:
+    label: hidden
+    weight: 5
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_location_tags:
+    label: above
+    weight: 13
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_publication_date:
+    label: hidden
+    weight: 0
+    type: datetime_default
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  field_question_or_teaser:
+    label: hidden
+    weight: 4
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_author: true
+  field_column_category: true
+  field_column_icon: true
+  field_ct: true
+  field_should_this_be_featured_in: true
+  field_what_image_should_accompan: true
+  field_what_is_the_author_s_compa: true
+  field_what_is_the_author_s_job_t: true

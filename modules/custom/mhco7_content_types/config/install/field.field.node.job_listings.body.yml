@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.job_listings
+  module:
+    - text
+id: node.job_listings.body
+field_name: body
+entity_type: node
+bundle: job_listings
+label: 'Job Description'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

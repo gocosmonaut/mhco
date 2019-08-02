@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - menu-columns
+    parent: 'menu-columns:0:'
+name: Column
+type: column
+description: 'This is the content type of Phil Querin, Mark Busch or guest columnists.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

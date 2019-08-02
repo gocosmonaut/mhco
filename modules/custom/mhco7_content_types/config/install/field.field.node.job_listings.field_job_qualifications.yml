@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_job_qualifications
+    - node.type.job_listings
+  module:
+    - text
+id: node.job_listings.field_job_qualifications
+field_name: field_job_qualifications
+entity_type: node
+bundle: job_listings
+label: 'Job Qualifications'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,13 @@
+name: Bulk Update Fields
+type: module
+description: Bulk update fields from one value to another
+# core: 8.x
+
+dependencies:
+  - drupal:action
+
+# Information added by Drupal.org packaging script on 2019-06-09
+version: '8.x-2.0-alpha2'
+core: '8.x'
+project: 'bulk_update_fields'
+datestamp: 1560086889

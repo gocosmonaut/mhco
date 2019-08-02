@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_associate_member_industry
+    - node.type.associate_member
+id: node.associate_member.field_associate_member_industry
+field_name: field_associate_member_industry
+entity_type: node
+bundle: associate_member
+label: 'Associate Member Industry'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

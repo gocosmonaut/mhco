@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_form_number
+    - node.type.fillable_forms
+id: node.fillable_forms.field_form_number
+field_name: field_form_number
+entity_type: node
+bundle: fillable_forms
+label: 'Form Number'
+description: 'Please enter the form number for sorting in lists. This is independent of the title.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

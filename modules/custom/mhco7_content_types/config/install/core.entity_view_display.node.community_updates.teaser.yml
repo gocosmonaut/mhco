@@ -1,0 +1,39 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.community_updates.body
+    - field.field.node.community_updates.field_column_image
+    - field.field.node.community_updates.field_community_update_topics
+    - field.field.node.community_updates.field_former_nid
+    - field.field.node.community_updates.field_location_tags
+    - field.field.node.community_updates.field_reports
+    - node.type.community_updates
+  module:
+    - text
+    - user
+id: node.community_updates.teaser
+targetEntityType: node
+bundle: community_updates
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_column_image: true
+  field_community_update_topics: true
+  field_former_nid: true
+  field_location_tags: true
+  field_reports: true

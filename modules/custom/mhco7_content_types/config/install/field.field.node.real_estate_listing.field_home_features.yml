@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_home_features
+    - node.type.real_estate_listing
+id: node.real_estate_listing.field_home_features
+field_name: field_home_features
+entity_type: node
+bundle: real_estate_listing
+label: 'Home Features'
+description: 'This field will auto-populate as you type. Separate each term with a comma. Please use existing terms where possible. Any new term you type here will be added to the vocabulary.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

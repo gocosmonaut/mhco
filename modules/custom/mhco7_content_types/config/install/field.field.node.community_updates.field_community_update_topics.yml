@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_community_update_topics
+    - node.type.community_updates
+id: node.community_updates.field_community_update_topics
+field_name: field_community_update_topics
+entity_type: node
+bundle: community_updates
+label: 'Community Update Topics'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

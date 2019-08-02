@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_question_or_teaser
+    - node.type.column
+  module:
+    - text
+id: node.column.field_question_or_teaser
+field_name: field_question_or_teaser
+entity_type: node
+bundle: column
+label: 'Question or Teaser'
+description: 'This area should be used for Phil Querin''s questions or teasers for other columns.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

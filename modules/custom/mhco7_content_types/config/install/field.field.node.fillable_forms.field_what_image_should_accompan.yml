@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_what_image_should_accompan
+    - node.type.fillable_forms
+id: node.fillable_forms.field_what_image_should_accompan
+field_name: field_what_image_should_accompan
+entity_type: node
+bundle: fillable_forms
+label: 'What image should accompany this column?'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    tid: '192'
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

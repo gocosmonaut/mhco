@@ -1,0 +1,21 @@
+name: 'FillPDF'
+type: module
+description: 'Allows users to populate PDF forms from website data.'
+# core: 8.x
+package: Other
+configure: fillpdf.settings
+dependencies:
+  - drupal:file
+  - drupal:link
+  - token:token
+  - drupal:views
+  - drupal:serialization
+  - drupal:options
+test_dependencies:
+  - webform:webform
+
+# Information added by Drupal.org packaging script on 2018-11-01
+version: '8.x-4.7'
+core: '8.x'
+project: 'fillpdf'
+datestamp: 1541083991

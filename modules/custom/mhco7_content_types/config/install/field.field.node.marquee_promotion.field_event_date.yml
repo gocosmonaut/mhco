@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_date
+    - node.type.marquee_promotion
+  module:
+    - datetime
+id: node.marquee_promotion.field_event_date
+field_name: field_event_date
+entity_type: node
+bundle: marquee_promotion
+label: 'Event Date'
+description: 'Enter a value if this is a seminar, annual conference or other event.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

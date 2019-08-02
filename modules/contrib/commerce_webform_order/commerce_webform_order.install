@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the RMB Commerce module.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function commerce_webform_order_install() {
+  $fields = commerce_webform_order_get_base_fields();
+
+  // Install module base fields to add relation between webform submissions,
+  // orders and order items.
+  $definition_update_manager = Drupal::entityDefinitionUpdateManager();
+  $definition_update_manager->installFieldStorageDefinition('commerce_webform_order_submissions', 'commerce_order_item', 'commerce_webform_order', $fields['commerce_webform_order_submissions']);
+  $definition_update_manager->installFieldStorageDefinition('commerce_webform_order_orders', 'webform_submission', 'commerce_webform_order', $fields['commerce_webform_order_orders']);
+}

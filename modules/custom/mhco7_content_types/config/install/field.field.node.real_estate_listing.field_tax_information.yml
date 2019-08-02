@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tax_information
+    - node.type.real_estate_listing
+id: node.real_estate_listing.field_tax_information
+field_name: field_tax_information
+entity_type: node
+bundle: real_estate_listing
+label: 'Tax Information'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

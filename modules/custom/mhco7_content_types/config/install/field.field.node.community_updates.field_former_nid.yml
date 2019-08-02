@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_former_nid
+    - node.type.community_updates
+id: node.community_updates.field_former_nid
+field_name: field_former_nid
+entity_type: node
+bundle: community_updates
+label: former_NID
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,37 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.fillable_forms.body
+    - field.field.node.fillable_forms.field_download_link
+    - field.field.node.fillable_forms.field_form_number
+    - field.field.node.fillable_forms.field_should_this_be_featured_in
+    - field.field.node.fillable_forms.field_what_image_should_accompan
+    - node.type.fillable_forms
+  module:
+    - text
+    - user
+id: node.fillable_forms.teaser
+targetEntityType: node
+bundle: fillable_forms
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_download_link: true
+  field_form_number: true
+  field_should_this_be_featured_in: true
+  field_what_image_should_accompan: true

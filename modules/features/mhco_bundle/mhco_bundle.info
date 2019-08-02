@@ -1,0 +1,15 @@
+name = mhco_bundle
+description = Get the shit out of here
+core = 7.x
+package = Features
+version = 7.x-1.0
+dependencies[] = features
+dependencies[] = image
+dependencies[] = taxonomy
+dependencies[] = text
+features[features_api][] = api:2
+features[field_base][] = body
+features[field_base][] = comment_body
+features[field_base][] = field_image
+features[field_base][] = field_tags
+features[taxonomy][] = tags

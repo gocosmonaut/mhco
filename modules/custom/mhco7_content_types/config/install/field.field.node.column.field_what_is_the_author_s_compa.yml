@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_what_is_the_author_s_compa
+    - node.type.column
+id: node.column.field_what_is_the_author_s_compa
+field_name: field_what_is_the_author_s_compa
+entity_type: node
+bundle: column
+label: 'What is the author''s company or organization?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

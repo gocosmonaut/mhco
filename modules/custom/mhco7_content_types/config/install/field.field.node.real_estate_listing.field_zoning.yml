@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_zoning
+    - node.type.real_estate_listing
+id: node.real_estate_listing.field_zoning
+field_name: field_zoning
+entity_type: node
+bundle: real_estate_listing
+label: Zoning
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

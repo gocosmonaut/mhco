@@ -1,0 +1,4 @@
+/* @todo: Do this without nested selector */
+fieldset:not(.fieldgroup).collapsed {
+  display: none;
+}

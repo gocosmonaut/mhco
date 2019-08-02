@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_column_icon
+    - node.type.column
+id: node.column.field_column_icon
+field_name: field_column_icon
+entity_type: node
+bundle: column
+label: 'Column Icon'
+description: 'This icon will accompany the teaser on the home page. The courthouse icon will appear as the default unless a different icon is chosen.'
+required: false
+translatable: false
+default_value:
+  -
+    tid: '199'
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.real_estate_listing
+  module:
+    - text
+id: node.real_estate_listing.body
+field_name: body
+entity_type: node
+bundle: real_estate_listing
+label: Description
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

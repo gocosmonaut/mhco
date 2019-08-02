@@ -1,0 +1,6 @@
+###
+### GitHub repository .gitignore section
+###
+
+sites/default/files/*
+vendor/*

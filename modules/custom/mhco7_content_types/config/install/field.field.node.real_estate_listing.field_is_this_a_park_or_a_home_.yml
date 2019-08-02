@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_is_this_a_park_or_a_home_
+    - node.type.real_estate_listing
+id: node.real_estate_listing.field_is_this_a_park_or_a_home_
+field_name: field_is_this_a_park_or_a_home_
+entity_type: node
+bundle: real_estate_listing
+label: 'Is this a park or a home?'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

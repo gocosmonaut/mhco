@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.column
+  module:
+    - text
+id: node.column.body
+field_name: body
+entity_type: node
+bundle: column
+label: Body
+description: 'The primary content, or "answer," should be entered here.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

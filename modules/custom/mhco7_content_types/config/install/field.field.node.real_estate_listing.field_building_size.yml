@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_building_size
+    - node.type.real_estate_listing
+id: node.real_estate_listing.field_building_size
+field_name: field_building_size
+entity_type: node
+bundle: real_estate_listing
+label: 'Square Footage'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 200
+  max: 50000
+  prefix: ''
+  suffix: ' square feet'
+field_type: integer

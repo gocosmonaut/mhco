@@ -1,0 +1,53 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.job_listings.body
+    - field.field.node.job_listings.field_city
+    - field.field.node.job_listings.field_company_logo
+    - field.field.node.job_listings.field_contact_person
+    - field.field.node.job_listings.field_email
+    - field.field.node.job_listings.field_job_classification
+    - field.field.node.job_listings.field_job_qualifications
+    - field.field.node.job_listings.field_pay_rate
+    - field.field.node.job_listings.field_phone
+    - field.field.node.job_listings.field_profile_name
+    - field.field.node.job_listings.field_property_address
+    - field.field.node.job_listings.field_state
+    - field.field.node.job_listings.field_zip
+    - node.type.job_listings
+  module:
+    - text
+    - user
+id: node.job_listings.teaser
+targetEntityType: node
+bundle: job_listings
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_city: true
+  field_company_logo: true
+  field_contact_person: true
+  field_email: true
+  field_job_classification: true
+  field_job_qualifications: true
+  field_pay_rate: true
+  field_phone: true
+  field_profile_name: true
+  field_property_address: true
+  field_state: true
+  field_zip: true

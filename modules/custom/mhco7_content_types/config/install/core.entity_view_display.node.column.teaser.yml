@@ -1,0 +1,52 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.column.body
+    - field.field.node.column.field_author
+    - field.field.node.column.field_column_category
+    - field.field.node.column.field_column_icon
+    - field.field.node.column.field_column_image
+    - field.field.node.column.field_ct
+    - field.field.node.column.field_location_tags
+    - field.field.node.column.field_publication_date
+    - field.field.node.column.field_question_or_teaser
+    - field.field.node.column.field_should_this_be_featured_in
+    - field.field.node.column.field_what_image_should_accompan
+    - field.field.node.column.field_what_is_the_author_s_compa
+    - field.field.node.column.field_what_is_the_author_s_job_t
+    - node.type.column
+  module:
+    - text
+    - user
+id: node.column.teaser
+targetEntityType: node
+bundle: column
+mode: teaser
+content:
+  field_question_or_teaser:
+    label: hidden
+    weight: 1
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  field_author: true
+  field_column_category: true
+  field_column_icon: true
+  field_column_image: true
+  field_ct: true
+  field_location_tags: true
+  field_publication_date: true
+  field_should_this_be_featured_in: true
+  field_what_image_should_accompan: true
+  field_what_is_the_author_s_compa: true
+  field_what_is_the_author_s_job_t: true

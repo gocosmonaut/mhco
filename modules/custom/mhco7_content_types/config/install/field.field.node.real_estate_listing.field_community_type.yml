@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_community_type
+    - node.type.real_estate_listing
+id: node.real_estate_listing.field_community_type
+field_name: field_community_type
+entity_type: node
+bundle: real_estate_listing
+label: 'Community Type'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,57 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.associate_member.body
+    - field.field.node.associate_member.field_associate_member_descripti
+    - field.field.node.associate_member.field_associate_member_industry
+    - field.field.node.associate_member.field_company_logo
+    - field.field.node.associate_member.field_location_tags
+    - node.type.associate_member
+  module:
+    - image
+    - text
+    - user
+id: node.associate_member.default
+targetEntityType: node
+bundle: associate_member
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_associate_member_descripti:
+    label: hidden
+    weight: 1
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_company_logo:
+    label: above
+    weight: 3
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_location_tags:
+    label: above
+    weight: 4
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_associate_member_industry: true
