@@ -11,7 +11,9 @@ globalscripts:
       css/flatit.css: {}
       css/animate.min.css: {}
       css/fonts.css: {}
-
+      css/front.css: {}
+      css/subpages.css: {}
+      
   dependencies:
     - core/jquery
     - core/jquery.once

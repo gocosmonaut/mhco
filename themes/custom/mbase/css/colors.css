@@ -1,22 +1,12 @@
 /* global */
 a, a:visited {color: #95511f;}
-a:hover {color: #de8639;}
-.btn {background: #de8639; border: none;}
-
-/* containers */
-div.main-container.container {
-    background: none repeat scroll 0 0 white;
-    border-radius: 12px;
-    box-shadow: 0 0 9px #666;
-    margin-top: 3%;
-    padding: 1.5%;
-    width: 90%;
-    max-width: 1170px;
-}
+a:hover {color: #de8639; text-decoration: none;}
+.btn {background: #DE863B;float: right;}
 
 .user-logged-in.adminimal-admin-toolbar #toolbar-item-administration-tray {
   position: fixed;
   top: 36px;
+  z-index: 9999;
 }
 
 .user-logged-in.adminimal-admin-toolbar #toolbar-bar {
@@ -371,28 +361,50 @@ div.main-container.container {
       position:fixed;
       top:0;
       left: 0;
+      color: #fff;
 }
 #block-utilitynav .field-name-body {
       width: 1170px;
-    margin: 0px auto;
+      margin: 0px auto;
+      text-align: left;
 }
-.user-logged-in.adminimal-admin-toolbar #block-utilitynav {
-  top:75px;
+#block-utilitynav div {text-align:right;font-size: 1.35rem;}
+#block-utilitynav div a {padding-right: 20px;}
+#block-utilitynav div a.sign-in {color: #fff !important;}
+#block-utilitynav div a:visited {color: #fff !important;}
+
+.user-logged-in.adminimal-admin-toolbar header#navbar {top:67px; }
+.user-logged-in.adminimal-admin-toolbar.toolbar-tray-open  header#navbar {top:103px; }
+
+.user-logged-in.adminimal-admin-toolbar #block-utilitynav {top:39px; z-index:-1; }
+.user-logged-in.adminimal-admin-toolbar.toolbar-tray-open #block-utilitynav {
+  top:75px; z-index:-1;
 }
+.user-logged-in.adminimal-admin-toolbar.toolbar-tray-open div.main-container.container {margin-top:120px;}
+
+.user-logged-in.adminimal-admin-toolbar #toolbar-item-user-tray {top:40px;}
   
 .dropdown-menu {
   background-color: #f8f8f8 !important;
 }
+
+header#navbar {
+     background-color: rgba(0, 0, 0, 0.5);
+     top: 28px;
+}
+header#navbar .container {
+  padding: 0;
+  
+}
 header#navbar,
 header#navbar a,
-header#navbar a:hover {
-    padding: 0px;
-    background-color: rgba(0, 0, 0, 0.5);
-    transition: all 0.3s ease;
-    z-index: 10;
-}
+header#navbar a, header#navbar a:visited {color:#FFF7D4;}
+header#navbar .nav li a:hover {background: blue;}
+
+
+
 .navbar-fixed-top {
-  top:28px;
+  top: 75px;
 }
 
 .user-logged-in.adminimal-admin-toolbar .navbar-fixed-top  {
@@ -639,8 +651,6 @@ button.list-group-item .list-group-item-heading,
     /* color: #333333; */
   }
 }
-/*background white*/
-body {background: #aaa;}
 
 .img-thumbnail ,
 .table .table,

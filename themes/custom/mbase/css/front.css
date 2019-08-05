@@ -1,0 +1,115 @@
+/* Welcome to this nightmare */
+
+.col-sm-12 {padding:5px;}
+.badge {
+    font-size: 0.9em;
+    background: #aaa;
+    margin: 2.5% 0% 2.5% 0%;
+    font-weight: normal;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+.path-frontpage {color:white;}
+.path-frontpage h1 {display:none;}
+.ds-2col-stacked-fluid:before {display:none;}
+
+.path-frontpage .block-region-left {
+    color: black;
+    width: 66%;
+  float:left;
+  line-height:150%;
+}
+
+.path-frontpage .block-region-right {
+    width: 31%;
+    color: black;
+    float:left;
+    right: 0;
+    top: 0;
+    margin-left:3%;
+}
+.path-frontpage h2 {
+        border-bottom: 1px solid #887b61;
+        font-size: 1em;
+        letter-spacing: 1px;
+        margin-bottom: 2%;
+        padding: 0% 2% 1.5% 0;
+        text-transform: uppercase;
+        color:  #666;
+}
+
+.view-id-associate_members .views-field-field-company-logo img {
+width: 125px;
+    max-width: 150px;
+    margin: 0px 0px 15px 15px;
+    height: auto;
+    float: right;
+}
+.view-id-associate_members p {font-size:1em;}
+.view-id-associate_members .views-field-title span {
+    font-size: 1em;
+    font-weight: 600;
+}
+
+
+section[data-block-plugin-id='views_block:columns-phil_querin'],
+section[data-block-plugin-id='views_block:columns-mark_busch'],
+section[data-block-plugin-id='views_block:columns-property_management']
+ {
+    width: 30%;
+    display: inline-block;
+    float:left;
+}
+section[data-block-plugin-id='views_block:columns-phil_querin'],
+section[data-block-plugin-id='views_block:columns-mark_busch'] {
+    margin-right: 5%;
+}
+
+ .block-region-left  h2.block-title  {
+    font-size: .85em;
+    text-transform: uppercase;
+    padding: 1.5% 2% 1.5% 0%;
+    border-bottom: #ccc 1px solid;
+    margin-bottom: 2%;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: #666;
+}
+
+ .block-region-left .views-field-title {margin-bottom: 10px;}
+ .block-region-left .views-field-title a {font-size: 1.2em;line-height: 145%;}
+
+.path-frontpage .block-region-right h2 {font-size:0.9em}
+ .block-region-right  h2.block-title  {background: none repeat scroll 0 0 #de8639;border-bottom: medium none;color: white;text-align: center;margin-top: 0px;padding: 2%;font-size: .9em;}
+
+.path-frontpage .views-field-field-icon img {
+    width: 50px;
+    height: auto;
+    margin: 4px 0px 12px 12px;
+    float: right;
+}
+.path-frontpage .views-field-field-company-logo img {
+    width: 125px;
+    max-width: 150px;
+    margin: 0px 0px 15px 15px;
+    height: auto;
+    float: right;
+}
+.path-frontpage section[data-block-plugin-id='views_block:community_updates-cu_home_page'] {
+    margin-top:20px;
+}
+.path-frontpage .view-id-community_updates .views-row {
+    padding-bottom:20px;
+}
+.path-frontpage .view-id-community_updates .views-row:nth-child(2) {
+    padding: 15px 0;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+}
+.path-frontpage .view-id-community_updates .views-row:nth-child(3) {
+    margin-top:15px;
+}
+
+.path-frontpage .view-id-community_updates .views-field-view-node {
+    text-align:right;
+}
