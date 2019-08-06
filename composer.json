@@ -16,7 +16,8 @@
         "drupal/address": "~1.0",
         "commerceguys/intl": "^1.0",
         "commerceguys/authnet": "^1.1",
-        "drupal/user_bundle": "1.x-dev"
+        "drupal/user_bundle": "1.x-dev",
+        "solarium/solarium": "^3.8"
     },
     "replace": {
         "drupal/core": "^8.7"

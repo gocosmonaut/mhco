@@ -1,0 +1,21 @@
+#conf2019 {}
+#agenda2019 h2 {color: #95511f; font-size:1.5em; font-weight:600;}
+#agenda2019 table {table-layout:auto;}
+#agenda2019 table th {border-bottom:1px solid #999;}
+#agenda2019 table td {border-bottom:1px solid #aaa; vertical-align: middle;}
+#agenda2019 table th:nth-child(1), #agenda2019 table td:nth-child(1) {text-align: center; width:15%; color: #3f542d;}
+#agenda2019 table th:nth-child(2), #agenda2019 table td:nth-child(2) {text-align: left; width:65%}
+#agenda2019 table th:nth-child(3), #agenda2019 table td:nth-child(3) {text-align: center; width: 20%;}
+#agenda2019 table th, #agenda2019 table td {padding: 1.5% 1%;}
+#agenda2019 table td:nth-child(3) {font-weight:500; font-size:1.1em;}
+
+#agenda2019 h3 {color: #95511f; font-size:1.3em; font-weight:500; line-height:145%; margin:0;}
+#agenda2019 h4 {color: #222; font-size:1.1em; font-weight:500; line-height:145%; margin:0;}
+#agenda2019 p {color: #000; font-size:1em; margin:24px auto 0;}
+
+#confheader2019 h2 {font-size: 1.75em; line-height:140%; color: #95511f; font-weight: 600;}
+#confheader2019 #valley-river-inn {background: #eee; padding: 2%; float:right; width: 35%; margin:3% 0 5% 5%;}
+#confheader2019 p {font-size: 1.1em;}
+#confheader2019 #valley-river-inn p {font-size: 1em; text-align: left;}
+#confheader2019 #valley-river-inn p.vri-logo {text-align: center; padding:3%;}
+#confheader2019 #valley-river-inn p.vri-logo img {margin-bottom: 12px;}
