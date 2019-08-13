@@ -3,6 +3,8 @@ body {
     background-size: cover;
 }
 
+
+
 #views-exposed-form-search-block-1 #edit-keywords {
     margin: 10px auto 5px auto;
     width: 100%;
@@ -73,6 +75,8 @@ div.main-container.container {
     max-width: 1170px;
 }
 
+.main-container .row {/* margin: 5px; *//* margin-right: 0; */margin-top: 5px;}
+
 #navbar #block-utilitynav .site-title {
     width: 33.3333%;
     float: left;
@@ -99,6 +103,7 @@ div.main-container.container {
 .user-anonymous #navbar #block-utilitynav .your-profile {display:none;}
 .user-logged-in #navbar #block-utilitynav a.sign-in {display:none;}
 .user-logged-in #navbar #block-utilitynav a.become-member {display:none;}
+.user-logged-in #navbar #block-utilitynav .welcome-back {padding-right:12px;}
 
 .path-innerpage .col-sm-3 h2.block-title {
     background: none repeat scroll 0 0 #ddd;
@@ -980,7 +985,7 @@ table .radio input[type=radio] {
 .checkbox-inline input[type=checkbox],
 .radio input[type=radio],
 .radio-inline input[type=radio] {
-    margin-left: 0px;
+     margin-left: -20px;
 }
 
 @media (min-width: 768px) {

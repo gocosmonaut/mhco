@@ -15,6 +15,7 @@ use Composer\Package\AliasPackage;
 use Composer\Package\BasePackage;
 use Composer\Package\CompletePackageInterface;
 use Composer\Package\Loader\ArrayLoader;
+use Composer\Package\Loader\InvalidPackageException;
 use Composer\Package\PackageInterface;
 use Composer\Repository\InvalidRepositoryException;
 use Composer\Repository\Vcs\VcsDriverInterface;
@@ -31,6 +32,8 @@ class AssetVcsRepository extends AbstractAssetVcsRepository
 {
     /**
      * {@inheritdoc}
+     *
+     * @throws
      */
     protected function initialize()
     {
@@ -47,6 +50,8 @@ class AssetVcsRepository extends AbstractAssetVcsRepository
 
     /**
      * Init the driver with branches and tags.
+     *
+     * @throws
      */
     protected function initFullDriver()
     {
@@ -57,6 +62,11 @@ class AssetVcsRepository extends AbstractAssetVcsRepository
             $this->initBranches($driver);
             $driver->cleanup();
         } catch (\Exception $e) {
+            if (!$e instanceof \InvalidArgumentException
+                    && !$e instanceof InvalidPackageException && !$e instanceof InvalidRepositoryException) {
+                throw $e;
+            }
+
             // do nothing
         }
     }
@@ -76,7 +86,7 @@ class AssetVcsRepository extends AbstractAssetVcsRepository
             $this->initTag($driver, $packageName, $tag, $identifier);
         }
 
-        if (!$this->verbose) {
+        if (!$this->io->isVerbose()) {
             $this->io->overwrite('', false);
         }
     }
@@ -96,7 +106,7 @@ class AssetVcsRepository extends AbstractAssetVcsRepository
         }
 
         if (!$parsedTag = Validator::validateTag($tag, $this->assetType, $this->versionParser)) {
-            if ($this->verbose) {
+            if ($this->io->isVerbose()) {
                 $this->io->write('<warning>Skipped tag '.$tag.', invalid tag name</warning>');
             }
 
@@ -154,7 +164,7 @@ class AssetVcsRepository extends AbstractAssetVcsRepository
             $this->preInitBranchLazyPackage($driver, $branch, $identifier);
         }
 
-        if (!$this->verbose) {
+        if (!$this->io->isVerbose()) {
             $this->io->overwrite('', false);
         }
     }

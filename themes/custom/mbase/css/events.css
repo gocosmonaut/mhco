@@ -13,9 +13,12 @@
 #agenda2019 h4 {color: #222; font-size:1.1em; font-weight:500; line-height:145%; margin:0;}
 #agenda2019 p {color: #000; font-size:1em; margin:24px auto 0;}
 
-#confheader2019 h2 {font-size: 1.75em; line-height:140%; color: #95511f; font-weight: 600;}
+#confheader2019 h2 {font-size: 1.75em;line-height:140%;color: #955122;font-weight: 600;}
 #confheader2019 #valley-river-inn {background: #eee; padding: 2%; float:right; width: 35%; margin:3% 0 5% 5%;}
 #confheader2019 p {font-size: 1.1em;}
+#confheader2019 #valley-river-inn a {font-size:1em; font-weight: 400;}
 #confheader2019 #valley-river-inn p {font-size: 1em; text-align: left;}
 #confheader2019 #valley-river-inn p.vri-logo {text-align: center; padding:3%;}
 #confheader2019 #valley-river-inn p.vri-logo img {margin-bottom: 12px;}
+
+#confheader2019 a {font-weight: 600; font-size:1.25em; color: blue}

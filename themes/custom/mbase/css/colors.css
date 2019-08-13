@@ -1,7 +1,9 @@
 /* global */
-a, a:visited {color: #95511f;}
-a:hover {color: #de8639; text-decoration: none;}
-.btn {background: #DE863B;float: right;}
+a, a:visited {color: #473223;}
+a:hover {color: #ff5c01; text-decoration: none;}
+.btn {background: green;float: right;border: navajowhite;margin: 12px;}
+.btn#edit-checkout { color: #fff; font-weight: 600;}
+#edit-remove-button-0, #edit-remove-button-0 {background: red;}
 
 .user-logged-in.adminimal-admin-toolbar #toolbar-item-administration-tray {
   position: fixed;
@@ -355,7 +357,7 @@ a:hover {color: #de8639; text-decoration: none;}
 
 #block-utilitynav {
       width: 100%;
-      background: #3f542d;
+      background: #0079cf;
       text-align: center;
       height: 28px;
       position:fixed;
@@ -644,6 +646,7 @@ button.list-group-item .list-group-item-heading,
 .panel-default > .panel-heading,
 .help-block {
   /* color: #333333; */
+  /* background: red; */
 }
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
@@ -682,5 +685,5 @@ button.list-group-item .list-group-item-heading,
 .panel-primary > .panel-heading .badge,
 .modal-content,
 .carousel-indicators .active {
-  background-color: #ffffff;
+  background: transparent;
 }

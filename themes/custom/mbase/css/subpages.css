@@ -5,3 +5,63 @@
 }
 
 .path-innerpage.path-search h1.page-header {border:0;}
+
+#block-views-block-advertisements-block-1 {
+    text-align: center;
+    margin-bottom: 12px;
+}
+.field-name-field-author {font-weight:600; color: #0079cf; }
+.field-name-field-publication-date {margin: 12px 0;}
+.field-name-field-what-is-the-author-s-job-t {margin-bottom:12px;}
+
+
+.layout-checkout-form .checkleft {width: 57%;}
+.layout-checkout-form .checkleft .field-commerce-product-variation--field-product-image {margin: 0px 25px 25px 0;width: 25%;float: left;}
+#edit-order-fieldscheckout-field-registrant-roles--wrapper .panel-title {font-size:1em; }
+#edit-order-fieldscheckout-field-registrant-roles--wrapper .panel-heading {margin-bottom: 12px;}
+#edit-order-fieldscheckout-field-registrant-roles--wrapper-child {margin-left: 0;}
+
+.checkleft td.views-field.views-field-purchased-entity {padding: 4%;}
+.checkleft .views-field-total-price__number, .checkleft .views-field-quantity {vertical-align:middle; text-align: center;
+}
+
+.checkleft h4.cartreturn {font-size: 1em; background: blueviolet; width: fit-content; }
+
+.checkleft h4.cartreturn a {color:#fff; display: block; padding: 8px; }
+.checkleft h4.cartreturn a:hover {color: #fff; background: green;}
+.checkleft h4.eventreturn {font-size: 1em; background: purple; width: fit-content; }
+.checkleft h4.eventreturn a {color:#fff; display: block; padding: 8px; }
+.checkleft h4.eventreturn a:hover {color: #fff; background: green;}
+
+.checkleft .field-commerce-product-variation--attribute-members {font-size: 0.9em; margin-bottom:10px;}
+.checkleft .field-commerce-product-variation--attribute-members .field-item {font-weight:600;}
+.checkleft .field-commerce-product-variation--attribute-sessions {font-size: 0.9em; margin-bottom:10px;}
+.checkleft .field-commerce-product-variation--attribute-sessions .field-item {font-weight:600;}
+
+.layout-checkout-form .checkright { width: 42%; padding: 2%; background: #f2e9ea}
+#edit-payment-information {background: transparent;}
+.layout-checkout-form .checkright h3 {display: none;}
+.layout-checkout-form .checkright .panel-heading {background: #ac8b91; color: white; margin-bottom:18px}
+.layout-checkout-form .checkright select, .layout-checkout-form .checkright input {background: white;}
+.layout-region-checkout-footer {width: 100%;}
+.layout-region-checkout-footer .btn {font-size: 1.25em; color: white;}
+.layout-region-checkout-footer .btn:hover {background: seagreen;}
+.path-checkout form {margin-top:12px;}
+
+
+#block-checkoutprogress {background: #ebfcf2; padding: 15px 0 6px 15px; margin-bottom: 12px}
+#block-checkoutprogress h2 {font-size: 1.5em; color: #999; width: 50%; float:left;}
+#block-checkoutprogress ol {padding: 20px;/* display: inline-flex; */width: 50%;text-align: right;float: right;}
+#block-checkoutprogress .checkout-progress--step__current {color: green;}
+
+td div {vertical-align: middle;
+}
+
+
+#edit-purchased-entity-wrapper,
+#edit-purchased-entity-wrapper--2,
+#edit-purchased-entity-wrapper--3,
+#edit-purchased-entity-wrapper--4 {display:none;}
+
+h3.viewcart {text-align: right; margin-bottom: 30px; }
+h3.viewcart a {padding: 12px; background: blue; color: white; border-radius: 6px; font-size: .9em;}

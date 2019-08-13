@@ -3,4 +3,4 @@
 ###
 
 sites/default/files/*
-vendor/*
+# vendor/*
