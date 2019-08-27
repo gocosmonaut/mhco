@@ -2,5 +2,5 @@
 ### GitHub repository .gitignore section
 ###
 
-sites/default/files/*
+# sites/default/files/*
 # vendor/*

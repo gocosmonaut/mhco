@@ -1,0 +1,22 @@
+uuid: 353e60d1-555e-4b76-9811-afc6a5f63df1
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mbase
+_core:
+  default_config_hash: n5HYxaTqBFLW_mWi335yixjcXhFjdszTolyhrup6B9E
+id: mbase_content
+theme: mbase
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

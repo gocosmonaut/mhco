@@ -1,0 +1,23 @@
+uuid: 443f06c9-d880-47ae-8258-ed49f0f9041a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.feeds_item
+    - node.type.fillable_forms
+  module:
+    - feeds
+id: node.fillable_forms.feeds_item
+field_name: feeds_item
+entity_type: node
+bundle: fillable_forms
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

@@ -1,0 +1,23 @@
+uuid: 4fd5d195-d608-4850-8d28-9ffa86c02258
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: 2qglxVn4zXIVetzNliU8KnaXWUmO5ziSx3ufnDjveCw
+id: node.field_parking
+field_name: field_parking
+entity_type: node
+type: string
+settings:
+  max_length: 60
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

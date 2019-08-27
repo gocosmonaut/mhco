@@ -1,0 +1,23 @@
+uuid: e2e2770f-8133-46af-a47f-677910213578
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: TPPN2WMxrZTajsOPC3a4ZRdXTy_zNwJAcpY4G7iB63Y
+id: node.field_sales_contact_name_2
+field_name: field_sales_contact_name_2
+entity_type: node
+type: string
+settings:
+  max_length: 40
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

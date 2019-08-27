@@ -1,0 +1,23 @@
+uuid: b7ad3d89-959f-446f-9311-ee45b161b8fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_park_or_community_name
+    - node.type.real_estate_listing
+  module:
+    - text
+_core:
+  default_config_hash: sx6LxsOCOXzYeo7djUkjD0t9a6x8oUxy74Civ1POddU
+id: node.real_estate_listing.field_park_or_community_name
+field_name: field_park_or_community_name
+entity_type: node
+bundle: real_estate_listing
+label: 'Park or Community Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,264 @@
+uuid: 08234bad-09c4-4b5e-992c-e62a51bd75d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_county
+    - field.field.user.user.field_d7_password
+    - field.field.user.user.field_legacy_uid
+    - field.field.user.user.field_profile_address
+    - field.field.user.user.field_profile_email
+    - field.field.user.user.field_profile_location
+    - field.field.user.user.field_profile_manager
+    - field.field.user.user.field_profile_name
+    - field.field.user.user.field_profile_owner
+    - field.field.user.user.field_profile_park
+    - field.field.user.user.field_profile_parkspaces
+    - field.field.user.user.field_profile_phone
+    - field.field.user.user.field_profile_state
+    - field.field.user.user.field_profile_zip
+    - user_bundle.user_type.user
+  module:
+    - user
+label: 'Users - All Data'
+id: users_all_data
+description: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:user'
+processor_configuration:
+  update_existing: 2
+  update_non_existent: _keep
+  expire: -1
+  skip_hash_check: false
+  values:
+    type: user
+  owner_id: 0
+  authorize: false
+  owner_feed_author: false
+custom_sources:
+  manager:
+    label: manager
+    value: manager
+    machine_name: manager
+  uid:
+    label: uid
+    value: uid
+    machine_name: uid
+  address:
+    label: address
+    value: address
+    machine_name: address
+  uid2:
+    label: uid
+    value: uid
+    machine_name: uid2
+  address2:
+    label: address
+    value: address
+    machine_name: address2
+  county:
+    label: county
+    value: county
+    machine_name: county
+  olduid:
+    label: olduid
+    value: olduid
+    machine_name: olduid
+  '':
+    label: phone
+    value: phone
+    machine_name: ''
+  streetaddress:
+    label: streetaddress
+    value: streetaddress
+    machine_name: streetaddress
+  mail:
+    label: mail
+    value: mail
+    machine_name: mail
+  name:
+    label: name
+    value: name
+    machine_name: name
+  park:
+    label: park
+    value: park
+    machine_name: park
+  pass:
+    label: pass
+    value: pass
+    machine_name: pass
+  owner:
+    label: owner
+    value: owner
+    machine_name: owner
+  location:
+    label: location
+    value: location
+    machine_name: location
+  zip:
+    label: zip
+    value: zip
+    machine_name: zip
+  profilestate:
+    label: profilestate
+    value: profilestate
+    machine_name: profilestate
+  yourname:
+    label: yourname
+    value: yourname
+    machine_name: yourname
+  phone:
+    label: phone
+    value: phone
+    machine_name: phone
+  parkspaces:
+    label: parkspaces
+    value: parkspaces
+    machine_name: parkspaces
+  liveuser:
+    label: liveuser
+    value: liveuser
+    machine_name: liveuser
+  lasttimehere:
+    label: lasttimehere
+    value: lasttimehere
+    machine_name: lasttimehere
+  accountmade:
+    label: accountmade
+    value: accountmade
+    machine_name: accountmade
+  latestaccess:
+    label: latestaccess
+    value: latestaccess
+    machine_name: latestaccess
+  timezone:
+    label: timezone
+    value: timezone
+    machine_name: timezone
+mappings:
+  -
+    target: field_profile_manager
+    map:
+      value: manager
+  -
+    target: field_county
+    map:
+      target_id: county
+    settings:
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_legacy_uid
+    map:
+      value: olduid
+  -
+    target: field_profile_address
+    map:
+      value: streetaddress
+    unique: {  }
+  -
+    target: field_profile_email
+    map:
+      value: mail
+    unique: {  }
+    settings:
+      defuse: false
+  -
+    target: name
+    map:
+      value: name
+    unique: {  }
+  -
+    target: field_profile_park
+    map:
+      value: park
+    unique: {  }
+  -
+    target: field_d7_password
+    map:
+      value: pass
+    unique: {  }
+  -
+    target: field_profile_owner
+    map:
+      value: owner
+  -
+    target: field_profile_zip
+    map:
+      value: zip
+    unique: {  }
+  -
+    target: field_profile_location
+    map:
+      target_id: location
+    settings:
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_profile_state
+    map:
+      target_id: profilestate
+    settings:
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_profile_name
+    map:
+      value: yourname
+    unique: {  }
+  -
+    target: field_profile_phone
+    map:
+      value: phone
+    unique: {  }
+  -
+    target: field_profile_parkspaces
+    map:
+      value: parkspaces
+  -
+    target: status
+    map:
+      value: liveuser
+  -
+    target: login
+    map:
+      value: lasttimehere
+    settings:
+      timezone: UTC
+  -
+    target: created
+    map:
+      value: accountmade
+    settings:
+      timezone: UTC
+  -
+    target: access
+    map:
+      value: latestaccess
+    settings:
+      timezone: UTC
+  -
+    target: timezone
+    map:
+      value: timezone
+    unique: {  }
+  -
+    target: mail
+    map:
+      value: mail
+    unique: {  }
+    settings:
+      defuse: false

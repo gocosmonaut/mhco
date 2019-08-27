@@ -1,0 +1,108 @@
+uuid: 97d8ed8a-ae2c-4346-917e-63c29bf14b2d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.real_estate_listing.body
+    - field.field.node.real_estate_listing.field_bathrooms
+    - field.field.node.real_estate_listing.field_bedrooms
+    - field.field.node.real_estate_listing.field_building_size
+    - field.field.node.real_estate_listing.field_cap_rate
+    - field.field.node.real_estate_listing.field_city
+    - field.field.node.real_estate_listing.field_community_amenities
+    - field.field.node.real_estate_listing.field_community_type
+    - field.field.node.real_estate_listing.field_community_web_site
+    - field.field.node.real_estate_listing.field_email
+    - field.field.node.real_estate_listing.field_email_2
+    - field.field.node.real_estate_listing.field_hoa_or_maintenance_fees
+    - field.field.node.real_estate_listing.field_home_color
+    - field.field.node.real_estate_listing.field_home_features
+    - field.field.node.real_estate_listing.field_improvements
+    - field.field.node.real_estate_listing.field_is_this_a_park_or_a_home_
+    - field.field.node.real_estate_listing.field_listing_images
+    - field.field.node.real_estate_listing.field_park_or_community_name
+    - field.field.node.real_estate_listing.field_parking
+    - field.field.node.real_estate_listing.field_phone
+    - field.field.node.real_estate_listing.field_phone_2
+    - field.field.node.real_estate_listing.field_price
+    - field.field.node.real_estate_listing.field_property_address
+    - field.field.node.real_estate_listing.field_property_manager
+    - field.field.node.real_estate_listing.field_property_size
+    - field.field.node.real_estate_listing.field_sales_contact_name
+    - field.field.node.real_estate_listing.field_sales_contact_name_2
+    - field.field.node.real_estate_listing.field_sales_flyer
+    - field.field.node.real_estate_listing.field_single_wide_double_wide
+    - field.field.node.real_estate_listing.field_spaces
+    - field.field.node.real_estate_listing.field_state
+    - field.field.node.real_estate_listing.field_tax_information
+    - field.field.node.real_estate_listing.field_trim_color
+    - field.field.node.real_estate_listing.field_utilities
+    - field.field.node.real_estate_listing.field_vacancies
+    - field.field.node.real_estate_listing.field_wetland_and_flood_plain_st
+    - field.field.node.real_estate_listing.field_year_opened_or_constructed
+    - field.field.node.real_estate_listing.field_zip
+    - field.field.node.real_estate_listing.field_zoning
+    - node.type.real_estate_listing
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: Fa-aitMsMHNODNYaPZ0baEsnMzA_JOlq4RlW8juj45U
+id: node.real_estate_listing.teaser
+targetEntityType: node
+bundle: real_estate_listing
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_bathrooms: true
+  field_bedrooms: true
+  field_building_size: true
+  field_cap_rate: true
+  field_city: true
+  field_community_amenities: true
+  field_community_type: true
+  field_community_web_site: true
+  field_email: true
+  field_email_2: true
+  field_hoa_or_maintenance_fees: true
+  field_home_color: true
+  field_home_features: true
+  field_improvements: true
+  field_is_this_a_park_or_a_home_: true
+  field_listing_images: true
+  field_park_or_community_name: true
+  field_parking: true
+  field_phone: true
+  field_phone_2: true
+  field_price: true
+  field_property_address: true
+  field_property_manager: true
+  field_property_size: true
+  field_sales_contact_name: true
+  field_sales_contact_name_2: true
+  field_sales_flyer: true
+  field_single_wide_double_wide: true
+  field_spaces: true
+  field_state: true
+  field_tax_information: true
+  field_trim_color: true
+  field_utilities: true
+  field_vacancies: true
+  field_wetland_and_flood_plain_st: true
+  field_year_opened_or_constructed: true
+  field_zip: true
+  field_zoning: true

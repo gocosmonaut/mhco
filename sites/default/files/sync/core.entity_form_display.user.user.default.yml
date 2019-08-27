@@ -1,0 +1,140 @@
+uuid: 626d8ea2-b829-46f2-b516-76f5920b83f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.feeds_item
+    - field.field.user.user.field_county
+    - field.field.user.user.field_d7_password
+    - field.field.user.user.field_legacy_uid
+    - field.field.user.user.field_profile_address
+    - field.field.user.user.field_profile_email
+    - field.field.user.user.field_profile_location
+    - field.field.user.user.field_profile_manager
+    - field.field.user.user.field_profile_name
+    - field.field.user.user.field_profile_owner
+    - field.field.user.user.field_profile_park
+    - field.field.user.user.field_profile_parkspaces
+    - field.field.user.user.field_profile_phone
+    - field.field.user.user.field_profile_state
+    - field.field.user.user.field_profile_zip
+    - field.field.user.user.field_user_address
+    - field.field.user.user.user_picture
+    - user_bundle.user_type.user
+  module:
+    - path
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  account:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_county:
+    weight: 11
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_profile_address:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_profile_location:
+    weight: 8
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_profile_manager:
+    weight: 4
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_profile_name:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_profile_owner:
+    weight: 5
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_profile_park:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_profile_parkspaces:
+    weight: 6
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_profile_phone:
+    weight: 12
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_profile_state:
+    weight: 9
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_profile_zip:
+    weight: 10
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  path:
+    type: path
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  contact: true
+  customer_profiles: true
+  feeds_item: true
+  field_d7_password: true
+  field_legacy_uid: true
+  field_profile_email: true
+  field_user_address: true
+  language: true
+  timezone: true
+  user_picture: true

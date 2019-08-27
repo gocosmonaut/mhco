@@ -1,0 +1,21 @@
+uuid: 45d94522-38d0-4cc0-aefa-91a5d94674fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_property_address
+    - node.type.real_estate_listing
+_core:
+  default_config_hash: nrh3aBV9X70IrGzaydT8rOVUsxXTGj0Mg1hKRsqCKrQ
+id: node.real_estate_listing.field_property_address
+field_name: field_property_address
+entity_type: node
+bundle: real_estate_listing
+label: 'Property Address'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

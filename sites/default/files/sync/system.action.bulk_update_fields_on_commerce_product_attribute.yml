@@ -1,0 +1,11 @@
+uuid: 40242632-4c81-4166-a742-f2ca4831b09c
+langcode: en
+status: true
+dependencies:
+  module:
+    - bulk_update_fields
+id: bulk_update_fields_on_commerce_product_attribute
+label: 'Bulk Update Product attribute Fields'
+type: commerce_product_attribute
+plugin: bulk_update_fields_action_base
+configuration: {  }

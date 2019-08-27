@@ -1,0 +1,31 @@
+uuid: f3fd49ce-2f59-43bf-b125-4df6476f35e8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:text:2429c017-455f-4f70-8db0-7d4646b041f8'
+  module:
+    - block_content
+    - system
+  theme:
+    - mbase
+id: checkoutintroduction
+theme: mbase
+region: header
+weight: -8
+provider: null
+plugin: 'block_content:2429c017-455f-4f70-8db0-7d4646b041f8'
+settings:
+  id: 'block_content:2429c017-455f-4f70-8db0-7d4646b041f8'
+  label: 'Checkout Introduction'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '/checkout/*'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,11 @@
+uuid: 0d35eb26-8c6f-43ad-a5c8-a2b4597bf37a
+langcode: en
+status: true
+dependencies:
+  module:
+    - bulk_update_fields
+id: bulk_update_fields_on_backup_migrate_settings
+label: 'Bulk Update Settings Profile Fields'
+type: backup_migrate_settings
+plugin: bulk_update_fields_action_base
+configuration: {  }

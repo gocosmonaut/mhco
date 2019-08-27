@@ -1,0 +1,27 @@
+uuid: 97e6f1c6-1643-4ac3-8f27-6854f93cd9bc
+langcode: en
+status: true
+dependencies: {  }
+id: real_estate_listing_creator
+label: 'Real Estate Listing creator'
+weight: 25
+is_admin: false
+permissions:
+  - 'access ckeditor_media_browser entity browser pages'
+  - 'access contextual links'
+  - 'access image_browser entity browser pages'
+  - 'access in-place editing'
+  - 'access media_browser entity browser pages'
+  - 'access toolbar'
+  - 'configure any layout'
+  - 'create real_estate_listing content'
+  - 'create url aliases'
+  - 'edit own real_estate_listing content'
+  - 'use editorial transition create_new_draft'
+  - 'use editorial transition review'
+  - 'use moderation sidebar'
+  - 'use text format rich_text'
+  - 'view any unpublished content'
+  - 'view latest version'
+  - 'view own unpublished content'
+  - 'view real_estate_listing revisions'

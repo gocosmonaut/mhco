@@ -1,0 +1,22 @@
+uuid: fe7bf47d-fca0-4668-937b-651a854dd001
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: '-VJitDTzYtcULS7a9MVtOwcTS699GWukY9awq5WEh5k'
+id: node.field_year_opened_or_constructed
+field_name: field_year_opened_or_constructed
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

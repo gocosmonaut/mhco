@@ -1,0 +1,21 @@
+uuid: ea34ce9b-c55a-45ca-ac58-58869b7f3cf6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_zoning
+    - node.type.real_estate_listing
+_core:
+  default_config_hash: gLGqXro9xcLNvmww1-te4ZoQApSEaxmB_yp985j5wgk
+id: node.real_estate_listing.field_zoning
+field_name: field_zoning
+entity_type: node
+bundle: real_estate_listing
+label: Zoning
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

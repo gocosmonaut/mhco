@@ -1,0 +1,25 @@
+uuid: ddd8f7e4-d6d8-453b-86fb-bb29a27cac02
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bathrooms
+    - node.type.real_estate_listing
+_core:
+  default_config_hash: iNi6BMJHkpMsCdT2Krvt5RI8G57velHb7-2zv4-zNlg
+id: node.real_estate_listing.field_bathrooms
+field_name: field_bathrooms
+entity_type: node
+bundle: real_estate_listing
+label: Bathrooms
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

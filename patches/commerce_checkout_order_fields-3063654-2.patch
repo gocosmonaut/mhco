@@ -1,0 +1,12 @@
+diff --git a/src/Plugin/Commerce/CheckoutPane/OrderFields.php b/src/Plugin/Commerce/CheckoutPane/OrderFields.php
+index dc0b1a5..fccb93b 100644
+--- a/src/Plugin/Commerce/CheckoutPane/OrderFields.php
++++ b/src/Plugin/Commerce/CheckoutPane/OrderFields.php
+@@ -109,6 +109,7 @@ class OrderFields extends CheckoutPaneBase {
+    * {@inheritdoc}
+    */
+   public function validatePaneForm(array &$pane_form, FormStateInterface $form_state, array &$complete_form) {
++    $this->getFormDisplay()->extractFormValues($this->order, $pane_form, $form_state);
+     $this->getFormDisplay()->validateFormValues($this->order, $pane_form, $form_state);
+     parent::validatePaneForm($pane_form, $form_state, $complete_form);
+   }

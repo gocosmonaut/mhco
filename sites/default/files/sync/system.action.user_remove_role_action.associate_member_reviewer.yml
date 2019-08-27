@@ -1,0 +1,14 @@
+uuid: 3826dad6-bec9-4cf7-a936-cb721f2e08a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.associate_member_reviewer
+  module:
+    - user
+id: user_remove_role_action.associate_member_reviewer
+label: 'Remove the Associate Member reviewer role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: associate_member_reviewer

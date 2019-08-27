@@ -1,0 +1,10 @@
+uuid: eebf00d7-fffe-4cd8-85e4-949de853212e
+langcode: en
+status: true
+dependencies: {  }
+label: 'Simple Order Items'
+id: simple_order_items
+purchasableEntityType: commerce_product_variation
+orderType: default
+traits: {  }
+locked: false

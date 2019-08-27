@@ -1,0 +1,43 @@
+uuid: f9de80e4-4c1d-4269-9fa3-9b7c585c0e29
+langcode: en
+status: true
+dependencies:
+  config:
+    - feeds.feed_type.cities
+    - field.field.feeds_feed.cities.field_legacy_tid
+id: feeds_feed.cities.default
+targetEntityType: feeds_feed
+bundle: cities
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_legacy_tid:
+    weight: 11
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }

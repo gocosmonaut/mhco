@@ -1,0 +1,22 @@
+uuid: 6092a4dd-a60e-45ca-8b10-78176e25acaf
+langcode: en
+status: true
+dependencies:
+  theme:
+    - mbase
+_core:
+  default_config_hash: QAZxBivvjJMFUEx9d8HjY8i4xrB6xvQdeAA3-QAGLwI
+id: mbase_local_tasks
+theme: mbase
+region: header
+weight: 10
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

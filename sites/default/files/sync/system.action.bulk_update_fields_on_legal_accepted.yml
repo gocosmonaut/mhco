@@ -1,0 +1,11 @@
+uuid: 28d80f5f-1314-49b9-a16a-3616f67709ee
+langcode: en
+status: true
+dependencies:
+  module:
+    - bulk_update_fields
+id: bulk_update_fields_on_legal_accepted
+label: 'Bulk Update T&C Accepted Fields'
+type: legal_accepted
+plugin: bulk_update_fields_action_base
+configuration: {  }

@@ -1,0 +1,24 @@
+uuid: 3ffeb90a-fb2a-48b0-9eaf-899a627b995b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.webform
+  module:
+    - text
+_core:
+  default_config_hash: GEGPFgtMcJX92LLslum9iBSeNJQcS8ltl7A6itAziVM
+id: node.webform.body
+field_name: body
+entity_type: node
+bundle: webform
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

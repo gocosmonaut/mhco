@@ -1,0 +1,20 @@
+uuid: 33f6ec05-a930-4f3b-9339-6e0cdf9587fc
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: H4ZdW1nTRkBalf3_6UB8XtOh30in1JMWHTpKCs8H6ec
+id: node.field_is_this_a_park_or_a_home_
+field_name: field_is_this_a_park_or_a_home_
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

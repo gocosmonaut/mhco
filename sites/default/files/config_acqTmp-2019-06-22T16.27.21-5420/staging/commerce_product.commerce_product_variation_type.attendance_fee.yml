@@ -1,0 +1,10 @@
+uuid: 76644671-3baa-4911-984b-00e9143c0774
+langcode: en
+status: true
+dependencies: {  }
+id: attendance_fee
+label: 'Attendance Fee'
+orderItemType: null
+generateTitle: null
+traits: {  }
+locked: false

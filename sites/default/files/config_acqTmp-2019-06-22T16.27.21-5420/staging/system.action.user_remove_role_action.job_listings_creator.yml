@@ -1,0 +1,14 @@
+uuid: 9cca5e2b-5fa0-4797-b40a-7b91135460aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.job_listings_creator
+  module:
+    - user
+id: user_remove_role_action.job_listings_creator
+label: 'Remove the Employment Listings creator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: job_listings_creator

@@ -1,0 +1,14 @@
+uuid: 4a1d2d45-087b-445c-8b3f-58dfb0c8ed6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.column_reviewer
+  module:
+    - user
+id: user_remove_role_action.column_reviewer
+label: 'Remove the Column reviewer role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: column_reviewer

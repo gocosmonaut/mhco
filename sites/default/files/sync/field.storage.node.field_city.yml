@@ -1,0 +1,22 @@
+uuid: ae658d22-6c4d-403d-85d8-0f57d50455e5
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+_core:
+  default_config_hash: MQ9FNjQD7mzrfqGb7SPPJUCK9TJ2YzlJIB88aqXW3Sc
+id: node.field_city
+field_name: field_city
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

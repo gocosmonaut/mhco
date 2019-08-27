@@ -1,0 +1,21 @@
+uuid: 2634581f-1135-4dda-bb6c-6a1826373d79
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_order
+id: commerce_order.field_zip
+field_name: field_zip
+entity_type: commerce_order
+type: string
+settings:
+  max_length: 10
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

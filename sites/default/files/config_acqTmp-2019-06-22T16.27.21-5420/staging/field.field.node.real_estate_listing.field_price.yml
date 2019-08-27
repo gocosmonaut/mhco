@@ -1,0 +1,25 @@
+uuid: b9806f5c-d6de-43d1-8742-1a7e4aa69d4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_price
+    - node.type.real_estate_listing
+_core:
+  default_config_hash: xT4dPi0nD6ksdJruaHgA7QdB8Acq3zK3gia24sKA8aA
+id: node.real_estate_listing.field_price
+field_name: field_price
+entity_type: node
+bundle: real_estate_listing
+label: Price
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: $
+  suffix: ' USD'
+field_type: integer

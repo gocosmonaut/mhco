@@ -1,0 +1,29 @@
+uuid: 94cfea6c-083e-413b-acea-b3ea295a02fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_county
+    - taxonomy.vocabulary.counties_oregon
+    - user_bundle.user_type.user
+id: user.user.field_county
+field_name: field_county
+entity_type: user
+bundle: user
+label: 'County (if in Oregon)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      counties_oregon: counties_oregon
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

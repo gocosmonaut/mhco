@@ -1,0 +1,22 @@
+uuid: 472a5409-f843-4ccb-9a8a-27ca2c9adf99
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: KNE8CL6Nu2MhxoKaPTdplSi7c6lmnxz45w2Svw2vSIM
+id: node.field_bedrooms
+field_name: field_bedrooms
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

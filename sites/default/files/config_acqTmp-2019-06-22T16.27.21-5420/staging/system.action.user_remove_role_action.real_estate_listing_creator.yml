@@ -1,0 +1,14 @@
+uuid: 824fb4d4-4d4a-42a2-8c5e-50a0eb66df3f
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.real_estate_listing_creator
+  module:
+    - user
+id: user_remove_role_action.real_estate_listing_creator
+label: 'Remove the Real Estate Listing creator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: real_estate_listing_creator

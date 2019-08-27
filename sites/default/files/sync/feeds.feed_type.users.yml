@@ -1,0 +1,101 @@
+uuid: 2c525c0e-3310-492d-a547-96ecc0aa778a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_legacy_uid
+    - user_bundle.user_type.user
+  module:
+    - user
+label: Users
+id: users
+description: Users
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:user'
+processor_configuration:
+  update_existing: 2
+  update_non_existent: _keep
+  expire: -1
+  skip_hash_check: false
+  values:
+    type: user
+  owner_id: 0
+  authorize: false
+  owner_feed_author: false
+custom_sources:
+  name:
+    label: name
+    value: name
+    machine_name: name
+  created:
+    label: created
+    value: created
+    machine_name: created
+  mail:
+    label: mail
+    value: mail
+    machine_name: mail
+  access:
+    label: access
+    value: access
+    machine_name: access
+  login:
+    label: login
+    value: login
+    machine_name: login
+  uid:
+    label: uid
+    value: uid
+    machine_name: uid
+  status:
+    label: status
+    value: status
+    machine_name: status
+mappings:
+  -
+    target: name
+    map:
+      value: name
+    unique: {  }
+  -
+    target: created
+    map:
+      value: created
+    settings:
+      timezone: UTC
+  -
+    target: mail
+    map:
+      value: mail
+    unique: {  }
+    settings:
+      defuse: false
+  -
+    target: access
+    map:
+      value: access
+    settings:
+      timezone: UTC
+  -
+    target: login
+    map:
+      value: login
+    settings:
+      timezone: UTC
+  -
+    target: field_legacy_uid
+    map:
+      value: uid
+  -
+    target: status
+    map:
+      value: status

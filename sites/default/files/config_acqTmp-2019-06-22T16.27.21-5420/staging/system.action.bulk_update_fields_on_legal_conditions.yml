@@ -1,0 +1,11 @@
+uuid: cf284278-9359-499f-865d-99092d15e352
+langcode: en
+status: true
+dependencies:
+  module:
+    - bulk_update_fields
+id: bulk_update_fields_on_legal_conditions
+label: 'Bulk Update Terms & Conditions Fields'
+type: legal_conditions
+plugin: bulk_update_fields_action_base
+configuration: {  }

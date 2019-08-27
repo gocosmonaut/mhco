@@ -1,0 +1,29 @@
+uuid: 5f826cfb-1638-49a5-8a78-c759d9c1bb61
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_order.commerce_order_type.default
+    - field.storage.commerce_order.field_state
+    - taxonomy.vocabulary.states
+id: commerce_order.default.field_state
+field_name: field_state
+entity_type: commerce_order
+bundle: default
+label: State
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      states: states
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

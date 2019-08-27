@@ -1,0 +1,17 @@
+uuid: 6abab128-1fea-460b-9316-a4030059a0fe
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access checkout'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'view Terms and Conditions'
+  - 'view commerce_product'
+  - 'view media'

@@ -357,11 +357,13 @@ function mbase_preprocess_form_element(&$variables) {
     $variables['suffix'] = '';
     // Set email icon as prefix to email fields.
     if ($type == 'email' && $element_icons) {
-      $variables['prefix']['#markup'] = _mbase_icon('envelope');
+   //   $variables['prefix']['#markup'] = _mbase_icon('envelope');
+            $variables['prefix'] = _mbase_icon('envelope');
     }
     // Set icons for tel and telphone fields.
     if ($type == 'tel' && isset($element['#attributes']['type']) && $element['#attributes']['type'] == 'tel' && $element_icons) {
-      $variables['prefix']['#markup'] = _mbase_icon('phone');
+      // $variables['prefix']['#markup'] = _mbase_icon('phone');
+            $variables['prefix'] = _mbase_icon('phone');
     }
     // Set icons for date and time fields.
     if ($type == 'date' && isset($element['#attributes']['type']) && $element['#attributes']['type'] == 'date' && $element_icons) {

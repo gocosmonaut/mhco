@@ -1,0 +1,20 @@
+uuid: 7c948529-dbd0-443c-a306-d1eca1b2faf3
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: ZzQrtzhC-ug9r1p8LjtckdA1_9bYakKZqT-5nlr29-0
+id: node.field_community_type
+field_name: field_community_type
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

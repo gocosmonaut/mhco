@@ -1,0 +1,52 @@
+uuid: 8a10d723-5b1f-4b99-9e4c-60cda14e8d0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.events.field_event_date
+    - field.field.taxonomy_term.events.field_event_venue
+    - taxonomy.vocabulary.events
+  module:
+    - commerce
+    - path
+    - text
+id: taxonomy_term.events.default
+targetEntityType: taxonomy_term
+bundle: events
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_event_date:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: commerce_end_date
+    region: content
+  field_event_venue:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

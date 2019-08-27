@@ -1,0 +1,31 @@
+uuid: 30d6ec3e-01a9-4ded-90c5-452b72910a32
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_community_update_topics
+    - node.type.community_updates
+    - taxonomy.vocabulary.community_update_topics
+_core:
+  default_config_hash: _VaGGy6r5-t48NbsiHYgipVRqT1lFgbGz6oV6fPuOPY
+id: node.community_updates.field_community_update_topics
+field_name: field_community_update_topics
+entity_type: node
+bundle: community_updates
+label: 'Community Update Topics'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      community_update_topics: community_update_topics
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: community_update_topics
+field_type: entity_reference

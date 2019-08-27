@@ -1,0 +1,14 @@
+uuid: 278698ec-621b-40e9-8455-9979941c672c
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.real_estate_listing_reviewer
+  module:
+    - user
+id: user_remove_role_action.real_estate_listing_reviewer
+label: 'Remove the Real Estate Listing reviewer role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: real_estate_listing_reviewer

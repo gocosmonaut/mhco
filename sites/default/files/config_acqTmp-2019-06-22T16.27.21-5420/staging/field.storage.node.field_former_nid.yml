@@ -1,0 +1,23 @@
+uuid: a227e4c9-3117-46dc-adf9-0bc3cf02e93f
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: c9FlhCSNlXwoKVyhGKJwrCBk8HTqsLNNC_ti3ZbBSX8
+id: node.field_former_nid
+field_name: field_former_nid
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

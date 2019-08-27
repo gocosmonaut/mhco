@@ -1,0 +1,30 @@
+uuid: be99626a-8eb7-4a1d-a23d-95814799c275
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mhco_forms
+  module:
+    - system
+    - views
+  theme:
+    - mbase
+id: views_block__mhco_forms_block_1
+theme: mbase
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_block:mhco_forms-block_1'
+settings:
+  id: 'views_block:mhco_forms-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/news-and-resources/*\r\n/search*\r\n/search\r\n/membership/*"
+    negate: false
+    context_mapping: {  }

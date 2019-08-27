@@ -1,0 +1,25 @@
+uuid: d493f681-c016-4f06-8e8c-14d38ae1f11a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_year_opened_or_constructed
+    - node.type.real_estate_listing
+_core:
+  default_config_hash: F_2Il8DPrl_gIoMX0ffvyfM6uDTwm4_Wt73T_4133v0
+id: node.real_estate_listing.field_year_opened_or_constructed
+field_name: field_year_opened_or_constructed
+entity_type: node
+bundle: real_estate_listing
+label: 'Year Opened or Built'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1920
+  max: 2016
+  prefix: ''
+  suffix: ''
+field_type: integer

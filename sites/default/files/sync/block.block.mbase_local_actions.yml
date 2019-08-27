@@ -1,0 +1,20 @@
+uuid: f045df28-8f26-4e19-abc8-5f11b1b87c6d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - mbase
+_core:
+  default_config_hash: WIjrSdbBu_Be-1M0-cybUoFMEkiDOBIESf7LDmRMT6U
+id: mbase_local_actions
+theme: mbase
+region: header
+weight: -6
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

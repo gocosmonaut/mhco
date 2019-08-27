@@ -1,0 +1,30 @@
+uuid: faae14ab-1022-4aa4-9941-a580eaa728b0
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_order
+    - options
+id: commerce_order.field_registrant_roles
+field_name: field_registrant_roles
+entity_type: commerce_order
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: owner
+      label: 'I am the owner.'
+    -
+      value: onsite
+      label: 'I am the onsite manager.'
+    -
+      value: offsite
+      label: 'I am the offsite manager.'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

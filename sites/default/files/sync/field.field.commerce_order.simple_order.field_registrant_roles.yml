@@ -1,0 +1,21 @@
+uuid: ef4b2f4f-58f7-4dee-b310-d08cd62a356b
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_order.commerce_order_type.simple_order
+    - field.storage.commerce_order.field_registrant_roles
+  module:
+    - options
+id: commerce_order.simple_order.field_registrant_roles
+field_name: field_registrant_roles
+entity_type: commerce_order
+bundle: simple_order
+label: 'Check all that apply to yourself as the registrant'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

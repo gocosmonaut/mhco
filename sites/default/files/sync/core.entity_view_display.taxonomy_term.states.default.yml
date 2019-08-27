@@ -1,0 +1,33 @@
+uuid: bc63d54e-9351-4d73-afad-8c5d86fbb27b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.states.feeds_item
+    - field.field.taxonomy_term.states.field_original_tid
+    - taxonomy.vocabulary.states
+  module:
+    - text
+id: taxonomy_term.states.default
+targetEntityType: taxonomy_term
+bundle: states
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_original_tid:
+    weight: 1
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+hidden:
+  feeds_item: true

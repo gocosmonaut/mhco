@@ -1,0 +1,19 @@
+uuid: 4a936168-065e-48c3-9faa-d58db5c275d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_order.commerce_order_type.annual_conference
+    - field.storage.commerce_order.field_email
+id: commerce_order.annual_conference.field_email
+field_name: field_email
+entity_type: commerce_order
+bundle: annual_conference
+label: Email
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

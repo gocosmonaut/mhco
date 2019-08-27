@@ -1,0 +1,24 @@
+uuid: 9e66b147-3ab5-4c75-9faa-044666c70a7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.article
+  module:
+    - text
+_core:
+  default_config_hash: s3cmzdAL_vaup5K_LfnjXLcU0Ur-OfASdn85abVzLhs
+id: node.article.body
+field_name: body
+entity_type: node
+bundle: article
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

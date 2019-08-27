@@ -1,0 +1,22 @@
+uuid: 6e5b7f04-6a6a-4a1d-a482-4f2e53d9c1cf
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - mbase
+_core:
+  default_config_hash: shcS0LzpNpjZgGNe2LRU61LPunjKSfNknBqo2Vy7UJM
+id: mbase_help
+theme: mbase
+region: help
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

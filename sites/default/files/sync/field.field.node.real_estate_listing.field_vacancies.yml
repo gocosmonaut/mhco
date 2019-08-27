@@ -1,0 +1,21 @@
+uuid: a21e26d8-bcce-4f91-b835-c6b5319325cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vacancies
+    - node.type.real_estate_listing
+_core:
+  default_config_hash: eGAEaJaZ9BFdza0XVYnUvWrBNdvuQCjRQ-WhSaB4_iE
+id: node.real_estate_listing.field_vacancies
+field_name: field_vacancies
+entity_type: node
+bundle: real_estate_listing
+label: Vacancies
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

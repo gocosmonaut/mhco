@@ -1,0 +1,21 @@
+uuid: 1fdb5396-c078-4754-817a-bd81ab3a2827
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email
+    - node.type.real_estate_listing
+_core:
+  default_config_hash: IHmD8K28FjJIXGrROIzbbGR84KakRrVfl5ySHGiX4fY
+id: node.real_estate_listing.field_email
+field_name: field_email
+entity_type: node
+bundle: real_estate_listing
+label: Email
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

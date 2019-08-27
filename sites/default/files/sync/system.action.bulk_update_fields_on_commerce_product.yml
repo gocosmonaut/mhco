@@ -1,0 +1,11 @@
+uuid: 18d22c11-96b2-4093-bf07-7ede09f3a296
+langcode: en
+status: true
+dependencies:
+  module:
+    - bulk_update_fields
+id: bulk_update_fields_on_commerce_product
+label: 'Bulk Update Product Fields'
+type: commerce_product
+plugin: bulk_update_fields_action_base
+configuration: {  }

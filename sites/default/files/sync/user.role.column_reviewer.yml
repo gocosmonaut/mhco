@@ -1,0 +1,19 @@
+uuid: e2ee4430-c6c2-4714-8bae-6d17105e7597
+langcode: en
+status: true
+dependencies: {  }
+id: column_reviewer
+label: 'Column reviewer'
+weight: 12
+is_admin: false
+permissions:
+  - 'access content overview'
+  - 'access toolbar'
+  - 'delete any column content'
+  - 'edit any column content'
+  - 'use editorial transition archive'
+  - 'use editorial transition publish'
+  - 'use editorial transition review'
+  - 'use moderation sidebar'
+  - 'view any unpublished content'
+  - 'view latest version'

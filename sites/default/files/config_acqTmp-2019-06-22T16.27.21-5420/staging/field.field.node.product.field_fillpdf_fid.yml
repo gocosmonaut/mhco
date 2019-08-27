@@ -1,0 +1,21 @@
+uuid: b3157963-4767-4058-8124-4dd828942589
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fillpdf_fid
+    - node.type.product
+_core:
+  default_config_hash: jfst-NdCuE1nyEAKB-_ytdtiv2ju8gWSPW_KGDFHZCA
+id: node.product.field_fillpdf_fid
+field_name: field_fillpdf_fid
+entity_type: node
+bundle: product
+label: 'FillPDF form ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

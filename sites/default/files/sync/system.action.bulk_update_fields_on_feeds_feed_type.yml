@@ -1,0 +1,11 @@
+uuid: 20d022ec-7257-421c-b92f-d31f4ac0f832
+langcode: en
+status: true
+dependencies:
+  module:
+    - bulk_update_fields
+id: bulk_update_fields_on_feeds_feed_type
+label: 'Bulk Update Feed type Fields'
+type: feeds_feed_type
+plugin: bulk_update_fields_action_base
+configuration: {  }

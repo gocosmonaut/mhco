@@ -1,0 +1,44 @@
+uuid: 6abab128-1fea-460b-9316-a4030059a0fe
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access checkout'
+  - 'access comments'
+  - 'access commerce_order overview'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'create annual_conference commerce_order'
+  - 'create default commerce_order'
+  - 'create simple_order commerce_order'
+  - 'delete annual_conference commerce_order'
+  - 'delete default commerce_order'
+  - 'delete simple_order commerce_order'
+  - 'manage admission commerce_product_variation'
+  - 'manage attendance_fee commerce_product_variation'
+  - 'manage default commerce_product_variation'
+  - 'manage how_many_days_do_you_plan_to_att commerce_product_variation'
+  - 'manage own commerce_payment_method'
+  - 'manage simple commerce_product_variation'
+  - 'search content'
+  - 'update annual_conference commerce_order'
+  - 'update default commerce_order'
+  - 'update simple_order commerce_order'
+  - 'use advanced search'
+  - 'view Terms and Conditions'
+  - 'view annual_conference commerce_order'
+  - 'view commerce_product'
+  - 'view commerce_product_attribute'
+  - 'view commerce_store'
+  - 'view default commerce_order'
+  - 'view default commerce_product'
+  - 'view media'
+  - 'view own commerce_order'
+  - 'view simple commerce_product'
+  - 'view simple_order commerce_order'

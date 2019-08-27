@@ -1,0 +1,11 @@
+uuid: 311bdf1f-e3ff-44e2-8cfb-870d77d1beba
+langcode: en
+status: true
+dependencies:
+  module:
+    - bulk_update_fields
+id: bulk_update_fields_on_fillpdf_file_context
+label: 'Bulk Update FillPDF file context Fields'
+type: fillpdf_file_context
+plugin: bulk_update_fields_action_base
+configuration: {  }

@@ -1,0 +1,22 @@
+uuid: 4d47f19f-5f15-4281-943b-4b70aaa1e91c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: columns
+label: Columns
+type: 'canonical_entities:node'
+pattern: 'news-and-resources/columns/[node:title]'
+selection_criteria:
+  3b44e7d0-694b-49b8-9e92-21e7a75e4684:
+    id: node_type
+    bundles:
+      column: column
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 3b44e7d0-694b-49b8-9e92-21e7a75e4684
+selection_logic: and
+weight: -5
+relationships: {  }

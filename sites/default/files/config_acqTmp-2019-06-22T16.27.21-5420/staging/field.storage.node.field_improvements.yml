@@ -1,0 +1,21 @@
+uuid: aac2bd98-a1e6-4dd7-8e3d-4bfee6ae73dd
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: xdpDmtwzD6dibrp-Ic4G1PMUCXk_oKqK8u3XhHdp0T4
+id: node.field_improvements
+field_name: field_improvements
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

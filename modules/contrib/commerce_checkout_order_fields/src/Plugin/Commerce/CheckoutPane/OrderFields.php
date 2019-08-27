@@ -109,6 +109,7 @@ class OrderFields extends CheckoutPaneBase {
    * {@inheritdoc}
    */
   public function validatePaneForm(array &$pane_form, FormStateInterface $form_state, array &$complete_form) {
+    $this->getFormDisplay()->extractFormValues($this->order, $pane_form, $form_state);
     $this->getFormDisplay()->validateFormValues($this->order, $pane_form, $form_state);
     parent::validatePaneForm($pane_form, $form_state, $complete_form);
   }

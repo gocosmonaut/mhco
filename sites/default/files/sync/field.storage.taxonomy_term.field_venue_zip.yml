@@ -1,0 +1,21 @@
+uuid: 52001bb5-8dc0-42d9-a3d8-4ad45fb227b7
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_venue_zip
+field_name: field_venue_zip
+entity_type: taxonomy_term
+type: string
+settings:
+  max_length: 10
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

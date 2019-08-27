@@ -1,0 +1,19 @@
+uuid: 77505bfa-c26f-4a99-a9ec-717405acb2ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_order.commerce_order_type.default
+    - field.storage.commerce_order.field_comments
+id: commerce_order.default.field_comments
+field_name: field_comments
+entity_type: commerce_order
+bundle: default
+label: Comments
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,22 @@
+uuid: 9e0f9e21-ca6e-49b0-92f8-a2188653030a
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+_core:
+  default_config_hash: COGuGgU33187BS7rXOZUKt5KsqW5_m32eNvKq-e13vc
+id: node.field_trim_color
+field_name: field_trim_color
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

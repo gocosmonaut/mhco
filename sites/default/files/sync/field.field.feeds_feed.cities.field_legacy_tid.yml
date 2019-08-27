@@ -1,0 +1,23 @@
+uuid: e237a731-9015-41a0-9aa7-31ae549c06bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - feeds.feed_type.cities
+    - field.storage.feeds_feed.field_legacy_tid
+id: feeds_feed.cities.field_legacy_tid
+field_name: field_legacy_tid
+entity_type: feeds_feed
+bundle: cities
+label: 'Legacy TID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

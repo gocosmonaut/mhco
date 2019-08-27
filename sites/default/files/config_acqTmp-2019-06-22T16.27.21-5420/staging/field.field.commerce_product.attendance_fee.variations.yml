@@ -1,0 +1,24 @@
+uuid: 05cd3ebd-d35a-449c-8a24-020f5562c2d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.attendance_fee
+    - commerce_product.commerce_product_variation_type.attendance_fee
+    - field.storage.commerce_product.variations
+id: commerce_product.attendance_fee.variations
+field_name: variations
+entity_type: commerce_product
+bundle: attendance_fee
+label: Variations
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: null
+settings:
+  handler: 'default:commerce_product_variation'
+  handler_settings:
+    target_bundles:
+      - attendance_fee
+field_type: entity_reference

@@ -1,0 +1,14 @@
+uuid: 7d22a4ea-c311-4d1a-b0dc-a2c82e61ed29
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.real_estate_listing_creator
+  module:
+    - user
+id: user_add_role_action.real_estate_listing_creator
+label: 'Add the Real Estate Listing creator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: real_estate_listing_creator

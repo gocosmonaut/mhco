@@ -1,0 +1,22 @@
+uuid: 345c9ef1-1197-42b5-bd9b-040a4057dd03
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mbase
+_core:
+  default_config_hash: GImto5nf_Pp67yFLNSJObTXGUYQ3PGAwc32jW-BsCy0
+id: mbase_powered
+theme: mbase
+region: footer
+weight: -10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

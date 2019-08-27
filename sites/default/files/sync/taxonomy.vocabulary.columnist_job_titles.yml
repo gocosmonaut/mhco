@@ -1,0 +1,8 @@
+uuid: c50975fb-e19c-459a-a6c2-6f6a90825ece
+langcode: en
+status: true
+dependencies: {  }
+name: 'Columnist Job Titles'
+vid: columnist_job_titles
+description: ''
+weight: 0

@@ -1,0 +1,9 @@
+remote_protocol: https
+remote_endpoint: fillpdf.io/xmlrpc.php
+scheme: public
+_core:
+  default_config_hash: bOBbmf7lF1S6XSSOGHGs2keYmtE5OZiIwG9bQBMgoIo
+backend: fillpdf_service
+fillpdf_service_api_key: XugbqFXF6UrjFBB9ywRT3ybyiTDDM2fTk
+pdftk_path: ''
+local_service_endpoint: ''
