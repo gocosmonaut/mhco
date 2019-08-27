@@ -1,4 +1,4 @@
-<?php declare(strict_types=1);
+<?php
 
 namespace PhpParser\Builder;
 
@@ -7,87 +7,91 @@ use PhpParser\Node;
 use PhpParser\Node\Scalar\DNumber;
 use PhpParser\Node\Stmt;
 
-class InterfaceTest extends \PHPUnit\Framework\TestCase
+class InterfaceTest extends \PHPUnit_Framework_TestCase
 {
-    protected function createInterfaceBuilder() {
-        return new Interface_('Contract');
+    /** @var Interface_ */
+    protected $builder;
+
+    protected function setUp() {
+        $this->builder = new Interface_('Contract');
     }
 
     private function dump($node) {
         $pp = new \PhpParser\PrettyPrinter\Standard;
-        return $pp->prettyPrint([$node]);
+        return $pp->prettyPrint(array($node));
     }
 
     public function testEmpty() {
-        $contract = $this->createInterfaceBuilder()->getNode();
-        $this->assertInstanceOf(Stmt\Interface_::class, $contract);
-        $this->assertEquals(new Node\Identifier('Contract'), $contract->name);
+        $contract = $this->builder->getNode();
+        $this->assertInstanceOf('PhpParser\Node\Stmt\Interface_', $contract);
+        $this->assertSame('Contract', $contract->name);
     }
 
     public function testExtending() {
-        $contract = $this->createInterfaceBuilder()
-            ->extend('Space\Root1', 'Root2')->getNode();
+        $contract = $this->builder->extend('Space\Root1', 'Root2')->getNode();
         $this->assertEquals(
-            new Stmt\Interface_('Contract', [
-                'extends' => [
+            new Stmt\Interface_('Contract', array(
+                'extends' => array(
                     new Node\Name('Space\Root1'),
                     new Node\Name('Root2')
-                ],
-            ]), $contract
+                ),
+            )), $contract
         );
     }
 
     public function testAddMethod() {
         $method = new Stmt\ClassMethod('doSomething');
-        $contract = $this->createInterfaceBuilder()->addStmt($method)->getNode();
-        $this->assertSame([$method], $contract->stmts);
+        $contract = $this->builder->addStmt($method)->getNode();
+        $this->assertSame(array($method), $contract->stmts);
     }
 
     public function testAddConst() {
-        $const = new Stmt\ClassConst([
+        $const = new Stmt\ClassConst(array(
             new Node\Const_('SPEED_OF_LIGHT', new DNumber(299792458.0))
-        ]);
-        $contract = $this->createInterfaceBuilder()->addStmt($const)->getNode();
+        ));
+        $contract = $this->builder->addStmt($const)->getNode();
         $this->assertSame(299792458.0, $contract->stmts[0]->consts[0]->value->value);
     }
 
     public function testOrder() {
-        $const = new Stmt\ClassConst([
+        $const = new Stmt\ClassConst(array(
             new Node\Const_('SPEED_OF_LIGHT', new DNumber(299792458))
-        ]);
+        ));
         $method = new Stmt\ClassMethod('doSomething');
-        $contract = $this->createInterfaceBuilder()
+        $contract = $this->builder
             ->addStmt($method)
             ->addStmt($const)
             ->getNode()
         ;
 
-        $this->assertInstanceOf(Stmt\ClassConst::class, $contract->stmts[0]);
-        $this->assertInstanceOf(Stmt\ClassMethod::class, $contract->stmts[1]);
+        $this->assertInstanceOf('PhpParser\Node\Stmt\ClassConst', $contract->stmts[0]);
+        $this->assertInstanceOf('PhpParser\Node\Stmt\ClassMethod', $contract->stmts[1]);
     }
 
     public function testDocComment() {
-        $node = $this->createInterfaceBuilder()
+        $node = $this->builder
             ->setDocComment('/** Test */')
             ->getNode();
 
-        $this->assertEquals(new Stmt\Interface_('Contract', [], [
-            'comments' => [new Comment\Doc('/** Test */')]
-        ]), $node);
+        $this->assertEquals(new Stmt\Interface_('Contract', array(), array(
+            'comments' => array(new Comment\Doc('/** Test */'))
+        )), $node);
     }
 
+    /**
+     * @expectedException \LogicException
+     * @expectedExceptionMessage Unexpected node of type "Stmt_PropertyProperty"
+     */
     public function testInvalidStmtError() {
-        $this->expectException(\LogicException::class);
-        $this->expectExceptionMessage('Unexpected node of type "Stmt_PropertyProperty"');
-        $this->createInterfaceBuilder()->addStmt(new Stmt\PropertyProperty('invalid'));
+        $this->builder->addStmt(new Stmt\PropertyProperty('invalid'));
     }
 
     public function testFullFunctional() {
-        $const = new Stmt\ClassConst([
+        $const = new Stmt\ClassConst(array(
             new Node\Const_('SPEED_OF_LIGHT', new DNumber(299792458))
-        ]);
+        ));
         $method = new Stmt\ClassMethod('doSomething');
-        $contract = $this->createInterfaceBuilder()
+        $contract = $this->builder
             ->addStmt($method)
             ->addStmt($const)
             ->getNode()
@@ -98,3 +102,4 @@ class InterfaceTest extends \PHPUnit\Framework\TestCase
         $this->assertTrue(interface_exists('Contract', false));
     }
 }
+

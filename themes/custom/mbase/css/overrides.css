@@ -105,6 +105,9 @@ div.main-container.container {
 .user-logged-in #navbar #block-utilitynav a.become-member {display:none;}
 .user-logged-in #navbar #block-utilitynav .welcome-back {padding-right:12px;}
 
+.user-anonymous.node--type-column .field-node--body,
+.user-anonymous.node--type-community-updates .field-node--body {display:none;}
+
 .path-innerpage .col-sm-3 h2.block-title {
     background: none repeat scroll 0 0 #ddd;
     color: #999;
