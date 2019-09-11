@@ -11,6 +11,7 @@ globalscripts:
       css/flatit.css: {}
       css/animate.min.css: {}
       css/fonts.css: {}
+      css/toolbar.theme.css : {}
       css/front.css: {}
       css/subpages.css: {}
       css/events.css: {}

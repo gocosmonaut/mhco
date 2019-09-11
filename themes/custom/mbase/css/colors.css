@@ -29,14 +29,17 @@ a:hover {
 
 .user-logged-in.adminimal-admin-toolbar #toolbar-item-administration-tray {
     position: fixed;
-    top: 36px;
+    top: 33px;
     z-index: 9999;
+    font-size: 12px !important;
 }
 
 .user-logged-in.adminimal-admin-toolbar #toolbar-bar {
     position: fixed;
     top: 0px;
     z-index: 9999;
+    font-size: 11px !important;
+    max-height: 35px;
 }
 
 .name.navbar-brand {
@@ -483,9 +486,13 @@ a:hover {
     text-align: center;
     height: 28px;
     position: fixed;
-    top: 0;
+    top: 0px;
     left: 0;
     color: #fff;
+}
+
+.toolbar-horizontal #block-utilitynav {
+    top: 200px;
 }
 
 #block-utilitynav .field-name-body {
@@ -512,11 +519,11 @@ a:hover {
 }
 
 .user-logged-in.adminimal-admin-toolbar header#navbar {
-    top: 67px;
+    top: 88px;
 }
 
 .user-logged-in.adminimal-admin-toolbar.toolbar-tray-open header#navbar {
-    top: 103px;
+    top: 122px;
 }
 
 .user-logged-in.adminimal-admin-toolbar #block-utilitynav {
@@ -525,7 +532,7 @@ a:hover {
 }
 
 .user-logged-in.adminimal-admin-toolbar.toolbar-tray-open #block-utilitynav {
-    top: 75px;
+    top: 94px;
     z-index: -1;
 }
 
@@ -534,7 +541,7 @@ a:hover {
 }
 
 .user-logged-in.adminimal-admin-toolbar #toolbar-item-user-tray {
-    top: 40px;
+    top: 160px;
 }
 
 .dropdown-menu {
@@ -568,9 +575,8 @@ header#navbar .nav li a:hover {
     top: 75px;
 }
 
-.user-logged-in.adminimal-admin-toolbar .navbar-fixed-top {
-    position: fixed;
-    top: 103px;
+.toolbar-horizontal header#navbar  {
+    top: 143px;
 }
 
 button.navbar-toggle {

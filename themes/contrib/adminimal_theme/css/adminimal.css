@@ -389,6 +389,7 @@
 .adminimal .toolbar .toolbar-bar {
   background-color: #2d2d2d;
   box-shadow: none;
+    
 }
 
 .adminimal .toolbar .toolbar-menu {
@@ -414,11 +415,13 @@
 
 .adminimal .toolbar-tray a {
   color: #bbbbbb;
+
 }
 
 .adminimal .toolbar .toolbar-bar .toolbar-tab:not(.workspaces-toolbar-tab) > .toolbar-item {
   color: #bebebe;
   font-weight: 600;
+        font-size: 11px !important;
 }
 
 .adminimal .toolbar .toolbar-bar .toolbar-tab:not(.workspaces-toolbar-tab) > .toolbar-item:hover {
