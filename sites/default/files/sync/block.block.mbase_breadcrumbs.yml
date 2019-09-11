@@ -1,0 +1,22 @@
+uuid: 1dacff0d-dae2-45ca-b012-88f5fb6c4058
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - mbase
+_core:
+  default_config_hash: 82QM-8NIVZ3K1sBhEnKjAlGcXhxgSzF-_xaaKqxxKp4
+id: mbase_breadcrumbs
+theme: mbase
+region: header
+weight: -3
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

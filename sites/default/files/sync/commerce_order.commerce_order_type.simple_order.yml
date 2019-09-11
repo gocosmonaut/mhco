@@ -1,0 +1,22 @@
+uuid: ccd3150e-bd47-420f-a57f-a0c154fd73c3
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_cart
+    - commerce_checkout
+third_party_settings:
+  commerce_cart:
+    cart_form_view: commerce_cart_form
+    cart_block_view: commerce_cart_block
+  commerce_checkout:
+    checkout_flow: default
+label: 'Simple Order'
+id: simple_order
+workflow: order_fulfillment_validation
+refresh_mode: customer
+refresh_frequency: 300
+sendReceipt: true
+receiptBcc: info@mhco.org
+traits: {  }
+locked: false

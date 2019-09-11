@@ -1,0 +1,22 @@
+uuid: dacc3839-d9e8-4635-88a9-1dfe60f5ab7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.admission
+    - field.storage.commerce_product.body
+  module:
+    - text
+id: commerce_product.admission.body
+field_name: body
+entity_type: commerce_product
+bundle: admission
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: null
+settings:
+  display_summary: false
+field_type: text_with_summary

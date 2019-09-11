@@ -1,0 +1,22 @@
+uuid: cdf106c7-6e57-4e0e-bbad-285b1bc63aea
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+_core:
+  default_config_hash: cEkYx5M72UR8gw9j4fRFmxKkC7pH8ZYDw-ZIEb2Ezf8
+id: node.field_community_update_topics
+field_name: field_community_update_topics
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

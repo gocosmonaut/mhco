@@ -1,0 +1,31 @@
+uuid: 7ea856fa-4ce4-44c9-8db0-e658609f86e9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:text:95ba5b46-550a-4fb7-92cb-318ea3755d8a'
+  module:
+    - block_content
+    - system
+  theme:
+    - mbase
+id: customfooter
+theme: mbase
+region: content
+weight: -8
+provider: null
+plugin: 'block_content:95ba5b46-550a-4fb7-92cb-318ea3755d8a'
+settings:
+  id: 'block_content:95ba5b46-550a-4fb7-92cb-318ea3755d8a'
+  label: 'Custom Footer'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '*'
+    negate: false
+    context_mapping: {  }

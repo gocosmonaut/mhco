@@ -1,0 +1,14 @@
+uuid: d8321522-632b-408a-acf5-5a0c32fa61af
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.advertisement_creator
+  module:
+    - user
+id: user_remove_role_action.advertisement_creator
+label: 'Remove the Advertisement creator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: advertisement_creator

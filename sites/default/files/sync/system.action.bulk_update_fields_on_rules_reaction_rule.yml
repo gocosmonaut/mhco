@@ -1,0 +1,11 @@
+uuid: 21e1127b-d830-4e71-9c04-96660e06912f
+langcode: en
+status: true
+dependencies:
+  module:
+    - bulk_update_fields
+id: bulk_update_fields_on_rules_reaction_rule
+label: 'Bulk Update Reaction Rule Fields'
+type: rules_reaction_rule
+plugin: bulk_update_fields_action_base
+configuration: {  }

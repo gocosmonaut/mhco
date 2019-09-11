@@ -1,0 +1,35 @@
+uuid: 4fe6ca46-41d2-465e-a294-470aa05ec91c
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.front_page
+    - views.view.columns
+  module:
+    - views
+id: front_page-block_display-0
+label: 'Block page'
+variant: block_display
+variant_settings:
+  blocks:
+    803dc834-35f4-4efb-92ec-05ef1537281a:
+      id: 'views_block:columns-home_page_slideshow'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: top
+      weight: 0
+      uuid: 803dc834-35f4-4efb-92ec-05ef1537281a
+      context_mapping: {  }
+  id: block_display
+  uuid: 0f7e46b9-66a2-45f6-9452-9dc9a6df810d
+  label: null
+  weight: 0
+  page_title: Home
+page: front_page
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

@@ -1,0 +1,12 @@
+uuid: 78cb7152-a2a4-4204-8cb9-186bd89cce62
+langcode: en
+status: true
+dependencies: {  }
+id: attendance_fee
+label: 'Attendance Fee'
+description: 'Fees for management seminars and the annual conference.'
+variationType: attendance_fee
+multipleVariations: true
+injectVariationFields: false
+traits: {  }
+locked: false

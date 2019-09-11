@@ -1,0 +1,52 @@
+uuid: 1eec85ca-2954-4739-b910-3a5beac2a28a
+langcode: en
+status: true
+dependencies:
+  config:
+    - feeds.feed_type.cu40
+    - field.field.feeds_feed.cu40.field_date
+    - field.field.feeds_feed.cu40.field_guid
+  module:
+    - datetime
+id: feeds_feed.cu40.default
+targetEntityType: feeds_feed
+bundle: cu40
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_date:
+    weight: 11
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_guid:
+    weight: 12
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }

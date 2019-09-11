@@ -1,0 +1,23 @@
+uuid: 8548be93-a7c2-4ffe-b48a-0bcb6b04c5c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_original_tid
+    - taxonomy.vocabulary.states
+id: taxonomy_term.states.field_original_tid
+field_name: field_original_tid
+entity_type: taxonomy_term
+bundle: states
+label: 'Original TID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

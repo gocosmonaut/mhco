@@ -1,0 +1,28 @@
+uuid: 3cef1cc1-adaf-4f49-b629-7296a763e81a
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_attribute.members
+    - commerce_product.commerce_product_variation_type.simple
+    - field.storage.commerce_product_variation.attribute_members
+id: commerce_product_variation.simple.attribute_members
+field_name: attribute_members
+entity_type: commerce_product_variation
+bundle: simple
+label: 'Are you an MHCO member?'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:commerce_product_attribute_value'
+  handler_settings:
+    target_bundles:
+      members: members
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

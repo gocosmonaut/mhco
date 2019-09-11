@@ -1,0 +1,33 @@
+uuid: 96ac810e-2ef3-452d-b937-ad39c0d6ded9
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_order.commerce_order_type.annual_conference
+    - field.storage.commerce_order.field_state
+    - taxonomy.vocabulary.states
+  content:
+    - 'taxonomy_term:states:666e23bc-54a2-41c9-acd6-2d36ef8bb93a'
+id: commerce_order.annual_conference.field_state
+field_name: field_state
+entity_type: commerce_order
+bundle: annual_conference
+label: State
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 666e23bc-54a2-41c9-acd6-2d36ef8bb93a
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      states: states
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

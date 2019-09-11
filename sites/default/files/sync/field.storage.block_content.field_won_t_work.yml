@@ -1,0 +1,20 @@
+uuid: b54ac4aa-aad7-4def-a6f1-7348bed7fa28
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - views
+id: block_content.field_won_t_work
+field_name: field_won_t_work
+entity_type: block_content
+type: entity_reference
+settings:
+  target_type: view
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

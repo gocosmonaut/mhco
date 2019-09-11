@@ -1,0 +1,40 @@
+uuid: 3a84398a-ffbb-4341-b44c-592bcb6791f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_company_logo
+    - node.type.job_listings
+  module:
+    - image
+_core:
+  default_config_hash: GM9phuu679ohB-43pWfR0HLzcpXjiRE2mtqtDJ7HbRk
+id: node.job_listings.field_company_logo
+field_name: field_company_logo
+entity_type: node
+bundle: job_listings
+label: 'Company Logo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: logos
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  title_field: false
+  default_image:
+    alt: ''
+    title: ''
+    width: null
+    height: null
+    uuid: ''
+  alt_field_required: true
+  title_field_required: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

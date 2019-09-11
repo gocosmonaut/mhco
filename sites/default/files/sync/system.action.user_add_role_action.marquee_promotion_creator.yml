@@ -1,0 +1,14 @@
+uuid: 075c49f7-dca9-4990-aaf6-a90bfd60832a
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.marquee_promotion_creator
+  module:
+    - user
+id: user_add_role_action.marquee_promotion_creator
+label: 'Add the Marquee Promotion creator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: marquee_promotion_creator

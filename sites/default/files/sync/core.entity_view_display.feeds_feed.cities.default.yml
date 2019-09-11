@@ -1,0 +1,52 @@
+uuid: 0f3f0994-fedd-41d9-ad66-2723241e588b
+langcode: en
+status: true
+dependencies:
+  config:
+    - feeds.feed_type.cities
+    - field.field.feeds_feed.cities.field_legacy_tid
+  module:
+    - feeds
+    - user
+id: feeds_feed.cities.default
+targetEntityType: feeds_feed
+bundle: cities
+mode: default
+content:
+  field_legacy_tid:
+    weight: 2
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  imported:
+    label: inline
+    type: timestamp_ago
+    weight: 1
+    region: content
+    settings:
+      future_format: '@interval hence'
+      past_format: '@interval ago'
+      granularity: 2
+    third_party_settings: {  }
+  next:
+    label: inline
+    type: timestamp
+    weight: 1
+    region: content
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+  source:
+    label: inline
+    type: feeds_uri_link
+    weight: -3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

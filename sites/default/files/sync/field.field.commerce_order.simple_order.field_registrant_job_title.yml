@@ -1,0 +1,19 @@
+uuid: 4aa5586b-bd3c-4023-a5c2-f3844dcf8e82
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_order.commerce_order_type.simple_order
+    - field.storage.commerce_order.field_registrant_job_title
+id: commerce_order.simple_order.field_registrant_job_title
+field_name: field_registrant_job_title
+entity_type: commerce_order
+bundle: simple_order
+label: 'Registrant Job Title'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,134 @@
+uuid: 2d4892a7-ef28-4db8-ab45-1c80ab66f1cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.community_updates.body
+    - field.field.node.community_updates.field_former_nid
+    - node.type.community_updates
+  module:
+    - node
+label: 'Community Update Type'
+id: cu40
+description: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  update_existing: 2
+  update_non_existent: _keep
+  expire: -1
+  owner_feed_author: true
+  owner_id: 0
+  authorize: true
+  skip_hash_check: false
+  values:
+    type: community_updates
+custom_sources:
+  guid:
+    label: guid
+    value: guid
+    machine_name: guid
+  date:
+    label: date
+    value: date
+    machine_name: date
+  field_community_update_topics:
+    label: field_community_update_topics
+    value: field_community_update_topics
+    machine_name: field_community_update_topics
+  fcut:
+    label: field_community_update_topics
+    value: field_community_update_topics
+    machine_name: fcut
+  geezus:
+    label: geezus
+    value: geezus
+    machine_name: geezus
+  title:
+    label: title
+    value: title
+    machine_name: title
+  body:
+    label: body
+    value: body
+    machine_name: body
+  nid:
+    label: nid
+    value: nid
+    machine_name: nid
+  language:
+    label: language
+    value: language
+    machine_name: language
+  uid:
+    label: uid
+    value: uid
+    machine_name: uid
+  status:
+    label: status
+    value: status
+    machine_name: status
+  changed:
+    label: changed
+    value: changed
+    machine_name: changed
+  teaseme:
+    label: teaseme
+    value: teaseme
+    machine_name: teaseme
+mappings:
+  -
+    target: field_former_nid
+    map:
+      value: nid
+    unique:
+      value: '1'
+  -
+    target: title
+    map:
+      value: title
+    unique: {  }
+  -
+    target: body
+    map:
+      value: body
+      summary: body
+    settings:
+      format: rich_text
+  -
+    target: langcode
+    map:
+      value: language
+  -
+    target: uid
+    map:
+      target_id: uid
+    settings:
+      reference_by: uid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: status
+    map:
+      value: status
+  -
+    target: created
+    map:
+      value: date
+    settings:
+      timezone: UTC
+  -
+    target: revision_timestamp
+    map:
+      value: changed
+    settings:
+      timezone: UTC

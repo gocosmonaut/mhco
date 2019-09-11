@@ -1,0 +1,14 @@
+uuid: 8cb37d9f-daed-4328-82be-f31b13f35118
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.real_estate_listing_reviewer
+  module:
+    - user
+id: user_add_role_action.real_estate_listing_reviewer
+label: 'Add the Real Estate Listing reviewer role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: real_estate_listing_reviewer

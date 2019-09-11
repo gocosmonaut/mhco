@@ -1,0 +1,23 @@
+uuid: 0dd737ed-3470-488d-8f20-1240f4538ca6
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: zCBMdd1XLqn-RVW2cnlghiw5aTX21DimPqV_klfCOMk
+id: node.field_pay_rate
+field_name: field_pay_rate
+entity_type: node
+type: string
+settings:
+  max_length: 30
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

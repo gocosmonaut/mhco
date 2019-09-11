@@ -1,0 +1,11 @@
+uuid: 839c4399-b66b-44e4-b136-3d59961b9483
+langcode: en
+status: true
+dependencies:
+  module:
+    - bulk_update_fields
+id: bulk_update_fields_on_user_type
+label: 'Bulk Update Account type Fields'
+type: user_type
+plugin: bulk_update_fields_action_base
+configuration: {  }

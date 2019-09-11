@@ -1,0 +1,247 @@
+uuid: b1a24a58-8f2f-4334-9d37-b51e4c204214
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_order.commerce_order_type.simple_order
+    - field.field.commerce_order.simple_order.field_additional_attendee_2_name
+    - field.field.commerce_order.simple_order.field_additional_attendee_3_job_
+    - field.field.commerce_order.simple_order.field_additional_attendee_3_name
+    - field.field.commerce_order.simple_order.field_attendee_1_name
+    - field.field.commerce_order.simple_order.field_attendee_2_job_title
+    - field.field.commerce_order.simple_order.field_attendees_job_titles
+    - field.field.commerce_order.simple_order.field_city
+    - field.field.commerce_order.simple_order.field_comments
+    - field.field.commerce_order.simple_order.field_community_or_park_name
+    - field.field.commerce_order.simple_order.field_county_if_in_oregon_
+    - field.field.commerce_order.simple_order.field_email
+    - field.field.commerce_order.simple_order.field_phone
+    - field.field.commerce_order.simple_order.field_registrant_job_title
+    - field.field.commerce_order.simple_order.field_registrant_name
+    - field.field.commerce_order.simple_order.field_registrant_roles
+    - field.field.commerce_order.simple_order.field_state
+    - field.field.commerce_order.simple_order.field_street_address
+    - field.field.commerce_order.simple_order.field_zip
+    - field.field.commerce_order.simple_order.order_items
+  module:
+    - commerce_order
+    - options
+    - state_machine
+    - user
+id: commerce_order.simple_order.default
+targetEntityType: commerce_order
+bundle: simple_order
+mode: default
+content:
+  completed:
+    label: above
+    type: timestamp
+    weight: 0
+    region: content
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+  field_additional_attendee_2_name:
+    weight: 17
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_additional_attendee_3_job_:
+    weight: 18
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_additional_attendee_3_name:
+    weight: 19
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_attendee_1_name:
+    weight: 20
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_attendee_2_job_title:
+    weight: 21
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_attendees_job_titles:
+    weight: 22
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_city:
+    weight: 13
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_comments:
+    weight: 28
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_community_or_park_name:
+    weight: 23
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_county_if_in_oregon_:
+    weight: 14
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_email:
+    weight: 12
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_phone:
+    weight: 24
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_registrant_job_title:
+    weight: 25
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_registrant_name:
+    weight: 11
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_registrant_roles:
+    weight: 16
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_state:
+    weight: 15
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_street_address:
+    weight: 26
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_zip:
+    weight: 27
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  ip_address:
+    label: above
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  mail:
+    label: above
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  order_items:
+    type: commerce_order_item_table
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  placed:
+    label: above
+    type: timestamp
+    weight: 0
+    region: content
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+  state:
+    label: hidden
+    type: state_transition_form
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  total_price:
+    label: hidden
+    type: commerce_order_total_summary
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  uid:
+    label: above
+    type: author
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  billing_profile: true
+  changed: true
+  order_number: true
+  search_api_excerpt: true
+  store_id: true
+  total_paid: true

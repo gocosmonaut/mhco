@@ -1,0 +1,14 @@
+uuid: ee4f1466-78d5-49bb-b549-0c02aff4f875
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.job_listings_reviewer
+  module:
+    - user
+id: user_add_role_action.job_listings_reviewer
+label: 'Add the Employment Listings reviewer role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: job_listings_reviewer

@@ -1,0 +1,130 @@
+uuid: dc41d913-c7ef-4822-aebe-25772bcaea7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.fillable_forms.field_download_link
+    - field.field.node.fillable_forms.field_form_number
+    - field.field.node.fillable_forms.field_former_nid
+    - field.field.node.fillable_forms.field_should_this_be_featured_in
+    - field.field.node.fillable_forms.field_what_image_should_accompan
+    - node.type.fillable_forms
+  module:
+    - node
+label: 'Fillable Form Nodes'
+id: fillable_form_node
+description: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  update_existing: 2
+  update_non_existent: _keep
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+  authorize: true
+  skip_hash_check: false
+  values:
+    type: fillable_forms
+custom_sources:
+  formorder:
+    label: formorder
+    value: formorder
+    machine_name: formorder
+  title:
+    label: title
+    value: title
+    machine_name: title
+  downloadlink:
+    label: downloadlink
+    value: downloadlink
+    machine_name: downloadlink
+  '':
+    label: uid
+    value: uid
+    machine_name: ''
+  nid:
+    label: nid
+    value: nid
+    machine_name: nid
+  feature:
+    label: feature
+    value: feature
+    machine_name: feature
+  image:
+    label: image
+    value: image
+    machine_name: image
+  uid:
+    label: uid
+    value: uid
+    machine_name: uid
+  status:
+    label: status
+    value: status
+    machine_name: status
+  created:
+    label: created
+    value: created
+    machine_name: created
+mappings:
+  -
+    target: field_form_number
+    map:
+      value: formorder
+    unique: {  }
+  -
+    target: title
+    map:
+      value: title
+    unique: {  }
+  -
+    target: field_download_link
+    map:
+      value: downloadlink
+    unique:
+      value: '1'
+  -
+    target: field_former_nid
+    map:
+      value: nid
+    unique: {  }
+  -
+    target: field_should_this_be_featured_in
+    map:
+      value: feature
+  -
+    target: field_what_image_should_accompan
+    map:
+      target_id: image
+    settings:
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: uid
+    map:
+      target_id: uid
+    settings:
+      reference_by: uid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: status
+    map:
+      value: status
+  -
+    target: created
+    map:
+      value: created
+    settings:
+      timezone: UTC

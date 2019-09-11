@@ -1,0 +1,12 @@
+uuid: bfeeb759-3d49-48d8-b2e2-95a19bcfb9de
+langcode: en
+status: false
+dependencies: {  }
+id: panels_test
+label: 'Panels Test'
+description: ''
+use_admin_theme: false
+path: /front
+access_logic: and
+access_conditions: {  }
+parameters: {  }

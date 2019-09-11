@@ -1,0 +1,14 @@
+uuid: 10be1ba5-4a32-4550-b7e4-78eef16299f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.panel_reviewer
+  module:
+    - user
+id: user_add_role_action.panel_reviewer
+label: 'Add the Panel reviewer role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: panel_reviewer

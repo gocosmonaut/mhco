@@ -1,0 +1,14 @@
+uuid: 689aa29c-5c4e-4811-b6bd-0715a4592e04
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.community_updates_creator
+  module:
+    - user
+id: user_remove_role_action.community_updates_creator
+label: 'Remove the Community Updates creator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: community_updates_creator

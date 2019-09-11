@@ -1,0 +1,23 @@
+uuid: 2ecd9b5d-0970-499c-90a1-cde0935c76b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_job_classification
+    - node.type.job_listings
+_core:
+  default_config_hash: 1FES-cl0jkmL9gM3JhTShshJGJ82FGZVMPn10q3Nlm8
+id: node.job_listings.field_job_classification
+field_name: field_job_classification
+entity_type: node
+bundle: job_listings
+label: 'Job Classification'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,19 @@
+uuid: 0074aa10-8860-4b22-8963-b0256086526a
+langcode: en
+status: true
+dependencies: {  }
+id: advertisement_reviewer
+label: 'Advertisement reviewer'
+weight: 30
+is_admin: false
+permissions:
+  - 'access content overview'
+  - 'access toolbar'
+  - 'delete any advertisement content'
+  - 'edit any advertisement content'
+  - 'use editorial transition archive'
+  - 'use editorial transition publish'
+  - 'use editorial transition review'
+  - 'use moderation sidebar'
+  - 'view any unpublished content'
+  - 'view latest version'

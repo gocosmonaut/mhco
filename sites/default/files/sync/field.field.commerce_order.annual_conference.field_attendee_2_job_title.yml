@@ -1,0 +1,19 @@
+uuid: e6a15f24-3e57-4cdd-a8e2-26f5c61f005a
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_order.commerce_order_type.annual_conference
+    - field.storage.commerce_order.field_attendee_2_job_title
+id: commerce_order.annual_conference.field_attendee_2_job_title
+field_name: field_attendee_2_job_title
+entity_type: commerce_order
+bundle: annual_conference
+label: 'Additional Attendee Job Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

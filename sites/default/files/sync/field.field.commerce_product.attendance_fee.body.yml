@@ -1,0 +1,22 @@
+uuid: bac705cf-ba0f-411c-8b3f-3ccf9bf5c1a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.attendance_fee
+    - field.storage.commerce_product.body
+  module:
+    - text
+id: commerce_product.attendance_fee.body
+field_name: body
+entity_type: commerce_product
+bundle: attendance_fee
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: null
+settings:
+  display_summary: false
+field_type: text_with_summary

@@ -1,0 +1,23 @@
+uuid: 0a3fdc40-7be4-439e-82b1-293f5e087c44
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: 54_skr6-VtJWSmek39FVV4YHuPcXa4Ah3cHEXz2HA9k
+id: node.field_sales_contact_name
+field_name: field_sales_contact_name
+entity_type: node
+type: string
+settings:
+  max_length: 40
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

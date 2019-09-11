@@ -1,0 +1,219 @@
+uuid: 6d34ca56-7af4-4230-916c-ace3dcdb2cb0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.column.body
+    - field.field.node.column.field_author
+    - field.field.node.column.field_column_category
+    - field.field.node.column.field_column_icon
+    - field.field.node.column.field_former_nid
+    - field.field.node.column.field_publication_date
+    - field.field.node.column.field_question_or_teaser
+    - field.field.node.column.field_should_this_be_featured_in
+    - field.field.node.column.field_what_image_should_accompan
+    - field.field.node.column.field_what_is_the_author_s_compa
+    - field.field.node.column.field_what_is_the_author_s_job_t
+    - node.type.column
+  module:
+    - node
+label: 'Column Type'
+id: column_type
+description: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  update_existing: 2
+  update_non_existent: _keep
+  expire: -1
+  owner_feed_author: true
+  owner_id: 0
+  authorize: true
+  skip_hash_check: false
+  values:
+    type: column
+custom_sources:
+  body:
+    label: body
+    value: body
+    machine_name: body
+  fnid:
+    label: fnid
+    value: fnid
+    machine_name: fnid
+  authuid:
+    label: authuid
+    value: authuid
+    machine_name: authuid
+  '':
+    label: authuid
+    value: authuid
+    machine_name: ''
+  titties:
+    label: titties
+    value: titties
+    machine_name: titties
+  pub:
+    label: pub
+    value: pub
+    machine_name: pub
+  revtime:
+    label: revtime
+    value: revtime
+    machine_name: revtime
+  mereal:
+    label: mereal
+    value: mereal
+    machine_name: mereal
+  by:
+    label: by
+    value: by
+    machine_name: by
+  columnimage:
+    label: columnimage
+    value: columnimage
+    machine_name: columnimage
+  featureme:
+    label: featureme
+    value: featureme
+    machine_name: featureme
+  columntype:
+    label: columntype
+    value: columntype
+    machine_name: columntype
+  authororg:
+    label: authororg
+    value: authororg
+    machine_name: authororg
+  teaser:
+    label: teaser
+    value: teaser
+    machine_name: teaser
+  authname:
+    label: authname
+    value: authname
+    machine_name: authname
+  whatyoudo:
+    label: whatyoudo
+    value: whatyoudo
+    machine_name: whatyoudo
+  columnicon:
+    label: columnicon
+    value: columnicon
+    machine_name: columnicon
+mappings:
+  -
+    target: body
+    map:
+      value: body
+      summary: teaser
+    settings:
+      format: rich_text
+  -
+    target: field_former_nid
+    map:
+      value: fnid
+    unique:
+      value: '1'
+  -
+    target: uid
+    map:
+      target_id: authname
+    settings:
+      reference_by: name
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: title
+    map:
+      value: titties
+    unique: {  }
+  -
+    target: field_publication_date
+    map:
+      value: pub
+    settings:
+      timezone: UTC
+  -
+    target: revision_timestamp
+    map:
+      value: revtime
+    settings:
+      timezone: UTC
+  -
+    target: created
+    map:
+      value: pub
+    settings:
+      timezone: UTC
+  -
+    target: status
+    map:
+      value: mereal
+  -
+    target: field_author
+    map:
+      target_id: by
+    settings:
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_what_image_should_accompan
+    map:
+      target_id: columnimage
+    settings:
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_should_this_be_featured_in
+    map:
+      value: featureme
+  -
+    target: field_column_category
+    map:
+      target_id: columntype
+    settings:
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_what_is_the_author_s_compa
+    map:
+      target_id: authororg
+    settings:
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_question_or_teaser
+    map:
+      value: teaser
+    settings:
+      format: rich_text
+  -
+    target: field_what_is_the_author_s_job_t
+    map:
+      target_id: whatyoudo
+    settings:
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_column_icon
+    map:
+      target_id: columnicon
+    settings:
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0

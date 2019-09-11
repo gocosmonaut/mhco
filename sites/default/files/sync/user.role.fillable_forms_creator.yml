@@ -1,0 +1,27 @@
+uuid: ec66f68f-7380-4814-bd20-882dbcbacc28
+langcode: en
+status: true
+dependencies: {  }
+id: fillable_forms_creator
+label: 'Fillable Forms creator'
+weight: 15
+is_admin: false
+permissions:
+  - 'access ckeditor_media_browser entity browser pages'
+  - 'access contextual links'
+  - 'access image_browser entity browser pages'
+  - 'access in-place editing'
+  - 'access media_browser entity browser pages'
+  - 'access toolbar'
+  - 'configure any layout'
+  - 'create fillable_forms content'
+  - 'create url aliases'
+  - 'edit own fillable_forms content'
+  - 'use editorial transition create_new_draft'
+  - 'use editorial transition review'
+  - 'use moderation sidebar'
+  - 'use text format rich_text'
+  - 'view any unpublished content'
+  - 'view fillable_forms revisions'
+  - 'view latest version'
+  - 'view own unpublished content'

@@ -1,0 +1,11 @@
+uuid: b1246e43-3b51-4af3-bf44-8c09c628a905
+langcode: en
+status: true
+dependencies:
+  module:
+    - bulk_update_fields
+id: bulk_update_fields_on_user_default_page_config_entity
+label: 'Bulk Update User default page Fields'
+type: user_default_page_config_entity
+plugin: bulk_update_fields_action_base
+configuration: {  }

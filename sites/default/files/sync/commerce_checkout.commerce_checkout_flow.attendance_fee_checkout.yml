@@ -1,0 +1,47 @@
+uuid: 9981b1a1-6391-40b1-87ba-509483241a16
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_checkout_order_fields
+    - commerce_payment
+id: attendance_fee_checkout
+label: 'Attendance Fee Checkout'
+plugin: multistep_default
+configuration:
+  display_checkout_progress: true
+  panes:
+    order_summary:
+      view: ''
+      step: order_information
+      weight: 1
+    review:
+      step: review
+      weight: 2
+    payment_process:
+      capture: true
+      step: payment
+      weight: 3
+    completion_message:
+      step: complete
+      weight: 4
+    payment_information:
+      step: _sidebar
+      weight: 5
+    'order_fields:checkout':
+      wrapper_element: container
+      display_label: 'Order fields'
+      step: order_information
+      weight: 0
+    login:
+      allow_guest_checkout: true
+      allow_registration: false
+      step: _disabled
+      weight: 6
+    contact_information:
+      double_entry: false
+      step: _disabled
+      weight: 7
+    completion_register:
+      step: _disabled
+      weight: 8

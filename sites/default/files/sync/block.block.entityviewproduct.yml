@@ -1,0 +1,37 @@
+uuid: 9d0790ea-175c-47f4-bf42-55f32b89b78f
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+  theme:
+    - bartik
+id: entityviewproduct
+theme: bartik
+region: featured_top
+weight: 0
+provider: null
+plugin: 'entity_view:commerce_product'
+settings:
+  id: 'entity_view:commerce_product'
+  label: 'Entity view (Product)'
+  provider: ctools
+  label_display: visible
+  view_mode: default
+  context_mapping:
+    entity: '@commerce_product.product_route_context:commerce_product'
+visibility:
+  'entity_bundle:commerce_product':
+    id: 'entity_bundle:commerce_product'
+    bundles:
+      attendance_fee: attendance_fee
+    negate: false
+    context_mapping:
+      commerce_product: '@commerce_product.product_route_context:commerce_product'
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      product: product
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

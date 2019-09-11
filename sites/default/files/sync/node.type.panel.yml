@@ -1,0 +1,20 @@
+uuid: 6d8cdb83-a8e6-459e-a57d-b6edc2bdde0d
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main-menu
+    parent: 'main-menu:0:'
+_core:
+  default_config_hash: vr1lznJg9gQaB1HcnKP0KrliyvFPe3k4FzeLoPGJvGs
+name: Panel
+type: panel
+description: 'A panel layout broken up into rows and columns.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

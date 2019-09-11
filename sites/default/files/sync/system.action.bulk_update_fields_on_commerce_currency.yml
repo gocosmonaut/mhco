@@ -1,0 +1,11 @@
+uuid: 9433c9d2-e8cc-4285-9cb2-591db57d4e26
+langcode: en
+status: true
+dependencies:
+  module:
+    - bulk_update_fields
+id: bulk_update_fields_on_commerce_currency
+label: 'Bulk Update Currency Fields'
+type: commerce_currency
+plugin: bulk_update_fields_action_base
+configuration: {  }

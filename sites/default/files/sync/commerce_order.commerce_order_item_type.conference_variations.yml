@@ -1,0 +1,10 @@
+uuid: 6e73c234-d01d-4362-8fc9-8ffdf69da4d0
+langcode: en
+status: true
+dependencies: {  }
+label: 'Conference Variations'
+id: conference_variations
+purchasableEntityType: commerce_product_variation
+orderType: annual_conference
+traits: {  }
+locked: false

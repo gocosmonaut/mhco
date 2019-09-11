@@ -1,0 +1,14 @@
+uuid: 662fddfa-e87c-4461-b59d-8509146d778b
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.associate_member_creator
+  module:
+    - user
+id: user_add_role_action.associate_member_creator
+label: 'Add the Associate Member creator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: associate_member_creator

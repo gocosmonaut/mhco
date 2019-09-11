@@ -1,0 +1,133 @@
+uuid: 3fa85a61-56ea-4360-8f3e-1146a72050ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.mhco
+    - views.view.advertisements
+    - views.view.article_search
+    - views.view.associate_members
+    - views.view.columns
+    - views.view.community_updates
+  module:
+    - panels
+    - views
+id: mhco-panels_variant-0
+label: MHCO
+variant: panels_variant
+variant_settings:
+  blocks:
+    ad5ab80c-edf9-41b3-8816-04023cec8b52:
+      id: 'views_block:columns-marquee_slideshow'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: left
+      weight: -4
+      uuid: ad5ab80c-edf9-41b3-8816-04023cec8b52
+      context_mapping: {  }
+    4d2498da-6f28-4127-880d-9da483075e66:
+      id: 'views_block:columns-mark_busch'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: left
+      weight: 0
+      uuid: 4d2498da-6f28-4127-880d-9da483075e66
+      context_mapping: {  }
+    65c61e82-2bba-462b-8f14-cd56445905dc:
+      id: 'views_block:columns-phil_querin'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: left
+      weight: -1
+      uuid: 65c61e82-2bba-462b-8f14-cd56445905dc
+      context_mapping: {  }
+    cddc0923-a777-48d3-973f-0b540992d118:
+      id: 'views_block:columns-property_management'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: left
+      weight: 1
+      uuid: cddc0923-a777-48d3-973f-0b540992d118
+      context_mapping: {  }
+    f9941c01-644e-4878-84ff-1812dc26fa5a:
+      id: 'views_block:article_search-block_1'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: left
+      weight: -3
+      uuid: f9941c01-644e-4878-84ff-1812dc26fa5a
+      context_mapping: {  }
+    cd8d29da-7d20-4427-80cd-ca02b433e64b:
+      id: 'views_block:community_updates-cu_home_page'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: right
+      weight: -1
+      uuid: cd8d29da-7d20-4427-80cd-ca02b433e64b
+      context_mapping: {  }
+    b4b85171-6fba-43c8-9659-5b6d4ac9cb78:
+      id: 'views_block:advertisements-block_2'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: right
+      weight: -2
+      uuid: b4b85171-6fba-43c8-9659-5b6d4ac9cb78
+      context_mapping: {  }
+    3b6f1523-0d57-405f-821b-53450336e9d5:
+      id: 'views_block:associate_members-associate_members_home'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: right
+      weight: -3
+      uuid: 3b6f1523-0d57-405f-821b-53450336e9d5
+      context_mapping: {  }
+    572242a8-8473-42d6-b49c-8829f7f921e3:
+      id: 'views_block:advertisements-block_3'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: footer
+      weight: 0
+      uuid: 572242a8-8473-42d6-b49c-8829f7f921e3
+      context_mapping: {  }
+  id: panels_variant
+  uuid: 06ec9f2c-1fcc-413b-978c-d7b8e5d13416
+  label: null
+  weight: 0
+  layout: ds_2col_stacked
+  layout_settings: {  }
+  page_title: ''
+  storage_type: page_manager
+  storage_id: mhco-panels_variant-0
+  builder: standard
+page: mhco
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

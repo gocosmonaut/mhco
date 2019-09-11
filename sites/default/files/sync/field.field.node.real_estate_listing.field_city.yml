@@ -1,0 +1,23 @@
+uuid: 787bc7f4-fd5d-4d06-b229-526f68f89fcf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_city
+    - node.type.real_estate_listing
+_core:
+  default_config_hash: Ll-bbEhy2TnufcjtdivrukUTjjsFaEONUO8p7_OHmaU
+id: node.real_estate_listing.field_city
+field_name: field_city
+entity_type: node
+bundle: real_estate_listing
+label: City
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

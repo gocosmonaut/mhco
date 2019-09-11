@@ -1,0 +1,28 @@
+uuid: 6e2d917b-ad96-468e-afca-05812f5c0f29
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.simple
+    - field.storage.node.field_product_variation
+    - node.type.page
+id: node.page.field_product_variation
+field_name: field_product_variation
+entity_type: node
+bundle: page
+label: Variation
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:commerce_product'
+  handler_settings:
+    target_bundles:
+      simple: simple
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

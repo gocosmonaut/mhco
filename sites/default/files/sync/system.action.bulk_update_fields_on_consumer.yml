@@ -1,0 +1,11 @@
+uuid: 3b7811f4-3081-4144-b83d-7c8b6066ffa4
+langcode: en
+status: true
+dependencies:
+  module:
+    - bulk_update_fields
+id: bulk_update_fields_on_consumer
+label: 'Bulk Update Consumer Fields'
+type: consumer
+plugin: bulk_update_fields_action_base
+configuration: {  }

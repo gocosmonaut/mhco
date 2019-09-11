@@ -1,0 +1,29 @@
+uuid: a9f1c4ec-aa94-4c99-9828-8eff66649a65
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_order.commerce_order_type.annual_conference
+    - field.storage.commerce_order.field_city
+    - taxonomy.vocabulary.cities
+id: commerce_order.annual_conference.field_city
+field_name: field_city
+entity_type: commerce_order
+bundle: annual_conference
+label: City
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      cities: cities
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: cities
+field_type: entity_reference

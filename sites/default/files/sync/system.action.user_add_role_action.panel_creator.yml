@@ -1,0 +1,14 @@
+uuid: 18983ce3-b053-4a36-b559-62589e310651
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.panel_creator
+  module:
+    - user
+id: user_add_role_action.panel_creator
+label: 'Add the Panel creator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: panel_creator

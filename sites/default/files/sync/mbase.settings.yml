@@ -1,0 +1,469 @@
+mbase_fluid_container: 0
+mbase_button_size: ''
+mbase_button_colorize: 1
+mbase_button_iconize: 1
+mbase_image_shape: ''
+mbase_image_responsive: 1
+mbase_image_thumbnail: 0
+mbase_table_bordered: 1
+mbase_table_condensed: 1
+mbase_table_hover: 1
+mbase_table_striped: 1
+mbase_table_responsive: 1
+mbase_breadcrumb: '2'
+mbase_breadcrumb_home: 1
+mbase_breadcrumb_title: 1
+mbase_breadcrumb_text: 'You are here : '
+mbase_navbar_position: fixed-top
+mbase_navbar_inverse: 0
+mbase_navigation_primary: 1
+mbase_navigation_account: 1
+mbase_region_well-sidebar_first: ''
+mbase_region_well-sidebar_second: ''
+mbase_anchors_fix: 1
+mbase_anchors_smooth_scrolling: 1
+mbase_forms_required_has_error: 0
+mbase_forms_has_error_value_toggle: 1
+mbase_forms_smart_descriptions: 1
+mbase_forms_smart_descriptions_limit: 250
+mbase_forms_smart_descriptions_allowed_tags: 'b, code, em, i, kbd, span, strong, a, img'
+mbase_form_elements_icons: 1
+mbase_alert_dismissible: 1
+mbase_bsflatit: 0
+mbase_animatecss: 1
+mbase_fontawesome: 0
+mbase_addbscsscdn: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'
+mbase_addbsjsscdn: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'
+mbase_include_cdn_css: "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css\r\nhttps://fonts.googleapis.com/css?family=Roboto:400,300italic,300,100italic,100,400italic,500,500italic,700,700italic,900\r\n"
+mbase_include_cdn_js: ''
+mbase_excludes_cssa:
+  - core/misc/vertical-tabs.css
+  - core/modules/system/css/system.theme.css
+  - core/assets/vendor/normalize-css/normalize.css
+  - core/modules/system/css/system.module.css
+  - core/misc/dropbutton/dropbutton.css
+  - core/misc/dropbutton/dropbutton.theme.css
+mbase_excludes_js:
+  - core/misc/dropbutton/dropbutton.js
+  - core/modules/book/book.js
+  - themes/mbase/js/core/misc/dropbutton/dropbutton.js
+mbase_toggle_name: 1
+mbase_toggle_search: 1
+mbase_credits: 1
+mbase_region_menu_style_orientation_branding: mb-menu-horizontal
+mbase_region_menu_child_display_branding: mb-menu-dropdown
+mbase_region_menu_style_orientation_navigation: mb-menu-horizontal
+mbase_region_menu_child_display_navigation: mb-menu-dropdown
+mbase_region_menu_style_orientation_header: mb-menu-horizontal
+mbase_region_menu_child_display_header: mb-menu-dropdown
+mbase_region_menu_style_orientation_highlighted: mb-menu-horizontal
+mbase_region_menu_child_display_highlighted: mb-menu-dropdown
+mbase_region_menu_style_orientation_help: mb-menu-horizontal
+mbase_region_menu_child_display_help: mb-menu-dropdown
+mbase_region_menu_style_orientation_content: mb-menu-horizontal
+mbase_region_menu_child_display_content: mb-menu-dropdown
+mbase_region_menu_style_orientation_sidebar_first: mb-menu-vertical
+mbase_region_menu_child_display_sidebar_first: mb-menu-dropright
+mbase_region_menu_style_orientation_sidebar_second: mb-menu-vertical
+mbase_region_menu_child_display_sidebar_second: mb-menu-dropleft
+mbase_region_menu_style_orientation_footer: mb-menu-horizontal
+mbase_region_menu_child_display_footer: mb-menu-dropup
+mbase_region_menu_style_orientation_page_top: mb-menu-horizontal
+mbase_region_menu_child_display_page_top: mb-menu-dropdown
+mbase_region_menu_style_orientation_page_bottom: mb-menu-horizontal
+mbase_region_menu_child_display_page_bottom: mb-menu-dropdown
+_core:
+  default_config_hash: u8Dgvy6qdtBpV4UHGNy7xMq9j9t1cxaOkyrVjmZN0As
+features:
+  node_user_picture: 1
+  comment_user_picture: 1
+  comment_user_verification: 1
+  favicon: 1
+logo:
+  use_default: 0
+  path: 'public://mhco_logo_white_0.png'
+favicon:
+  use_default: 1
+mbase_region_well-branding: ''
+mbase_region_well-navigation: ''
+mbase_region_well-header: ''
+mbase_region_well-highlighted: ''
+mbase_region_well-help: ''
+mbase_region_well-content: ''
+mbase_region_well-footer: ''
+mbase_region_well-page_top: ''
+mbase_region_well-page_bottom: ''
+mbase_region_visibility-branding-xs: visible-xs-block
+mbase_region_visibility-branding-sm: visible-sm-block
+mbase_region_visibility-branding-md: visible-md-block
+mbase_region_visibility-branding-lg: visible-lg-block
+mbase_region_visibility-navigation-xs: visible-xs-block
+mbase_region_visibility-navigation-sm: visible-sm-block
+mbase_region_visibility-navigation-md: visible-md-block
+mbase_region_visibility-navigation-lg: visible-lg-block
+mbase_region_visibility-header-xs: visible-xs-block
+mbase_region_visibility-header-sm: visible-sm-block
+mbase_region_visibility-header-md: visible-md-block
+mbase_region_visibility-header-lg: visible-lg-block
+mbase_region_visibility-highlighted-xs: visible-xs-block
+mbase_region_visibility-highlighted-sm: visible-sm-block
+mbase_region_visibility-highlighted-md: visible-md-block
+mbase_region_visibility-highlighted-lg: visible-lg-block
+mbase_region_visibility-help-xs: visible-xs-block
+mbase_region_visibility-help-sm: visible-sm-block
+mbase_region_visibility-help-md: visible-md-block
+mbase_region_visibility-help-lg: visible-lg-block
+mbase_region_visibility-content-xs: visible-xs-block
+mbase_region_visibility-content-sm: visible-sm-block
+mbase_region_visibility-content-md: visible-md-block
+mbase_region_visibility-content-lg: visible-lg-block
+mbase_region_visibility-sidebar_first-xs: visible-xs-block
+mbase_region_visibility-sidebar_first-sm: visible-sm-block
+mbase_region_visibility-sidebar_first-md: visible-md-block
+mbase_region_visibility-sidebar_first-lg: visible-lg-block
+mbase_region_visibility-sidebar_second-xs: visible-xs-block
+mbase_region_visibility-sidebar_second-sm: visible-sm-block
+mbase_region_visibility-sidebar_second-md: visible-md-block
+mbase_region_visibility-sidebar_second-lg: visible-lg-block
+mbase_region_visibility-footer-xs: visible-xs-block
+mbase_region_visibility-footer-sm: visible-sm-block
+mbase_region_visibility-footer-md: visible-md-block
+mbase_region_visibility-footer-lg: visible-lg-block
+mbase_region_visibility-page_top-xs: visible-xs-block
+mbase_region_visibility-page_top-sm: visible-sm-block
+mbase_region_visibility-page_top-md: visible-md-block
+mbase_region_visibility-page_top-lg: visible-lg-block
+mbase_region_visibility-page_bottom-xs: visible-xs-block
+mbase_region_visibility-page_bottom-sm: visible-sm-block
+mbase_region_visibility-page_bottom-md: visible-md-block
+mbase_region_visibility-page_bottom-lg: visible-lg-block
+mbase_region_bscomponent_branding: '-'
+mbase_region_bs_component_branding_bspanel_panel_class: '-1|panel-default'
+mbase_region_bs_component_branding_bsscrollspy_offset: '50'
+mbase_region_bs_component_branding_bsscrollspy_verticle: 'false'
+mbase_region_bs_component_branding_bstimeline_icons: '-1|<div class="timeline-badge success"><i class="fa fa-star" aria-hidden="true"></i></div>'
+mbase_region_bs_component_branding_bslistgroups_colorclass: '-1|list-group-item-info'
+mbase_region_bs_component_branding_bsmodal_triggerstyle: btngrp
+mbase_region_bs_component_branding_bsmodal_dropdowntext: Click
+mbase_region_bs_component_branding_bsmodal_dropdownstyle: btn-primary
+mbase_region_bs_component_branding_bsmodal_buttongroupstyle: btn-group-justified
+mbase_region_bs_component_branding_bsmodal_buttonstyles: '-1|btn-success btn-sm'
+mbase_region_bs_component_branding_bsmodal_modalstyles: '-1|modal-lg'
+mbase_region_bs_component_branding_bsnavtab_verticle: 'false'
+mbase_region_bs_component_branding_bsnavtab_animateclass: fade
+mbase_region_bs_component_branding_bscarousel_interval: '5000'
+mbase_region_bs_component_branding_bscarousel_pause: hover
+mbase_region_bs_component_branding_bscarousel_wrap: 'true'
+mbase_region_bs_component_branding_bscarousel_keyboard: 'true'
+mbase_region_bs_component_branding_bscarousel_minheight: 250px
+mbase_region_bs_component_branding_bscarousel_maxheight: 350px
+mbase_region_bs_component_branding_bscarousel_showarrows: 'true'
+mbase_region_bs_component_branding_bscarousel_shownavs: 'true'
+mbase_region_bs_component_branding_bsaccordion_allcollapsed: 'false'
+mbase_region_bs_component_branding_bsaccordion_panel_class: '-1|panel-default'
+mbase_region_bs_component_branding_bspopover_animation: 'true'
+mbase_region_bs_component_branding_bspopover_buttongroupstyle: btn-group-justified
+mbase_region_bs_component_branding_bspopover_container: body
+mbase_region_bs_component_branding_bspopover_placement: 'auto right'
+mbase_region_bs_component_branding_bspopover_trigger: hover
+mbase_region_bs_component_branding_bspopover_buttonstyles: '-1|btn-success btn-sm'
+mbase_region_bscomponent_navigation: '-'
+mbase_region_bs_component_navigation_bspanel_panel_class: '-1|panel-default'
+mbase_region_bs_component_navigation_bsscrollspy_offset: '50'
+mbase_region_bs_component_navigation_bsscrollspy_verticle: 'false'
+mbase_region_bs_component_navigation_bstimeline_icons: '-1|<div class="timeline-badge success"><i class="fa fa-star" aria-hidden="true"></i></div>'
+mbase_region_bs_component_navigation_bslistgroups_colorclass: '-1|list-group-item-info'
+mbase_region_bs_component_navigation_bsmodal_triggerstyle: btngrp
+mbase_region_bs_component_navigation_bsmodal_dropdowntext: Click
+mbase_region_bs_component_navigation_bsmodal_dropdownstyle: btn-primary
+mbase_region_bs_component_navigation_bsmodal_buttongroupstyle: btn-group-justified
+mbase_region_bs_component_navigation_bsmodal_buttonstyles: '-1|btn-success btn-sm'
+mbase_region_bs_component_navigation_bsmodal_modalstyles: '-1|modal-lg'
+mbase_region_bs_component_navigation_bsnavtab_verticle: 'false'
+mbase_region_bs_component_navigation_bsnavtab_animateclass: fade
+mbase_region_bs_component_navigation_bscarousel_interval: '5000'
+mbase_region_bs_component_navigation_bscarousel_pause: hover
+mbase_region_bs_component_navigation_bscarousel_wrap: 'true'
+mbase_region_bs_component_navigation_bscarousel_keyboard: 'true'
+mbase_region_bs_component_navigation_bscarousel_minheight: 250px
+mbase_region_bs_component_navigation_bscarousel_maxheight: 350px
+mbase_region_bs_component_navigation_bscarousel_showarrows: 'true'
+mbase_region_bs_component_navigation_bscarousel_shownavs: 'true'
+mbase_region_bs_component_navigation_bsaccordion_allcollapsed: 'false'
+mbase_region_bs_component_navigation_bsaccordion_panel_class: '-1|panel-default'
+mbase_region_bs_component_navigation_bspopover_animation: 'true'
+mbase_region_bs_component_navigation_bspopover_buttongroupstyle: btn-group-justified
+mbase_region_bs_component_navigation_bspopover_container: body
+mbase_region_bs_component_navigation_bspopover_placement: 'auto right'
+mbase_region_bs_component_navigation_bspopover_trigger: hover
+mbase_region_bs_component_navigation_bspopover_buttonstyles: '-1|btn-success btn-sm'
+mbase_region_bscomponent_header: '-'
+mbase_region_bs_component_header_bspanel_panel_class: '-1|panel-default'
+mbase_region_bs_component_header_bsscrollspy_offset: '50'
+mbase_region_bs_component_header_bsscrollspy_verticle: 'false'
+mbase_region_bs_component_header_bstimeline_icons: '-1|<div class="timeline-badge success"><i class="fa fa-star" aria-hidden="true"></i></div>'
+mbase_region_bs_component_header_bslistgroups_colorclass: '-1|list-group-item-info'
+mbase_region_bs_component_header_bsmodal_triggerstyle: btngrp
+mbase_region_bs_component_header_bsmodal_dropdowntext: Click
+mbase_region_bs_component_header_bsmodal_dropdownstyle: btn-primary
+mbase_region_bs_component_header_bsmodal_buttongroupstyle: btn-group-justified
+mbase_region_bs_component_header_bsmodal_buttonstyles: '-1|btn-success btn-sm'
+mbase_region_bs_component_header_bsmodal_modalstyles: '-1|modal-lg'
+mbase_region_bs_component_header_bsnavtab_verticle: 'false'
+mbase_region_bs_component_header_bsnavtab_animateclass: fade
+mbase_region_bs_component_header_bscarousel_interval: '5000'
+mbase_region_bs_component_header_bscarousel_pause: hover
+mbase_region_bs_component_header_bscarousel_wrap: 'true'
+mbase_region_bs_component_header_bscarousel_keyboard: 'true'
+mbase_region_bs_component_header_bscarousel_minheight: 250px
+mbase_region_bs_component_header_bscarousel_maxheight: 350px
+mbase_region_bs_component_header_bscarousel_showarrows: 'true'
+mbase_region_bs_component_header_bscarousel_shownavs: 'true'
+mbase_region_bs_component_header_bsaccordion_allcollapsed: 'false'
+mbase_region_bs_component_header_bsaccordion_panel_class: '-1|panel-default'
+mbase_region_bs_component_header_bspopover_animation: 'true'
+mbase_region_bs_component_header_bspopover_buttongroupstyle: btn-group-justified
+mbase_region_bs_component_header_bspopover_container: body
+mbase_region_bs_component_header_bspopover_placement: 'auto right'
+mbase_region_bs_component_header_bspopover_trigger: hover
+mbase_region_bs_component_header_bspopover_buttonstyles: '-1|btn-success btn-sm'
+mbase_region_bscomponent_highlighted: '-'
+mbase_region_bs_component_highlighted_bspanel_panel_class: '-1|panel-default'
+mbase_region_bs_component_highlighted_bsscrollspy_offset: '50'
+mbase_region_bs_component_highlighted_bsscrollspy_verticle: 'false'
+mbase_region_bs_component_highlighted_bstimeline_icons: '-1|<div class="timeline-badge success"><i class="fa fa-star" aria-hidden="true"></i></div>'
+mbase_region_bs_component_highlighted_bslistgroups_colorclass: '-1|list-group-item-info'
+mbase_region_bs_component_highlighted_bsmodal_triggerstyle: btngrp
+mbase_region_bs_component_highlighted_bsmodal_dropdowntext: Click
+mbase_region_bs_component_highlighted_bsmodal_dropdownstyle: btn-primary
+mbase_region_bs_component_highlighted_bsmodal_buttongroupstyle: btn-group-justified
+mbase_region_bs_component_highlighted_bsmodal_buttonstyles: '-1|btn-success btn-sm'
+mbase_region_bs_component_highlighted_bsmodal_modalstyles: '-1|modal-lg'
+mbase_region_bs_component_highlighted_bsnavtab_verticle: 'false'
+mbase_region_bs_component_highlighted_bsnavtab_animateclass: fade
+mbase_region_bs_component_highlighted_bscarousel_interval: '5000'
+mbase_region_bs_component_highlighted_bscarousel_pause: hover
+mbase_region_bs_component_highlighted_bscarousel_wrap: 'true'
+mbase_region_bs_component_highlighted_bscarousel_keyboard: 'true'
+mbase_region_bs_component_highlighted_bscarousel_minheight: 250px
+mbase_region_bs_component_highlighted_bscarousel_maxheight: 350px
+mbase_region_bs_component_highlighted_bscarousel_showarrows: 'true'
+mbase_region_bs_component_highlighted_bscarousel_shownavs: 'true'
+mbase_region_bs_component_highlighted_bsaccordion_allcollapsed: 'false'
+mbase_region_bs_component_highlighted_bsaccordion_panel_class: '-1|panel-default'
+mbase_region_bs_component_highlighted_bspopover_animation: 'true'
+mbase_region_bs_component_highlighted_bspopover_buttongroupstyle: btn-group-justified
+mbase_region_bs_component_highlighted_bspopover_container: body
+mbase_region_bs_component_highlighted_bspopover_placement: 'auto right'
+mbase_region_bs_component_highlighted_bspopover_trigger: hover
+mbase_region_bs_component_highlighted_bspopover_buttonstyles: '-1|btn-success btn-sm'
+mbase_region_bscomponent_help: '-'
+mbase_region_bs_component_help_bspanel_panel_class: '-1|panel-default'
+mbase_region_bs_component_help_bsscrollspy_offset: '50'
+mbase_region_bs_component_help_bsscrollspy_verticle: 'false'
+mbase_region_bs_component_help_bstimeline_icons: '-1|<div class="timeline-badge success"><i class="fa fa-star" aria-hidden="true"></i></div>'
+mbase_region_bs_component_help_bslistgroups_colorclass: '-1|list-group-item-info'
+mbase_region_bs_component_help_bsmodal_triggerstyle: btngrp
+mbase_region_bs_component_help_bsmodal_dropdowntext: Click
+mbase_region_bs_component_help_bsmodal_dropdownstyle: btn-primary
+mbase_region_bs_component_help_bsmodal_buttongroupstyle: btn-group-justified
+mbase_region_bs_component_help_bsmodal_buttonstyles: '-1|btn-success btn-sm'
+mbase_region_bs_component_help_bsmodal_modalstyles: '-1|modal-lg'
+mbase_region_bs_component_help_bsnavtab_verticle: 'false'
+mbase_region_bs_component_help_bsnavtab_animateclass: fade
+mbase_region_bs_component_help_bscarousel_interval: '5000'
+mbase_region_bs_component_help_bscarousel_pause: hover
+mbase_region_bs_component_help_bscarousel_wrap: 'true'
+mbase_region_bs_component_help_bscarousel_keyboard: 'true'
+mbase_region_bs_component_help_bscarousel_minheight: 250px
+mbase_region_bs_component_help_bscarousel_maxheight: 350px
+mbase_region_bs_component_help_bscarousel_showarrows: 'true'
+mbase_region_bs_component_help_bscarousel_shownavs: 'true'
+mbase_region_bs_component_help_bsaccordion_allcollapsed: 'false'
+mbase_region_bs_component_help_bsaccordion_panel_class: '-1|panel-default'
+mbase_region_bs_component_help_bspopover_animation: 'true'
+mbase_region_bs_component_help_bspopover_buttongroupstyle: btn-group-justified
+mbase_region_bs_component_help_bspopover_container: body
+mbase_region_bs_component_help_bspopover_placement: 'auto right'
+mbase_region_bs_component_help_bspopover_trigger: hover
+mbase_region_bs_component_help_bspopover_buttonstyles: '-1|btn-success btn-sm'
+mbase_region_bscomponent_content: '-'
+mbase_region_bs_component_content_bspanel_panel_class: '-1|panel-default'
+mbase_region_bs_component_content_bsscrollspy_offset: '50'
+mbase_region_bs_component_content_bsscrollspy_verticle: 'false'
+mbase_region_bs_component_content_bstimeline_icons: '-1|<div class="timeline-badge success"><i class="fa fa-star" aria-hidden="true"></i></div>'
+mbase_region_bs_component_content_bslistgroups_colorclass: '-1|list-group-item-info'
+mbase_region_bs_component_content_bsmodal_triggerstyle: btngrp
+mbase_region_bs_component_content_bsmodal_dropdowntext: Click
+mbase_region_bs_component_content_bsmodal_dropdownstyle: btn-primary
+mbase_region_bs_component_content_bsmodal_buttongroupstyle: btn-group-justified
+mbase_region_bs_component_content_bsmodal_buttonstyles: '-1|btn-success btn-sm'
+mbase_region_bs_component_content_bsmodal_modalstyles: '-1|modal-lg'
+mbase_region_bs_component_content_bsnavtab_verticle: 'false'
+mbase_region_bs_component_content_bsnavtab_animateclass: fade
+mbase_region_bs_component_content_bscarousel_interval: '5000'
+mbase_region_bs_component_content_bscarousel_pause: hover
+mbase_region_bs_component_content_bscarousel_wrap: 'true'
+mbase_region_bs_component_content_bscarousel_keyboard: 'true'
+mbase_region_bs_component_content_bscarousel_minheight: 250px
+mbase_region_bs_component_content_bscarousel_maxheight: 350px
+mbase_region_bs_component_content_bscarousel_showarrows: 'true'
+mbase_region_bs_component_content_bscarousel_shownavs: 'true'
+mbase_region_bs_component_content_bsaccordion_allcollapsed: 'false'
+mbase_region_bs_component_content_bsaccordion_panel_class: '-1|panel-default'
+mbase_region_bs_component_content_bspopover_animation: 'true'
+mbase_region_bs_component_content_bspopover_buttongroupstyle: btn-group-justified
+mbase_region_bs_component_content_bspopover_container: body
+mbase_region_bs_component_content_bspopover_placement: 'auto right'
+mbase_region_bs_component_content_bspopover_trigger: hover
+mbase_region_bs_component_content_bspopover_buttonstyles: '-1|btn-success btn-sm'
+mbase_region_bscomponent_sidebar_first: '-'
+mbase_region_bs_component_sidebar_first_bspanel_panel_class: '-1|panel-default'
+mbase_region_bs_component_sidebar_first_bsscrollspy_offset: '50'
+mbase_region_bs_component_sidebar_first_bsscrollspy_verticle: 'false'
+mbase_region_bs_component_sidebar_first_bstimeline_icons: '-1|<div class="timeline-badge success"><i class="fa fa-star" aria-hidden="true"></i></div>'
+mbase_region_bs_component_sidebar_first_bslistgroups_colorclass: '-1|list-group-item-info'
+mbase_region_bs_component_sidebar_first_bsmodal_triggerstyle: btngrp
+mbase_region_bs_component_sidebar_first_bsmodal_dropdowntext: Click
+mbase_region_bs_component_sidebar_first_bsmodal_dropdownstyle: btn-primary
+mbase_region_bs_component_sidebar_first_bsmodal_buttongroupstyle: btn-group-justified
+mbase_region_bs_component_sidebar_first_bsmodal_buttonstyles: '-1|btn-success btn-sm'
+mbase_region_bs_component_sidebar_first_bsmodal_modalstyles: '-1|modal-lg'
+mbase_region_bs_component_sidebar_first_bsnavtab_verticle: 'false'
+mbase_region_bs_component_sidebar_first_bsnavtab_animateclass: fade
+mbase_region_bs_component_sidebar_first_bscarousel_interval: '5000'
+mbase_region_bs_component_sidebar_first_bscarousel_pause: hover
+mbase_region_bs_component_sidebar_first_bscarousel_wrap: 'true'
+mbase_region_bs_component_sidebar_first_bscarousel_keyboard: 'true'
+mbase_region_bs_component_sidebar_first_bscarousel_minheight: 250px
+mbase_region_bs_component_sidebar_first_bscarousel_maxheight: 350px
+mbase_region_bs_component_sidebar_first_bscarousel_showarrows: 'true'
+mbase_region_bs_component_sidebar_first_bscarousel_shownavs: 'true'
+mbase_region_bs_component_sidebar_first_bsaccordion_allcollapsed: 'false'
+mbase_region_bs_component_sidebar_first_bsaccordion_panel_class: '-1|panel-default'
+mbase_region_bs_component_sidebar_first_bspopover_animation: 'true'
+mbase_region_bs_component_sidebar_first_bspopover_buttongroupstyle: btn-group-justified
+mbase_region_bs_component_sidebar_first_bspopover_container: body
+mbase_region_bs_component_sidebar_first_bspopover_placement: 'auto right'
+mbase_region_bs_component_sidebar_first_bspopover_trigger: hover
+mbase_region_bs_component_sidebar_first_bspopover_buttonstyles: '-1|btn-success btn-sm'
+mbase_region_bscomponent_sidebar_second: '-'
+mbase_region_bs_component_sidebar_second_bspanel_panel_class: '-1|panel-default'
+mbase_region_bs_component_sidebar_second_bsscrollspy_offset: '50'
+mbase_region_bs_component_sidebar_second_bsscrollspy_verticle: 'false'
+mbase_region_bs_component_sidebar_second_bstimeline_icons: '-1|<div class="timeline-badge success"><i class="fa fa-star" aria-hidden="true"></i></div>'
+mbase_region_bs_component_sidebar_second_bslistgroups_colorclass: '-1|list-group-item-info'
+mbase_region_bs_component_sidebar_second_bsmodal_triggerstyle: btngrp
+mbase_region_bs_component_sidebar_second_bsmodal_dropdowntext: Click
+mbase_region_bs_component_sidebar_second_bsmodal_dropdownstyle: btn-primary
+mbase_region_bs_component_sidebar_second_bsmodal_buttongroupstyle: btn-group-justified
+mbase_region_bs_component_sidebar_second_bsmodal_buttonstyles: '-1|btn-success btn-sm'
+mbase_region_bs_component_sidebar_second_bsmodal_modalstyles: '-1|modal-lg'
+mbase_region_bs_component_sidebar_second_bsnavtab_verticle: 'false'
+mbase_region_bs_component_sidebar_second_bsnavtab_animateclass: fade
+mbase_region_bs_component_sidebar_second_bscarousel_interval: '5000'
+mbase_region_bs_component_sidebar_second_bscarousel_pause: hover
+mbase_region_bs_component_sidebar_second_bscarousel_wrap: 'true'
+mbase_region_bs_component_sidebar_second_bscarousel_keyboard: 'true'
+mbase_region_bs_component_sidebar_second_bscarousel_minheight: 250px
+mbase_region_bs_component_sidebar_second_bscarousel_maxheight: 350px
+mbase_region_bs_component_sidebar_second_bscarousel_showarrows: 'true'
+mbase_region_bs_component_sidebar_second_bscarousel_shownavs: 'true'
+mbase_region_bs_component_sidebar_second_bsaccordion_allcollapsed: 'false'
+mbase_region_bs_component_sidebar_second_bsaccordion_panel_class: '-1|panel-default'
+mbase_region_bs_component_sidebar_second_bspopover_animation: 'true'
+mbase_region_bs_component_sidebar_second_bspopover_buttongroupstyle: btn-group-justified
+mbase_region_bs_component_sidebar_second_bspopover_container: body
+mbase_region_bs_component_sidebar_second_bspopover_placement: 'auto right'
+mbase_region_bs_component_sidebar_second_bspopover_trigger: hover
+mbase_region_bs_component_sidebar_second_bspopover_buttonstyles: '-1|btn-success btn-sm'
+mbase_region_bscomponent_footer: '-'
+mbase_region_bs_component_footer_bspanel_panel_class: '-1|panel-default'
+mbase_region_bs_component_footer_bsscrollspy_offset: '50'
+mbase_region_bs_component_footer_bsscrollspy_verticle: 'false'
+mbase_region_bs_component_footer_bstimeline_icons: '-1|<div class="timeline-badge success"><i class="fa fa-star" aria-hidden="true"></i></div>'
+mbase_region_bs_component_footer_bslistgroups_colorclass: '-1|list-group-item-info'
+mbase_region_bs_component_footer_bsmodal_triggerstyle: btngrp
+mbase_region_bs_component_footer_bsmodal_dropdowntext: Click
+mbase_region_bs_component_footer_bsmodal_dropdownstyle: btn-primary
+mbase_region_bs_component_footer_bsmodal_buttongroupstyle: btn-group-justified
+mbase_region_bs_component_footer_bsmodal_buttonstyles: '-1|btn-success btn-sm'
+mbase_region_bs_component_footer_bsmodal_modalstyles: '-1|modal-lg'
+mbase_region_bs_component_footer_bsnavtab_verticle: 'false'
+mbase_region_bs_component_footer_bsnavtab_animateclass: fade
+mbase_region_bs_component_footer_bscarousel_interval: '5000'
+mbase_region_bs_component_footer_bscarousel_pause: hover
+mbase_region_bs_component_footer_bscarousel_wrap: 'true'
+mbase_region_bs_component_footer_bscarousel_keyboard: 'true'
+mbase_region_bs_component_footer_bscarousel_minheight: 250px
+mbase_region_bs_component_footer_bscarousel_maxheight: 350px
+mbase_region_bs_component_footer_bscarousel_showarrows: 'true'
+mbase_region_bs_component_footer_bscarousel_shownavs: 'true'
+mbase_region_bs_component_footer_bsaccordion_allcollapsed: 'false'
+mbase_region_bs_component_footer_bsaccordion_panel_class: '-1|panel-default'
+mbase_region_bs_component_footer_bspopover_animation: 'true'
+mbase_region_bs_component_footer_bspopover_buttongroupstyle: btn-group-justified
+mbase_region_bs_component_footer_bspopover_container: body
+mbase_region_bs_component_footer_bspopover_placement: 'auto right'
+mbase_region_bs_component_footer_bspopover_trigger: hover
+mbase_region_bs_component_footer_bspopover_buttonstyles: '-1|btn-success btn-sm'
+mbase_region_bscomponent_page_top: '-'
+mbase_region_bs_component_page_top_bspanel_panel_class: '-1|panel-default'
+mbase_region_bs_component_page_top_bsscrollspy_offset: '50'
+mbase_region_bs_component_page_top_bsscrollspy_verticle: 'false'
+mbase_region_bs_component_page_top_bstimeline_icons: '-1|<div class="timeline-badge success"><i class="fa fa-star" aria-hidden="true"></i></div>'
+mbase_region_bs_component_page_top_bslistgroups_colorclass: '-1|list-group-item-info'
+mbase_region_bs_component_page_top_bsmodal_triggerstyle: btngrp
+mbase_region_bs_component_page_top_bsmodal_dropdowntext: Click
+mbase_region_bs_component_page_top_bsmodal_dropdownstyle: btn-primary
+mbase_region_bs_component_page_top_bsmodal_buttongroupstyle: btn-group-justified
+mbase_region_bs_component_page_top_bsmodal_buttonstyles: '-1|btn-success btn-sm'
+mbase_region_bs_component_page_top_bsmodal_modalstyles: '-1|modal-lg'
+mbase_region_bs_component_page_top_bsnavtab_verticle: 'false'
+mbase_region_bs_component_page_top_bsnavtab_animateclass: fade
+mbase_region_bs_component_page_top_bscarousel_interval: '5000'
+mbase_region_bs_component_page_top_bscarousel_pause: hover
+mbase_region_bs_component_page_top_bscarousel_wrap: 'true'
+mbase_region_bs_component_page_top_bscarousel_keyboard: 'true'
+mbase_region_bs_component_page_top_bscarousel_minheight: 250px
+mbase_region_bs_component_page_top_bscarousel_maxheight: 350px
+mbase_region_bs_component_page_top_bscarousel_showarrows: 'true'
+mbase_region_bs_component_page_top_bscarousel_shownavs: 'true'
+mbase_region_bs_component_page_top_bsaccordion_allcollapsed: 'false'
+mbase_region_bs_component_page_top_bsaccordion_panel_class: '-1|panel-default'
+mbase_region_bs_component_page_top_bspopover_animation: 'true'
+mbase_region_bs_component_page_top_bspopover_buttongroupstyle: btn-group-justified
+mbase_region_bs_component_page_top_bspopover_container: body
+mbase_region_bs_component_page_top_bspopover_placement: 'auto right'
+mbase_region_bs_component_page_top_bspopover_trigger: hover
+mbase_region_bs_component_page_top_bspopover_buttonstyles: '-1|btn-success btn-sm'
+mbase_region_bscomponent_page_bottom: '-'
+mbase_region_bs_component_page_bottom_bspanel_panel_class: '-1|panel-default'
+mbase_region_bs_component_page_bottom_bsscrollspy_offset: '50'
+mbase_region_bs_component_page_bottom_bsscrollspy_verticle: 'false'
+mbase_region_bs_component_page_bottom_bstimeline_icons: '-1|<div class="timeline-badge success"><i class="fa fa-star" aria-hidden="true"></i></div>'
+mbase_region_bs_component_page_bottom_bslistgroups_colorclass: '-1|list-group-item-info'
+mbase_region_bs_component_page_bottom_bsmodal_triggerstyle: btngrp
+mbase_region_bs_component_page_bottom_bsmodal_dropdowntext: Click
+mbase_region_bs_component_page_bottom_bsmodal_dropdownstyle: btn-primary
+mbase_region_bs_component_page_bottom_bsmodal_buttongroupstyle: btn-group-justified
+mbase_region_bs_component_page_bottom_bsmodal_buttonstyles: '-1|btn-success btn-sm'
+mbase_region_bs_component_page_bottom_bsmodal_modalstyles: '-1|modal-lg'
+mbase_region_bs_component_page_bottom_bsnavtab_verticle: 'false'
+mbase_region_bs_component_page_bottom_bsnavtab_animateclass: fade
+mbase_region_bs_component_page_bottom_bscarousel_interval: '5000'
+mbase_region_bs_component_page_bottom_bscarousel_pause: hover
+mbase_region_bs_component_page_bottom_bscarousel_wrap: 'true'
+mbase_region_bs_component_page_bottom_bscarousel_keyboard: 'true'
+mbase_region_bs_component_page_bottom_bscarousel_minheight: 250px
+mbase_region_bs_component_page_bottom_bscarousel_maxheight: 350px
+mbase_region_bs_component_page_bottom_bscarousel_showarrows: 'true'
+mbase_region_bs_component_page_bottom_bscarousel_shownavs: 'true'
+mbase_region_bs_component_page_bottom_bsaccordion_allcollapsed: 'false'
+mbase_region_bs_component_page_bottom_bsaccordion_panel_class: '-1|panel-default'
+mbase_region_bs_component_page_bottom_bspopover_animation: 'true'
+mbase_region_bs_component_page_bottom_bspopover_buttongroupstyle: btn-group-justified
+mbase_region_bs_component_page_bottom_bspopover_container: body
+mbase_region_bs_component_page_bottom_bspopover_placement: 'auto right'
+mbase_region_bs_component_page_bottom_bspopover_trigger: hover
+mbase_region_bs_component_page_bottom_bspopover_buttonstyles: '-1|btn-success btn-sm'

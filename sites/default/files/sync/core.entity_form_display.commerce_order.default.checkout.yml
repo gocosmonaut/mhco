@@ -1,0 +1,179 @@
+uuid: ebecf1b6-1240-4a25-8b7c-dbb2960a10b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_order.commerce_order_type.default
+    - core.entity_form_mode.commerce_order.checkout
+    - field.field.commerce_order.default.field_additional_attendee_2_name
+    - field.field.commerce_order.default.field_additional_attendee_3_job_
+    - field.field.commerce_order.default.field_additional_attendee_3_name
+    - field.field.commerce_order.default.field_attendee_1_name
+    - field.field.commerce_order.default.field_attendee_2_job_title
+    - field.field.commerce_order.default.field_attendees_job_titles
+    - field.field.commerce_order.default.field_city
+    - field.field.commerce_order.default.field_comments
+    - field.field.commerce_order.default.field_community_or_park_name
+    - field.field.commerce_order.default.field_county_if_in_oregon_
+    - field.field.commerce_order.default.field_email
+    - field.field.commerce_order.default.field_phone
+    - field.field.commerce_order.default.field_registrant_job_title
+    - field.field.commerce_order.default.field_registrant_name
+    - field.field.commerce_order.default.field_registrant_roles
+    - field.field.commerce_order.default.field_state
+    - field.field.commerce_order.default.field_street_address
+    - field.field.commerce_order.default.field_zip
+    - field.field.commerce_order.default.order_items
+_core:
+  default_config_hash: 1NKrIQBqELStd0cyiuHeNArhuPvOZj36faDEG1dWqEA
+id: commerce_order.default.checkout
+targetEntityType: commerce_order
+bundle: default
+mode: checkout
+content:
+  field_additional_attendee_2_name:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_additional_attendee_3_job_:
+    type: string_textfield
+    weight: 7
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_additional_attendee_3_name:
+    type: string_textfield
+    weight: 6
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_attendee_1_name:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_attendee_2_job_title:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_attendees_job_titles:
+    type: string_textfield
+    weight: 5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_city:
+    type: entity_reference_autocomplete
+    weight: 10
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_comments:
+    type: string_textarea
+    weight: 16
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_community_or_park_name:
+    type: string_textfield
+    weight: 8
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_county_if_in_oregon_:
+    type: options_select
+    weight: 13
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_email:
+    type: email_default
+    weight: 15
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_phone:
+    type: string_textfield
+    weight: 14
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_registrant_job_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_registrant_name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_state:
+    type: options_select
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_street_address:
+    type: string_textfield
+    weight: 9
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_zip:
+    type: string_textfield
+    weight: 12
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  adjustments: true
+  billing_profile: true
+  cart: true
+  created: true
+  field_registrant_roles: true
+  ip_address: true
+  mail: true
+  order_items: true
+  order_number: true
+  state: true
+  store_id: true
+  uid: true

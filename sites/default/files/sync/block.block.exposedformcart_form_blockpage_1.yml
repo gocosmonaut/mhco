@@ -1,0 +1,29 @@
+uuid: 3f9f6d00-632f-430f-82a0-ceffb4918f95
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.cart_form_block
+  module:
+    - system
+    - views
+  theme:
+    - mbase
+id: exposedformcart_form_blockpage_1
+theme: mbase
+region: header
+weight: -2
+provider: null
+plugin: 'views_exposed_filter_block:cart_form_block-page_1'
+settings:
+  id: 'views_exposed_filter_block:cart_form_block-page_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: ''
+    negate: true
+    context_mapping: {  }

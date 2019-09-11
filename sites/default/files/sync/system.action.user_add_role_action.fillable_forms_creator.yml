@@ -1,0 +1,14 @@
+uuid: 7f185829-38dd-44b5-817d-b528491407f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.fillable_forms_creator
+  module:
+    - user
+id: user_add_role_action.fillable_forms_creator
+label: 'Add the Fillable Forms creator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: fillable_forms_creator

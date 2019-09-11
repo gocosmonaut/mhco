@@ -1,0 +1,75 @@
+uuid: bdeb3b20-01fe-4a12-9f8b-f9db658417a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.attendance_fee
+    - field.field.commerce_product.attendance_fee.body
+    - field.field.commerce_product.attendance_fee.field_conference_price
+    - field.field.commerce_product.attendance_fee.stores
+    - field.field.commerce_product.attendance_fee.variations
+  module:
+    - commerce_price
+    - path
+    - text
+id: commerce_product.attendance_fee.default
+targetEntityType: commerce_product
+bundle: attendance_fee
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 3
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_conference_price:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: commerce_price_default
+    region: content
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 6
+    region: content
+    third_party_settings: {  }
+  stores:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  variations:
+    type: options_buttons
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  uid: true

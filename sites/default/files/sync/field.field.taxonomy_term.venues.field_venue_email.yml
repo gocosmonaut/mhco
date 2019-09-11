@@ -1,0 +1,19 @@
+uuid: bbe07c9e-1896-4d0c-8368-e7adb1ad7a8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_venue_email
+    - taxonomy.vocabulary.venues
+id: taxonomy_term.venues.field_venue_email
+field_name: field_venue_email
+entity_type: taxonomy_term
+bundle: venues
+label: Email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

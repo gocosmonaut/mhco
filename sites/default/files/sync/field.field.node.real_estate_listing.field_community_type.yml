@@ -1,0 +1,23 @@
+uuid: 27dd4a64-58d9-44f8-af7e-f4c0aaa5395b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_community_type
+    - node.type.real_estate_listing
+_core:
+  default_config_hash: PhhrlIIoRcLTHP8N4GDPPdBckxpQWdxsvYhiuCroENA
+id: node.real_estate_listing.field_community_type
+field_name: field_community_type
+entity_type: node
+bundle: real_estate_listing
+label: 'Community Type'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
