@@ -1,8 +1,0 @@
-uuid: 7dcee35f-859d-48a6-bb8b-99d962d2d7e4
-langcode: en
-status: true
-dependencies: {  }
-id: views_block
-label: 'Views Block'
-revision: 1
-description: ''

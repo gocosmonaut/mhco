@@ -1,4 +1,0 @@
-default_page: content
-index:
-  cron_limit: 10
-logging: true

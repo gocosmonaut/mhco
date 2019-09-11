@@ -1,8 +1,0 @@
-uuid: 6f2fd88b-0567-4a3d-ba06-6d619fc85d9a
-langcode: en
-status: true
-dependencies: {  }
-name: 'Ad Placement'
-vid: ad_placement
-description: ''
-weight: 0
