@@ -1,0 +1,21 @@
+uuid: 814d12fd-bc73-4464-8cf6-cbd5601cd6b2
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_order
+id: commerce_order.field_additional_attendee_2_name
+field_name: field_additional_attendee_2_name
+entity_type: commerce_order
+type: string
+settings:
+  max_length: 40
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

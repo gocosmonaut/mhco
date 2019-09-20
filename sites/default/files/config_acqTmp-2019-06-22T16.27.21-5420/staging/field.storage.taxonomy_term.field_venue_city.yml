@@ -1,0 +1,45 @@
+uuid: 0d609164-9677-48ab-9b5b-83d9ecf174ef
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - taxonomy
+id: taxonomy_term.field_venue_city
+field_name: field_venue_city
+entity_type: taxonomy_term
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Bend
+      label: Bend
+    -
+      value: Eugene
+      label: Eugene
+    -
+      value: Keizer
+      label: Keizer
+    -
+      value: Medford
+      label: Medford
+    -
+      value: Portland
+      label: Portland
+    -
+      value: Salem
+      label: Salem
+    -
+      value: Vancouver
+      label: Vancouver
+    -
+      value: Wilsonville
+      label: Wilsonville
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

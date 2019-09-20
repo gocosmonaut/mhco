@@ -4,11 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.node.article.body
+    - field.field.node.article.field_comments
     - field.field.node.article.field_image
     - field.field.node.article.field_location_tags
     - field.field.node.article.field_tags
     - node.type.article
   module:
+    - comment
     - image
     - text
     - user
@@ -25,6 +27,15 @@ content:
     type: text_default
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_comments:
+    weight: 101
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    type: comment_default
     region: content
   field_image:
     label: hidden
@@ -56,4 +67,5 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  search_api_excerpt: true

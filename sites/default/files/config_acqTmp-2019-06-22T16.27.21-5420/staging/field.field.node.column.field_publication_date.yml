@@ -15,9 +15,12 @@ entity_type: node
 bundle: column
 label: 'Publication Date'
 description: ''
-required: true
+required: false
 translatable: false
-default_value: {  }
+default_value:
+  -
+    default_date_type: now
+    default_date: now
 default_value_callback: ''
 settings: {  }
 field_type: datetime

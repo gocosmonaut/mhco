@@ -2,7 +2,9 @@ body {
     background: url(../../../../sites/default/files/wallpaper/eugene.jpg) fixed bottom no-repeat;
     background-size: cover;
 }
-
+body.toolbar-horizontal.user-logged-in {
+    padding-top: 140px !important;
+}
 
 
 #views-exposed-form-search-block-1 #edit-keywords {
@@ -228,7 +230,7 @@ body.admin-expanded.admin-vertical.admin-sw .navbar {
 }
 
 body.navbar-is-fixed-top {
-    padding-top: 64px!important;
+    padding-top: 64px;
 }
 
 body.path-frontpage.navbar-is-default header#navbar.affix {

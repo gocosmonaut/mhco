@@ -492,7 +492,8 @@ a:hover {
 }
 
 .toolbar-horizontal #block-utilitynav {
-    top: 200px;
+    top: 69px;
+    z-index: -21;
 }
 
 #block-utilitynav .field-name-body {
@@ -555,7 +556,6 @@ header#navbar {
 
 header#navbar .container {
     padding: 0;
-
 }
 
 header#navbar,
@@ -576,7 +576,8 @@ header#navbar .nav li a:hover {
 }
 
 .toolbar-horizontal header#navbar  {
-    top: 143px;
+    top: 97px;
+    /* z-index: -1; */
 }
 
 button.navbar-toggle {

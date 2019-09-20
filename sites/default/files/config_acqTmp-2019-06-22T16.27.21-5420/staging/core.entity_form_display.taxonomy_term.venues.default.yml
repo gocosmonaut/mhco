@@ -1,0 +1,106 @@
+uuid: eeebe363-fffc-419d-949c-195e505f67a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.venues.field_venue_address
+    - field.field.taxonomy_term.venues.field_venue_city
+    - field.field.taxonomy_term.venues.field_venue_email
+    - field.field.taxonomy_term.venues.field_venue_map_link
+    - field.field.taxonomy_term.venues.field_venue_phone
+    - field.field.taxonomy_term.venues.field_venue_state
+    - field.field.taxonomy_term.venues.field_venue_website
+    - field.field.taxonomy_term.venues.field_venue_zip
+    - taxonomy.vocabulary.venues
+  module:
+    - link
+    - path
+    - text
+id: taxonomy_term.venues.default
+targetEntityType: taxonomy_term
+bundle: venues
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_venue_address:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_venue_city:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_venue_email:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_venue_map_link:
+    weight: 9
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_venue_phone:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_venue_state:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_venue_website:
+    weight: 8
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_venue_zip:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

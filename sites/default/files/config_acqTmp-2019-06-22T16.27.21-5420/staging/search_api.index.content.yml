@@ -39,6 +39,7 @@ field_settings:
         anonymous: anonymous
       view_mode:
         'entity:node':
+          advertisement: default
           article: default
           associate_member: default
           column: default
@@ -75,8 +76,13 @@ field_settings:
 datasource_settings:
   'entity:node':
     bundles:
-      default: true
-      selected: {  }
+      default: false
+      selected:
+        - associate_member
+        - column
+        - community_updates
+        - fillable_forms
+        - page
     languages:
       default: true
       selected: {  }
@@ -176,7 +182,7 @@ processor_settings:
     all_fields: false
 tracker_settings:
   default:
-    indexing_order: fifo
+    indexing_order: lifo
 options:
   index_directly: true
   cron_limit: 50

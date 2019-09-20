@@ -5,6 +5,7 @@ dependencies:
   config:
     - search_api.index.content
   module:
+    - better_exposed_filters
     - search_api
 _core:
   default_config_hash: 8eXHpZgzJ58fVmB7evA4TNESdXWjMOW9AFPYSxEimE4
@@ -27,25 +28,36 @@ display:
         type: none
         options: {  }
       cache:
-        type: search_api_time
-        options:
-          results_lifespan: 3600
-          results_lifespan_custom: 0
-          output_lifespan: 3600
-          output_lifespan_custom: 0
+        type: none
+        options: {  }
       query:
         type: views_query
       exposed_form:
-        type: input_required
+        type: bef
         options:
-          submit_button: Search
+          submit_button: ⇒
           reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
-          text_input_required: 'Enter keywords to search the site.'
+          input_required: true
+          text_input_required: ''
+          bef:
+            general:
+              allow_secondary: false
+              secondary_label: 'Advanced options'
+              autosubmit: true
+              autosubmit_exclude_textfield: false
+              autosubmit_hide: true
+            search_api_fulltext:
+              bef_format: default
+              more_options:
+                is_secondary: false
+                placeholder_text: ''
+                rewrite:
+                  filter_rewrite_values: ''
           text_input_required_format: rich_text
       pager:
         type: mini
@@ -77,27 +89,17 @@ display:
         options:
           view_modes:
             'entity:node':
-              article: default
+              advertisement: default
               associate_member: default
               column: default
               community_updates: default
               fillable_forms: default
-              job_listings: default
-              landing_page: teaser
-              marquee_promotion: default
-              page: teaser
-              panel: default
-              product: default
-              real_estate_listing: default
-              webform: default
+              page: default
       fields:
         rendered:
+          id: rendered
           table: search_api_index_content
           field: rendered
-          id: rendered
-          entity_type: null
-          entity_field: null
-          plugin_id: search_api
           relationship: none
           group_type: group
           admin_label: ''
@@ -134,7 +136,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -143,8 +145,12 @@ display:
           empty_zero: false
           hide_alter_empty: true
           link_to_item: false
+          use_highlighting: true
           multi_type: separator
           multi_separator: ', '
+          entity_type: null
+          entity_field: null
+          plugin_id: search_api
       filters:
         search_api_fulltext:
           id: search_api_fulltext
@@ -159,7 +165,7 @@ display:
           exposed: true
           expose:
             operator_id: search_api_fulltext_op
-            label: Keywords
+            label: ''
             description: ''
             use_operator: false
             operator: search_api_fulltext_op
@@ -171,15 +177,36 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
-              layout_manager: '0'
-              media_creator: '0'
-              media_manager: '0'
               page_creator: '0'
+              layout_manager: '0'
               page_reviewer: '0'
               landing_page_creator: '0'
               landing_page_reviewer: '0'
-              workspace_creator: '0'
-              workspace_reviewer: '0'
+              media_creator: '0'
+              media_manager: '0'
+              article_creator: '0'
+              article_reviewer: '0'
+              associate_member_creator: '0'
+              associate_member_reviewer: '0'
+              column_creator: '0'
+              column_reviewer: '0'
+              community_updates_creator: '0'
+              community_updates_reviewer: '0'
+              fillable_forms_creator: '0'
+              fillable_forms_reviewer: '0'
+              job_listings_creator: '0'
+              job_listings_reviewer: '0'
+              marquee_promotion_creator: '0'
+              marquee_promotion_reviewer: '0'
+              panel_creator: '0'
+              panel_reviewer: '0'
+              product_creator: '0'
+              product_reviewer: '0'
+              real_estate_listing_creator: '0'
+              real_estate_listing_reviewer: '0'
+              webform_creator: '0'
+              webform_reviewer: '0'
+            placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -229,6 +256,111 @@ display:
       arguments: {  }
       display_extenders: {  }
       title: Search
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      use_ajax: true
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+      tags: {  }
+  block_1:
+    display_plugin: block
+    id: block_1
+    display_title: Block
+    position: 2
+    display_options:
+      display_extenders: {  }
+      block_description: 'Search Block Left'
+      block_hide_empty: false
+      filters:
+        search_api_fulltext:
+          id: search_api_fulltext
+          table: search_api_index_content
+          field: search_api_fulltext
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: search_api_fulltext_op
+            label: ''
+            description: ''
+            use_operator: false
+            operator: search_api_fulltext_op
+            identifier: keywords
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              page_creator: '0'
+              layout_manager: '0'
+              page_reviewer: '0'
+              landing_page_creator: '0'
+              landing_page_reviewer: '0'
+              media_creator: '0'
+              media_manager: '0'
+              article_creator: '0'
+              article_reviewer: '0'
+              associate_member_creator: '0'
+              associate_member_reviewer: '0'
+              column_creator: '0'
+              column_reviewer: '0'
+              community_updates_creator: '0'
+              community_updates_reviewer: '0'
+              fillable_forms_creator: '0'
+              fillable_forms_reviewer: '0'
+              job_listings_creator: '0'
+              job_listings_reviewer: '0'
+              marquee_promotion_creator: '0'
+              marquee_promotion_reviewer: '0'
+              panel_creator: '0'
+              panel_reviewer: '0'
+              product_creator: '0'
+              product_reviewer: '0'
+              real_estate_listing_creator: '0'
+              real_estate_listing_reviewer: '0'
+              webform_creator: '0'
+              webform_reviewer: '0'
+              advertisement_creator: '0'
+              advertisement_reviewer: '0'
+            placeholder: Search
+          is_grouped: false
+          group_info:
+            label: 'Fulltext search'
+            description: null
+            identifier: search_api_fulltext
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1: {  }
+              2: {  }
+              3: {  }
+          parse_mode: terms
+          min_length: 2
+          fields: {  }
+          plugin_id: search_api_fulltext
+      defaults:
+        filters: false
+        filter_groups: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
     cache_metadata:
       max-age: -1
       contexts:
@@ -244,7 +376,10 @@ display:
     display_options:
       display_extenders: {  }
       path: search
-      exposed_block: true
+      exposed_block: false
+      use_ajax: false
+      defaults:
+        use_ajax: false
     cache_metadata:
       max-age: -1
       contexts:

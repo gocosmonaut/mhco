@@ -2,18 +2,21 @@ module:
   action: 0
   address: 0
   admin_toolbar: 0
-  adminimal_admin_toolbar: 0
+  admin_toolbar_tools: 0
   backup_migrate: 0
+  better_exposed_filters: 0
   blazy: 0
   block: 0
   block_content: 0
   breakpoint: 0
   bulk_update_fields: 0
   ckeditor: 0
+  comment: 0
   commerce: 0
   commerce_authnet: 0
   commerce_cart: 0
   commerce_checkout: 0
+  commerce_checkout_order_fields: 0
   commerce_log: 0
   commerce_order: 0
   commerce_payment: 0
@@ -21,6 +24,7 @@ module:
   commerce_price: 0
   commerce_product: 0
   commerce_store: 0
+  commerce_webform_order: 0
   config: 0
   config_update: 0
   consumers: 0
@@ -55,15 +59,16 @@ module:
   google_analytics_reports_api: 0
   help: 0
   history: 0
+  honeypot: 0
   image: 0
   image_widget_crop: 0
   inline_entity_form: 0
+  inline_form_errors: 0
   jsonapi: 0
   layout_builder: 0
   layout_builder_restrictions: 0
   layout_discovery: 0
   layout_library: 0
-  legal: 0
   libraries: 0
   lightning_api: 0
   lightning_contact_form: 0
@@ -109,6 +114,7 @@ module:
   options: 0
   page_cache: 0
   page_manager: 0
+  page_manager_ui: 0
   panels: 0
   path: 0
   profile: 0
@@ -116,8 +122,11 @@ module:
   rdf: 0
   schemata: 0
   schemata_json_schema: 0
+  search: 0
   search_api: 0
   search_api_db: 0
+  search_api_solr: 0
+  search_autocomplete: 0
   serialization: 0
   sharedemail: 0
   shortcut: 0
@@ -128,19 +137,25 @@ module:
   slick_entityreference: 0
   state_machine: 0
   system: 0
+  tagclouds: 0
   taxonomy: 0
   taxonomy_manager: 0
   telephone: 0
+  term_merge: 0
+  term_reference_change: 0
   text: 0
   token: 0
   token_filter: 0
   toolbar: 0
   user: 0
   user_bundle: 0
+  user_default_page: 0
   video_embed_field: 0
   video_embed_media: 0
   views_bulk_operations: 0
   views_infinite_scroll: 0
+  views_slideshow: 0
+  views_slideshow_cycle: 0
   views_ui: 0
   webform: 0
   webform_submission_log: 0
@@ -148,6 +163,7 @@ module:
   workflows: 0
   xmlrpc: 0
   contact_storage: 1
+  ds: 1
   menu_link_content: 1
   pathauto: 1
   views: 10
@@ -157,8 +173,8 @@ theme:
   classy: 0
   bartik: 0
   seven: 0
-  adminimal_theme: 0
   mbase: 0
+  adminimal_theme: 0
 profile: lightning
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc

@@ -40,6 +40,7 @@
   color: #fff;
 }
 .toolbar .toolbar-bar .toolbar-tab > .toolbar-item {
+  font-size:11px !important;
   font-weight: bold;
 }
 .toolbar .toolbar-bar .toolbar-tab > .toolbar-item:hover,
@@ -56,10 +57,11 @@
  * Toolbar tray.
  */
 .toolbar .toolbar-tray {
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.75);
 }
 .toolbar-horizontal .toolbar-tray > .toolbar-lining {
-  padding-right: 5em; /* LTR */
+          font-size: 11px !important;
+          padding-right: 5em; /* LTR */
 }
 [dir="rtl"] .toolbar-horizontal .toolbar-tray > .toolbar-lining {
   padding-right: 0;
@@ -78,7 +80,15 @@
 .toolbar-horizontal .toolbar-tray {
   border-bottom: 1px solid #aaa;
   box-shadow: -2px 1px 3px 1px rgba(0, 0, 0, 0.3333); /* LTR */
+  top: 34px;
+  position: fixed;
+  z-index: 1031;
 }
+.toolbar-lining  .toolbar-menu.list-inline a {
+  color: white;
+  background: #00bfff;
+}
+
 [dir="rtl"] .toolbar-horizontal .toolbar-tray {
   box-shadow: 2px 1px 3px 1px rgba(0, 0, 0, 0.3333);
 }
@@ -90,6 +100,8 @@
   cursor: pointer;
   text-decoration: none;
   color: #565656;
+  font-size: 11px !important;
+  background: #f0f8ff;
 }
 .toolbar-tray a:hover,
 .toolbar-tray a:active,
@@ -99,7 +111,7 @@
   color: #000;
 }
 .toolbar .toolbar-menu {
-  background-color: #fff;
+  background-color: black;
 }
 .toolbar-horizontal .toolbar-tray .menu-item + .menu-item {
   border-left: 1px solid #ddd; /* LTR */

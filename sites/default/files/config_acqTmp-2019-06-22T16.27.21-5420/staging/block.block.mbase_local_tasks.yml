@@ -1,4 +1,4 @@
-uuid: 6092a4dd-a60e-45ca-8b10-78176e25acaf
+uuid: f9b5597b-ae25-4d94-b401-6260a07579d9
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ _core:
 id: mbase_local_tasks
 theme: mbase
 region: header
-weight: 10
+weight: -7
 provider: null
 plugin: local_tasks_block
 settings:

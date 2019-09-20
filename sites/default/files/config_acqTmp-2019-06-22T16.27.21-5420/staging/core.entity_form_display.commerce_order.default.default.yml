@@ -4,9 +4,26 @@ status: true
 dependencies:
   config:
     - commerce_order.commerce_order_type.default
+    - field.field.commerce_order.default.field_additional_attendee_2_name
+    - field.field.commerce_order.default.field_additional_attendee_3_job_
+    - field.field.commerce_order.default.field_additional_attendee_3_name
+    - field.field.commerce_order.default.field_attendee_1_name
+    - field.field.commerce_order.default.field_attendee_2_job_title
+    - field.field.commerce_order.default.field_attendees_job_titles
+    - field.field.commerce_order.default.field_city
+    - field.field.commerce_order.default.field_comments
+    - field.field.commerce_order.default.field_community_or_park_name
+    - field.field.commerce_order.default.field_county_if_in_oregon_
+    - field.field.commerce_order.default.field_email
+    - field.field.commerce_order.default.field_phone
+    - field.field.commerce_order.default.field_registrant_job_title
+    - field.field.commerce_order.default.field_registrant_name
+    - field.field.commerce_order.default.field_registrant_roles
+    - field.field.commerce_order.default.field_state
+    - field.field.commerce_order.default.field_street_address
+    - field.field.commerce_order.default.field_zip
     - field.field.commerce_order.default.order_items
   module:
-    - commerce_order
     - inline_entity_form
 _core:
   default_config_hash: 1NKrIQBqELStd0cyiuHeNArhuPvOZj36faDEG1dWqEA
@@ -15,17 +32,157 @@ targetEntityType: commerce_order
 bundle: default
 mode: default
 content:
-  adjustments:
-    type: commerce_adjustment_default
+  cart:
+    type: boolean_checkbox
+    settings:
+      display_label: true
     weight: 2
-    settings: {  }
-    third_party_settings: {  }
     region: content
-  billing_profile:
-    type: commerce_billing_profile
+    third_party_settings: {  }
+  field_additional_attendee_2_name:
+    weight: 9
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_additional_attendee_3_job_:
+    weight: 10
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_additional_attendee_3_name:
+    weight: 11
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_attendee_1_name:
+    weight: 12
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_attendee_2_job_title:
+    weight: 13
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_attendees_job_titles:
+    weight: 14
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_city:
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_comments:
+    weight: 19
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_community_or_park_name:
+    weight: 15
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_county_if_in_oregon_:
+    weight: 6
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_email:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_phone:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_registrant_job_title:
+    weight: 16
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_registrant_name:
     weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_registrant_roles:
+    weight: 8
     settings: {  }
     third_party_settings: {  }
+    type: options_select
+    region: content
+  field_state:
+    weight: 7
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_street_address:
+    weight: 17
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_zip:
+    weight: 18
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   order_items:
     type: inline_entity_form_complex
@@ -38,9 +195,14 @@ content:
       match_operator: CONTAINS
       allow_existing: false
       form_mode: default
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
     third_party_settings: {  }
     region: content
 hidden:
+  adjustments: true
+  billing_profile: true
   created: true
   ip_address: true
   mail: true

@@ -20,5 +20,15 @@ configuration:
   mode: live
   payment_method_types:
     - credit_card
-conditions: {  }
+conditions:
+  -
+    plugin: order_currency
+    configuration:
+      currencies:
+        - USD
+  -
+    plugin: order_store
+    configuration:
+      stores:
+        - 3d58662b-dc32-4aeb-a581-c5d1b2eab40c
 conditionOperator: AND

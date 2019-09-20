@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.product.body
-    - field.field.node.product.field_fillpdf_fid
     - field.field.node.product.uc_product_image
     - node.type.product
   module:
@@ -39,5 +38,4 @@ content:
       image_link: ''
     third_party_settings: {  }
     region: content
-hidden:
-  field_fillpdf_fid: true
+hidden: {  }

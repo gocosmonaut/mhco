@@ -415,7 +415,7 @@
 
 .adminimal .toolbar-tray a {
   color: #bbbbbb;
-
+        font-size: 11px !important;
 }
 
 .adminimal .toolbar .toolbar-bar .toolbar-tab:not(.workspaces-toolbar-tab) > .toolbar-item {

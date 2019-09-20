@@ -1,4 +1,4 @@
-uuid: 353e60d1-555e-4b76-9811-afc6a5f63df1
+uuid: c00971e0-4647-4403-9c1d-c226206c8204
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: mbase_content
 theme: mbase
 region: content
-weight: 0
+weight: -9
 provider: null
 plugin: system_main_block
 settings:

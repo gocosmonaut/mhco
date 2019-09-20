@@ -1,0 +1,44 @@
+uuid: 153b195e-35da-4d3c-9b39-3b5de0a7eff8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.panel
+  module:
+    - layout_builder
+    - layout_library
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          8c6d612e-79d6-4de1-bcf4-2a2c8e8033d2:
+            uuid: 8c6d612e-79d6-4de1-bcf4-2a2c8e8033d2
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:panel:links'
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+  layout_library:
+    enable: false
+id: node.panel.default
+targetEntityType: node
+bundle: panel
+mode: default
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  search_api_excerpt: true

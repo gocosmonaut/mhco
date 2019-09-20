@@ -1,0 +1,12 @@
+diff --git a/scripts/build.sh b/scripts/build.sh
+index ddf5f04..8817b7e 100755
+--- a/scripts/build.sh
++++ b/scripts/build.sh
+@@ -124,6 +124,7 @@ if [[ "8" -eq "$S_CORE" ]]; then
+ 
+     # Enable projects to specify patches
+     # timeout 120 composer config extra.enable-patching true
++    timeout 120 composer config discard-changes true
+ 
+     # Load all the things
+     timeout 350 composer update --with-dependencies -n --no-progress --no-ansi || s_ste 303

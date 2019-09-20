@@ -5,6 +5,7 @@ dependencies:
   config:
     - entity_browser.browser.image_browser
     - field.field.node.community_updates.body
+    - field.field.node.community_updates.feeds_item
     - field.field.node.community_updates.field_column_image
     - field.field.node.community_updates.field_community_update_topics
     - field.field.node.community_updates.field_former_nid
@@ -128,4 +129,5 @@ content:
     region: content
     third_party_settings: {  }
 hidden:
+  feeds_item: true
   field_location_tags: true

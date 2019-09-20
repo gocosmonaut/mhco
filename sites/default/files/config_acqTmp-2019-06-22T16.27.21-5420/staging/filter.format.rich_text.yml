@@ -27,7 +27,7 @@ filters:
   filter_htmlcorrector:
     id: filter_htmlcorrector
     provider: filter
-    status: true
+    status: false
     weight: -45
     settings: {  }
   editor_file_reference:
@@ -48,7 +48,7 @@ filters:
     status: true
     weight: -49
     settings:
-      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <s> <sup> <sub> <img src alt data-entity-type data-entity-uuid data-align data-caption> <table> <caption> <tbody> <thead> <tfoot> <th> <td> <tr> <hr> <p> <br> <h1> <pre> <drupal-entity data-* title alt>'
+      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <s> <sup> <sub> <img src alt data-entity-type data-entity-uuid data-align data-caption> <table> <caption> <tbody> <thead> <tfoot> <th> <td> <tr> <hr> <p> <br> <h1> <pre> <drupal-entity data-* title alt><a id><class><style><a><a href>'
       filter_html_help: true
       filter_html_nofollow: false
   filter_autop:
@@ -72,7 +72,7 @@ filters:
   filter_url:
     id: filter_url
     provider: filter
-    status: false
+    status: true
     weight: -41
     settings:
       filter_url_length: 72

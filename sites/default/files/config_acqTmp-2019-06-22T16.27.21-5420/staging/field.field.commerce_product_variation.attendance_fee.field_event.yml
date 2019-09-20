@@ -1,0 +1,33 @@
+uuid: 09669907-9886-4c14-9d08-cb1139fed5aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.attendance_fee
+    - field.storage.commerce_product_variation.field_event
+    - taxonomy.vocabulary.events
+  content:
+    - 'taxonomy_term:events:1f9d8485-e90b-4ee4-90e0-f7b6ebefcbe9'
+id: commerce_product_variation.attendance_fee.field_event
+field_name: field_event
+entity_type: commerce_product_variation
+bundle: attendance_fee
+label: Event
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 1f9d8485-e90b-4ee4-90e0-f7b6ebefcbe9
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      events: events
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

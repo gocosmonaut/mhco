@@ -5,13 +5,16 @@ dependencies:
   config:
     - core.entity_view_mode.node.full
     - field.field.node.landing_page.body
+    - field.field.node.landing_page.field_meta_tags
+    - field.field.node.landing_page.layout_builder__layout
     - field.field.node.landing_page.layout_selection
     - node.type.landing_page
   module:
+    - entity_block
     - layout_builder
     - layout_builder_restrictions
-    - layout_discovery
     - layout_library
+    - metatag
     - user
 third_party_settings:
   layout_builder:
@@ -19,9 +22,23 @@ third_party_settings:
     enabled: true
     sections:
       -
-        layout_id: layout_onecol
-        layout_settings: {  }
-        components: {  }
+        layout_id: layout_twocol_section
+        layout_settings:
+          column_widths: 67-33
+        components:
+          c53793a1-6360-4a07-8634-cf167de110ea:
+            uuid: c53793a1-6360-4a07-8634-cf167de110ea
+            region: second
+            configuration:
+              id: 'entity_block:taxonomy_term'
+              label: 'Taxonomy term'
+              provider: entity_block
+              label_display: ''
+              entity: '1167'
+              view_mode: full
+              context_mapping: {  }
+            additional: {  }
+            weight: 0
         third_party_settings: {  }
   layout_library:
     enable: true
@@ -66,5 +83,8 @@ content:
     third_party_settings: {  }
 hidden:
   body: true
+  content_moderation_control: true
+  layout_builder__layout: true
   layout_selection: true
   links: true
+  search_api_excerpt: true

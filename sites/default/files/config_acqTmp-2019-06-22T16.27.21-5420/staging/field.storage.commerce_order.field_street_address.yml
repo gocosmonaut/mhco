@@ -1,0 +1,21 @@
+uuid: 10b193dd-2f5c-4a7a-9783-405ab1b48169
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_order
+id: commerce_order.field_street_address
+field_name: field_street_address
+entity_type: commerce_order
+type: string
+settings:
+  max_length: 60
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

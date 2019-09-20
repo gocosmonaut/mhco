@@ -4,9 +4,28 @@ status: true
 dependencies:
   config:
     - commerce_order.commerce_order_type.default
+    - field.field.commerce_order.default.field_additional_attendee_2_name
+    - field.field.commerce_order.default.field_additional_attendee_3_job_
+    - field.field.commerce_order.default.field_additional_attendee_3_name
+    - field.field.commerce_order.default.field_attendee_1_name
+    - field.field.commerce_order.default.field_attendee_2_job_title
+    - field.field.commerce_order.default.field_attendees_job_titles
+    - field.field.commerce_order.default.field_city
+    - field.field.commerce_order.default.field_comments
+    - field.field.commerce_order.default.field_community_or_park_name
+    - field.field.commerce_order.default.field_county_if_in_oregon_
+    - field.field.commerce_order.default.field_email
+    - field.field.commerce_order.default.field_phone
+    - field.field.commerce_order.default.field_registrant_job_title
+    - field.field.commerce_order.default.field_registrant_name
+    - field.field.commerce_order.default.field_registrant_roles
+    - field.field.commerce_order.default.field_state
+    - field.field.commerce_order.default.field_street_address
+    - field.field.commerce_order.default.field_zip
     - field.field.commerce_order.default.order_items
   module:
     - commerce_order
+    - options
     - state_machine
     - user
 _core:
@@ -35,6 +54,147 @@ content:
       custom_date_format: ''
       timezone: ''
     third_party_settings: {  }
+    region: content
+  field_additional_attendee_2_name:
+    weight: 16
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_additional_attendee_3_job_:
+    weight: 17
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_additional_attendee_3_name:
+    weight: 18
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_attendee_1_name:
+    weight: 19
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_attendee_2_job_title:
+    weight: 20
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_attendees_job_titles:
+    weight: 21
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_city:
+    weight: 12
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_comments:
+    weight: 26
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_community_or_park_name:
+    weight: 22
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_county_if_in_oregon_:
+    weight: 13
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_email:
+    weight: 11
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_phone:
+    weight: 10
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_registrant_job_title:
+    weight: 23
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_registrant_name:
+    weight: 9
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_registrant_roles:
+    weight: 15
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_state:
+    weight: 14
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_street_address:
+    weight: 24
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_zip:
+    weight: 25
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
     region: content
   ip_address:
     label: inline
@@ -92,5 +252,6 @@ content:
 hidden:
   billing_profile: true
   order_number: true
+  search_api_excerpt: true
   store_id: true
   total_paid: true

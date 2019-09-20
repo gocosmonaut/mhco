@@ -121,7 +121,7 @@ class ProfileListBuilder extends EntityListBuilder {
       '#theme' => 'username',
       '#account' => $entity->getOwner(),
     ];
-    $row['status'] = $entity->isActive() ? $this->t('active') : $this->t('not active');
+    $row['status'] = $entity->isPublished() ? $this->t('active') : $this->t('not active');
     $row['is_default'] = $entity->isDefault() ? $this->t('default') : $this->t('not default');
     $row['changed'] = $this->dateFormatter->format($entity->getChangedTime(), 'short');
     $language_manager = \Drupal::languageManager();
@@ -135,19 +135,21 @@ class ProfileListBuilder extends EntityListBuilder {
   /**
    * {@inheritdoc}
    */
-  public function getOperations(EntityInterface $entity) {
-    $operations = parent::getOperations($entity);
+  public function getDefaultOperations(EntityInterface $entity) {
+    $operations = parent::getDefaultOperations($entity);
 
     $destination = $this->redirectDestination->getAsArray();
     foreach ($operations as $key => $operation) {
       $operations[$key]['query'] = $destination;
     }
 
-    if ($entity->isActive() && !$entity->isDefault()) {
+    /** @var \Drupal\profile\Entity\ProfileInterface $entity */
+    if ($entity->access('update') && $entity->isPublished() && !$entity->isDefault()) {
       $operations['set_default'] = [
         'title' => $this->t('Mark as default'),
         'url' => $entity->toUrl('set-default'),
         'parameter' => $entity,
+        'weight' => 20,
       ];
     }
 

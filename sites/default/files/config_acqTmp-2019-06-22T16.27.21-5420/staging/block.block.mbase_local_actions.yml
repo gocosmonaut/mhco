@@ -1,4 +1,4 @@
-uuid: 9361444b-960a-4a25-9566-9423062afac0
+uuid: f045df28-8f26-4e19-abc8-5f11b1b87c6d
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ _core:
 id: mbase_local_actions
 theme: mbase
 region: header
-weight: 20
+weight: -6
 provider: null
 plugin: local_actions_block
 settings:

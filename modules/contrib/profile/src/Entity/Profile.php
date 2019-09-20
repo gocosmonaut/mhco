@@ -2,7 +2,6 @@
 
 namespace Drupal\profile\Entity;
 
-use Drupal\Core\Cache\Cache;
 use Drupal\Core\Entity\EditorialContentEntityBase;
 use Drupal\Core\Entity\EntityStorageInterface;
 use Drupal\Core\Entity\EntityTypeInterface;
@@ -18,7 +17,14 @@ use Drupal\profile\Event\ProfileLabelEvent;
  * @ContentEntityType(
  *   id = "profile",
  *   label = @Translation("Profile"),
- *   bundle_label = @Translation("Profile"),
+ *   label_collection = @Translation("Profiles"),
+ *   label_singular = @Translation("profile"),
+ *   label_plural = @Translation("profiles"),
+ *   label_count = @PluralTranslation(
+ *     singular = "@count profile",
+ *     plural = "@count profiles",
+ *   ),
+ *   bundle_label = @Translation("Profile type"),
  *   handlers = {
  *     "storage" = "Drupal\profile\ProfileStorage",
  *     "storage_schema" = "Drupal\profile\ProfileStorageSchema",
@@ -82,8 +88,8 @@ class Profile extends EditorialContentEntityBase implements ProfileInterface {
    */
   public function label() {
     $profile_type = ProfileType::load($this->bundle());
-    $label = $this->t('@type profile #@id', [
-      '@type' => $profile_type->label(),
+    $label = $this->t('@type #@id', [
+      '@type' => $profile_type->getDisplayLabel() ?: $profile_type->label(),
       '@id' => $this->id(),
     ]);
     // Allow the label to be overridden.
@@ -194,12 +200,17 @@ class Profile extends EditorialContentEntityBase implements ProfileInterface {
   /**
    * {@inheritdoc}
    */
-  public function getCacheTagsToInvalidate() {
-    $tags = parent::getCacheTagsToInvalidate();
-    return Cache::mergeTags($tags, [
-      'user:' . $this->getOwnerId(),
-      'user_view',
-    ]);
+  public function equalToProfile(ProfileInterface $profile, array $field_names = []) {
+    // Compare all configurable fields by default.
+    $field_names = $field_names ?: $this->getConfigurableFieldNames($profile);
+    foreach ($field_names as $field_name) {
+      $profile_field_item_list = $profile->get($field_name);
+      if (!$this->hasField($field_name) || !$this->get($field_name)->equals($profile_field_item_list)) {
+        return FALSE;
+      }
+    }
+
+    return TRUE;
   }
 
   /**
@@ -207,13 +218,7 @@ class Profile extends EditorialContentEntityBase implements ProfileInterface {
    */
   public function populateFromProfile(ProfileInterface $profile, array $field_names = []) {
     // Transfer all configurable fields by default.
-    if (empty($field_names)) {
-      foreach ($profile->getFieldDefinitions() as $field_name => $definition) {
-        if (!($definition instanceof BaseFieldDefinition)) {
-          $field_names[] = $field_name;
-        }
-      }
-    }
+    $field_names = $field_names ?: $this->getConfigurableFieldNames($profile);
     $profile_values = $profile->toArray();
     foreach ($field_names as $field_name) {
       if (isset($profile_values[$field_name]) && $this->hasField($field_name)) {
@@ -225,23 +230,40 @@ class Profile extends EditorialContentEntityBase implements ProfileInterface {
   }
 
   /**
+   * Gets the names of all configurable fields on the given profile.
+   *
+   * @param \Drupal\profile\Entity\ProfileInterface $profile
+   *   The profile.
+   *
+   * @return string[]
+   *   The field names.
+   */
+  protected function getConfigurableFieldNames(ProfileInterface $profile) {
+    $field_names = [];
+    foreach ($profile->getFieldDefinitions() as $field_name => $definition) {
+      if (!($definition instanceof BaseFieldDefinition)) {
+        $field_names[] = $field_name;
+      }
+    }
+    return $field_names;
+  }
+
+  /**
    * {@inheritdoc}
    */
   public function preSave(EntityStorageInterface $storage) {
     /** @var \Drupal\profile\ProfileStorage $storage */
     parent::preSave($storage);
 
-    // If this profile is active and the owner has no current default profile
-    // of this type, set this as the default.
-    if ($this->getOwnerId() > 0) {
-      if ($this->isPublished() && !$this->isDefault()) {
-        if (!$storage->loadDefaultByUser($this->getOwner(), $this->bundle())) {
-          $this->setDefault(TRUE);
-        }
-      }
-      // Only active profiles can be default.
-      elseif (!$this->isPublished()) {
-        $this->setDefault(FALSE);
+    // Only published profiles can be default.
+    if (!$this->isPublished()) {
+      $this->setDefault(FALSE);
+    }
+    // Mark the profile as default if there's no other default.
+    if ($this->getOwnerId() && $this->isPublished() && !$this->isDefault()) {
+      $profile = $storage->loadByUser($this->getOwner(), $this->bundle());
+      if (!$profile || !$profile->isDefault()) {
+        $this->setDefault(TRUE);
       }
     }
     // If no revision author has been set explicitly, make the profile owner
@@ -258,26 +280,17 @@ class Profile extends EditorialContentEntityBase implements ProfileInterface {
     /** @var \Drupal\profile\ProfileStorage $storage */
     parent::postSave($storage, $update);
 
-    // Check if this profile is, or became the default.
-    if ($this->getOwnerId() > 0) {
-      if ($this->isDefault()) {
-        /** @var \Drupal\profile\Entity\ProfileInterface[] $profiles */
+    if ($this->getOwnerId()) {
+      $default = $this->isDefault();
+      $original_default = $this->original ? $this->original->isDefault() : FALSE;
+      if ($default && !$original_default) {
+        // The profile was set as default, remove the flag from other profiles.
         $profiles = $storage->loadMultipleByUser($this->getOwner(), $this->bundle());
-
-        // Ensure that all other profiles are set to not default.
         foreach ($profiles as $profile) {
           if ($profile->id() != $this->id() && $profile->isDefault()) {
             $profile->setDefault(FALSE);
             $profile->save();
           }
-        }
-      }
-      // If this isn't the default, try to set a new one.
-      elseif (!$storage->loadDefaultByUser($this->getOwner(), $this->bundle())) {
-        /** @var \Drupal\profile\Entity\ProfileInterface $profile */
-        if ($profile = $storage->loadByUser($this->getOwner(), $this->bundle())) {
-          $profile->setDefault(TRUE);
-          $profile->save();
         }
       }
     }
@@ -298,12 +311,15 @@ class Profile extends EditorialContentEntityBase implements ProfileInterface {
 
     $fields['status']
       ->setLabel(t('Active'))
-      ->setDescription(t('Whether the profile is active.'));
+      ->setDescription(t('Whether the profile is active.'))
+      ->setTranslatable(FALSE);
 
     $fields['is_default'] = BaseFieldDefinition::create('boolean')
       ->setLabel(t('Default'))
       ->setDescription(t('Whether this is the default profile.'))
-      ->setRevisionable(TRUE);
+      ->setDefaultValue(FALSE)
+      ->setRevisionable(TRUE)
+      ->setDisplayConfigurable('form', TRUE);
 
     $fields['data'] = BaseFieldDefinition::create('map')
       ->setLabel(t('Data'))

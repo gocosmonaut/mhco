@@ -1,0 +1,15 @@
+uuid: 4dbd0631-6762-4b16-a10f-98d5279ccca7
+langcode: en
+status: true
+dependencies: {  }
+id: front
+label: Front
+user_roles:
+  authenticated: authenticated
+  administrator: administrator
+users: null
+weight: -1
+login_redirect: /home
+login_redirect_message: ''
+logout_redirect: ''
+logout_redirect_message: ''

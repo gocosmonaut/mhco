@@ -18,12 +18,19 @@ settings:
           name: Formatting
           items:
             - Bold
+            - Underline
             - Italic
             - Strike
             - Superscript
             - Subscript
             - '-'
             - RemoveFormat
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyBlock
+            - JustifyRight
+            - PasteFromWord
+            - tokenbrowser
         -
           name: Linking
           items:
@@ -41,6 +48,7 @@ settings:
             - Table
             - HorizontalRule
             - media_browser
+            - DrupalImage
         -
           name: 'Block Formatting'
           items:

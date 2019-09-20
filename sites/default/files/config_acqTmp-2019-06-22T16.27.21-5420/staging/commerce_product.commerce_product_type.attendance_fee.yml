@@ -7,6 +7,6 @@ label: 'Attendance Fee'
 description: 'Fees for management seminars and the annual conference.'
 variationType: attendance_fee
 multipleVariations: true
-injectVariationFields: true
+injectVariationFields: false
 traits: {  }
 locked: false

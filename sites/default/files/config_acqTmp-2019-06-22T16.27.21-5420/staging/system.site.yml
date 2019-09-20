@@ -1,14 +1,15 @@
 uuid: be5cfc7d-64a5-4fc9-9c19-ec7aee06e146
-name: MHCO
+name: 'MHCO | Manufactured Housing Communities of Oregon'
 mail: info@mhco.org
 slogan: ''
 page:
-  403: ''
+  403: /node/1986
   404: ''
-  front: /node
+  front: /home
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en
 default_langcode: en
 _core:
   default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+mail_notification: ''

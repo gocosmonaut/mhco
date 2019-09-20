@@ -1,4 +1,4 @@
-uuid: 1527e9f3-4754-4f6b-bcf4-5733492c4341
+uuid: bce16b06-3eb4-4b9d-aec2-6d78a55f1f5a
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: mbase_messages
 theme: mbase
 region: header
-weight: -50
+weight: -9
 provider: null
 plugin: system_messages_block
 settings:

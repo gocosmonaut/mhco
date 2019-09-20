@@ -17,7 +17,15 @@
         "commerceguys/intl": "^1.0",
         "commerceguys/authnet": "^1.1",
         "drupal/user_bundle": "1.x-dev",
-        "solarium/solarium": "^3.8"
+        "solarium/solarium": "^3.8",
+        "drupal/commerce": "^2.14",
+        "drupal/commerce_checkout_order_fields": "^1.0",
+        "drupal/ds": "^3.4",
+        "cweagans/composer-patches": "^1.6",
+        "drupal/moderation_dashboard": "^1.0@beta",
+        "drupal/views_bulk_operations": "^3.2",
+        "drupal/entity_reference_revisions": "^1.6",
+        "drupal/taxonomy_manager": "^1.0@alpha"
     },
     "replace": {
         "drupal/core": "^8.7"
@@ -26,9 +34,25 @@
     "prefer-stable": true,
     "config": {
         "preferred-install": "dist",
-        "autoloader-suffix": "Drupal8"
+        "autoloader-suffix": "Drupal8",
+        "discard-changes": true
     },
     "extra": {
+        "patches": {
+            "drupal/ds": {
+                "Fix entities without fields": "https://www.drupal.org/files/issues/2019-01-31/ds_fix_entities_without_fields.patch"
+            },
+            "drupal/moderation_dashboard": {
+                "Provides a 'Moderation Dashboard Access' condition.": "https://www.drupal.org/files/issues/2019-04-18/user_load_moderation_dashboard_3048782.patch"
+            },
+            "drupal/commerce_checkout_order_fields": {
+                "Order fields extends CheckoutPaneBase": "https://www.drupal.org/files/issues/2019-06-26/commerce_checkout_order_fields-3063654-2.patch"
+            },
+            "drupal/taxonomy_manager": {
+                "Change hidden form element that triggers AJAX system" :
+                "https://www.drupal.org/files/issues/2019-07-30/taxonomy_manager-3046752-1.patch"
+            }
+        },
         "_readme": [
             "By default Drupal loads the autoloader from ./vendor/autoload.php.",
             "To change the autoloader you can edit ./autoload.php.",
@@ -45,14 +69,29 @@
             "merge-extra": false
         },
         "installer-paths": {
-            "core": ["type:drupal-core"],
-            "modules/contrib/{$name}": ["type:drupal-module"],
-            "profiles/contrib/{$name}": ["type:drupal-profile"],
-            "themes/contrib/{$name}": ["type:drupal-theme"],
-            "drush/contrib/{$name}": ["type:drupal-drush"],
-            "modules/custom/{$name}": ["type:drupal-custom-module"],
-            "themes/custom/{$name}": ["type:drupal-custom-theme"]
-        }
+            "core": [
+                "type:drupal-core"
+            ],
+            "modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/contrib/{$name}": [
+                "type:drupal-drush"
+            ],
+            "modules/custom/{$name}": [
+                "type:drupal-custom-module"
+            ],
+            "themes/custom/{$name}": [
+                "type:drupal-custom-theme"
+            ]
+        },
+        "enable-patching": "true"
     },
     "autoload": {
         "psr-4": {

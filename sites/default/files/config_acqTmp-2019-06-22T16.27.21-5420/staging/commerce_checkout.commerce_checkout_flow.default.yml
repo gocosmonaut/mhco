@@ -1,7 +1,10 @@
 uuid: c8b2b5f0-3ac0-4101-bd22-7a12429471f8
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - commerce_checkout_order_fields
+    - commerce_payment
 _core:
   default_config_hash: wwkDVBiXUqSzRifJbb71ajFBklJdNJ_DgS67IF-_qgY
 id: default
@@ -10,25 +13,37 @@ plugin: multistep_default
 configuration:
   display_checkout_progress: true
   panes:
-    login:
-      allow_guest_checkout: true
-      allow_registration: false
-      step: login
+    'order_fields:checkout':
+      wrapper_element: container
+      display_label: 'Order fields'
+      step: order_information
       weight: 0
-    contact_information:
-      double_entry: true
-      step: order_information
-      weight: 1
-    billing_information:
-      step: order_information
-      weight: 2
     review:
       step: review
+      weight: 2
+    payment_process:
+      capture: true
+      step: payment
       weight: 3
     completion_message:
       step: complete
       weight: 4
-    order_summary:
-      view: commerce_checkout_order_summary
-      step: _sidebar
+    completion_register:
+      step: complete
       weight: 5
+    payment_information:
+      step: _sidebar
+      weight: 6
+    login:
+      allow_guest_checkout: true
+      allow_registration: false
+      step: _disabled
+      weight: 7
+    order_summary:
+      view: ''
+      step: order_information
+      weight: 1
+    contact_information:
+      double_entry: false
+      step: _disabled
+      weight: 8

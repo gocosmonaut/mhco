@@ -1,0 +1,22 @@
+diff --git a/src/Plugin/Condition/ModerationDashboardAccess.php b/src/Plugin/Condition/ModerationDashboardAccess.php
+index f665588..807439a 100644
+--- a/src/Plugin/Condition/ModerationDashboardAccess.php
++++ b/src/Plugin/Condition/ModerationDashboardAccess.php
+@@ -3,6 +3,7 @@
+ namespace Drupal\moderation_dashboard\Plugin\Condition;
+ 
+ use Drupal\Core\Condition\ConditionPluginBase;
++use Drupal\user\Entity\User;
+ 
+ /**
+  * Provides a 'Moderation Dashboard Access' condition.
+@@ -24,6 +25,9 @@ class ModerationDashboardAccess extends ConditionPluginBase {
+   public function evaluate() {
+     $dashboard_owner = $this->getContextValue('dashboard_user');
+     $current_user = $this->getContextValue('current_user');
++    if(is_string($dashboard_owner)) {
++      $dashboard_owner = User::load($dashboard_owner);
++    }
+ 
+     // If the given user doesn't have a dashboard, nobody can view it.
+     if (!$dashboard_owner->hasPermission('use moderation dashboard')) {

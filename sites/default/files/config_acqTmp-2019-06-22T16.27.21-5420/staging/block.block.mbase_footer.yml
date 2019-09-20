@@ -1,6 +1,6 @@
-uuid: 4abfc192-8f68-48ac-bfd4-cdfec106a623
+uuid: 6fc4812a-f001-4dd8-b0cd-ebd43f42ff04
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.footer
@@ -13,7 +13,7 @@ _core:
 id: mbase_footer
 theme: mbase
 region: footer
-weight: 0
+weight: -9
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

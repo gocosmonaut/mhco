@@ -14,17 +14,17 @@ uid: null
 template: false
 archive: false
 id: contact
-title: Contact
+title: 'Contact MHCO'
 description: 'Basic email contact webform.'
 category: ''
-elements: "name:\n  '#title': 'Your Name'\n  '#type': textfield\n  '#required': true\n  '#default_value': '[current-user:display-name]'\nemail:\n  '#title': 'Your Email'\n  '#type': email\n  '#required': true\n  '#default_value': '[current-user:mail]'\nsubject:\n  '#title': Subject\n  '#type': textfield\n  '#required': true\n  '#test': 'Testing contact webform from [site:name]'\nmessage:\n  '#title': Message\n  '#type': textarea\n  '#required': true\n  '#test': 'Please ignore this email.'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Send message'"
+elements: "intro:\n  '#type': webform_markup\n  '#markup': \"MHCO<br />\\r\\nPO Box 12709<br />\\r\\nPSalem, Oregon 97309<br />\\r\\n503-391-4496 phone<br />\\r\\n503-214-8100 fax<br />\\r\\n<a href=\\\"mailto:MHCOregon@gmail.com\\\">MHCOregon@gmail.com</a>\"\nsubject:\n  '#type': textfield\n  '#title': Subject\n  '#required': true\n  '#counter_type': character\n  '#counter_maximum': '120'\n  '#test': 'Testing contact webform from [site:name]'\nname:\n  '#type': textfield\n  '#title': Name\n  '#required': true\n  '#default_value': '[current-user:display-name]'\ncompany_park_or_organization:\n  '#type': textfield\n  '#title': 'Company, Park or Organization'\n  '#counter_type': character\n  '#counter_minimum': '3'\n  '#counter_maximum': '120'\nphone:\n  '#type': tel\n  '#title': Phone\nmessage:\n  '#type': textarea\n  '#title': 'Comments or Questions'\n  '#required': true\n  '#counter_type': character\n  '#counter_maximum': '400'\n  '#test': 'Please ignore this email.'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Send message'"
 css: ''
 javascript: ''
 settings:
-  ajax: false
+  ajax: true
   ajax_scroll_top: form
   page: true
-  page_submit_path: ''
+  page_submit_path: contact-mhco
   page_confirm_path: ''
   form_title: source_entity_webform
   form_submit_once: false
@@ -41,14 +41,14 @@ settings:
   form_prepopulate_source_entity_required: false
   form_prepopulate_source_entity_type: ''
   form_reset: false
-  form_disable_autocomplete: false
+  form_disable_autocomplete: true
   form_novalidate: false
   form_disable_inline_errors: false
   form_required: false
   form_unsaved: false
   form_disable_back: false
   form_submit_back: false
-  form_autofocus: false
+  form_autofocus: true
   form_details_toggle: false
   form_access_denied: default
   form_access_denied_title: ''
@@ -99,7 +99,7 @@ settings:
   draft_loaded_message: ''
   confirmation_type: url_message
   confirmation_title: ''
-  confirmation_message: 'Your message has been sent.'
+  confirmation_message: 'Your message has been sent. Thank you for contacting MHCO.'
   confirmation_url: '<front>'
   confirmation_attributes: {  }
   confirmation_back: true
@@ -218,15 +218,15 @@ handlers:
         - completed
       to_mail: _default
       to_options: {  }
-      cc_mail: ''
+      cc_mail: 'MHCOregon@gmail.com, mhcochuck@gmail.com, daniel@gocosmonaut.com'
       cc_options: {  }
       bcc_mail: ''
       bcc_options: {  }
-      from_mail: '[webform_submission:values:email:raw]'
+      from_mail: _default
       from_options: {  }
-      from_name: '[webform_submission:values:name:raw]'
-      subject: '[webform_submission:values:subject:raw]'
-      body: '[webform_submission:values:message:value]'
+      from_name: MHCO
+      subject: _default
+      body: _default
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true
