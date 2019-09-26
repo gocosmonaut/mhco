@@ -1,0 +1,14 @@
+uuid: b2440571-5a5d-49c6-8cef-8d11ad9d1d9a
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_order
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    description: ''
+id: commerce_order.admin
+label: Admin
+targetEntityType: commerce_order
+cache: true

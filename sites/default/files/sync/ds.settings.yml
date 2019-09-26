@@ -3,7 +3,8 @@ field_template: false
 ft-default: default
 ft-show-colon: false
 classes:
-  region: {  }
+  region:
+    - order-printable
   field: {  }
 use_field_names: true
 _core:

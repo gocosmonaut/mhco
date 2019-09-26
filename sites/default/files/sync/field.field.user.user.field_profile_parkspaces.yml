@@ -9,7 +9,7 @@ id: user.user.field_profile_parkspaces
 field_name: field_profile_parkspaces
 entity_type: user
 bundle: user
-label: 'How many park spaces do this park have?'
+label: 'How many park spaces does this park have?'
 description: ''
 required: false
 translatable: false
