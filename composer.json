@@ -25,7 +25,20 @@
         "drupal/moderation_dashboard": "^1.0@beta",
         "drupal/views_bulk_operations": "^3.2",
         "drupal/entity_reference_revisions": "^1.6",
-        "drupal/taxonomy_manager": "^1.0@alpha"
+        "drupal/taxonomy_manager": "^1.0@alpha",
+        "drupal/fillpdf": "^4.7",
+        "drupal/token": "^1.5",
+        "drupal/commerce_authnet": "^1.2",
+        "symfony/finder": "^3.4",
+        "symfony/framework-bundle": "^3.4",
+        "drupal/commerce_webform_order": "1.x-dev",
+        "symfony/routing": "^3.4",
+        "drupal/webform": "^5.4",
+        "symfony/yaml": "^3.4",
+        "drupal/rules": "^3.0@alpha",
+        "dompdf/dompdf": "0.8.0",
+        "tecnickcom/tcpdf": "~6",
+        "mikehaertl/phpwkhtmltopdf": "~2.1"
     },
     "replace": {
         "drupal/core": "^8.7"
@@ -39,6 +52,21 @@
     },
     "extra": {
         "patches": {
+            "drupal/core": {
+                "Allow to provide a custom #icon for an element with the enabled 'Iconize Buttons' setting": "https://www.drupal.org/files/issues/2019-07-25/bootstrap-custom-icon-3070426-1-D7.patch",
+                "Fix entity reference views source": "https://www.drupal.org/files/issues/2019-04-16/2174633-views-273.patch",
+                "Views reverse relationships": "https://www.drupal.org/files/issues/2018-04-30/2829178-20-array-reroll.patch",
+                "Rename files on upload": "https://www.drupal.org/files/issues/2019-05-04/2492171-285.patch",
+                "Cannot use relationship for rendered entity on views": "https://www.drupal.org/files/issues/2019-03-15/2457999-189.patch",
+                "Filename Transliteration enforces lowercase filenames which causes 404 errors with CSS/JS Aggregation turned on": "https://www.drupal.org/files/issues/2018-08-09/core-file_transliteration_breaks_asset_aggregation-2991606-2-D8.patch",
+                "PDOException: Syntax error or access violation: 1305 SAVEPOINT savepoint_1 does not exist": "https://www.drupal.org/files/issues/2018-06-20/1803886-41.patch",
+                "fix views replacement options for links": "https://www.drupal.org/files/issues/2018-03-27/2645954-26.views-output-field-as-link-for-routed-paths.patch",
+                "layout buider performance 2": "https://www.drupal.org/files/issues/2019-03-26/3043319-5.patch",
+                "Parameter must be an array or an object that implements Countable": "https://www.drupal.org/files/issues/2019-09-23/php-warning-count-param-3083061-2.patch",
+                "cannot uninstall layout builder with overrides in place": "https://www.drupal.org/files/issues/2019-06-12/2980299-36.patch",
+                "class loader": "https://www.drupal.org/files/issues/2019-05-18/2704571-27.patch",
+                "get derivative definitions forEach": "https://www.drupal.org/files/issues/2018-12-10/core--getDerivatives-Invalid-argument-foreach--2893892-11-d8.patch"
+            },
             "drupal/ds": {
                 "Fix entities without fields": "https://www.drupal.org/files/issues/2019-01-31/ds_fix_entities_without_fields.patch"
             },
@@ -48,9 +76,21 @@
             "drupal/commerce_checkout_order_fields": {
                 "Order fields extends CheckoutPaneBase": "https://www.drupal.org/files/issues/2019-06-26/commerce_checkout_order_fields-3063654-2.patch"
             },
+            "drupal/commerce_authnet": {
+                "CVV code not being passed to Authorize.net for validation using Accept.js": "https://www.drupal.org/files/issues/2019-08-22/cvv-code-not-being-passed-to-authorizenet-for-validation-using-acceptjs-3052498-16-D8.patch",
+                "$this->routeMatch depreciated": "https://www.drupal.org/files/issues/2019-07-08/commerce_authnet-fix_routeMatch.patch"
+            },
+            "drupal/webform": {
+                "QueryException when removing certain fields from results": "https://www.drupal.org/files/issues/2019-09-04/3078502-11.patch"
+            },
             "drupal/taxonomy_manager": {
-                "Change hidden form element that triggers AJAX system" :
-                "https://www.drupal.org/files/issues/2019-07-30/taxonomy_manager-3046752-1.patch"
+                "Change hidden form element that triggers AJAX system": "https://www.drupal.org/files/issues/2019-07-30/taxonomy_manager-3046752-1.patch"
+            },
+            "drupal/token": {
+                "Bulk generate": "https://www.drupal.org/files/issues/2019-09-02/3061560-4.patch"
+            },
+            "drupal/fillpdf": {
+                "Set heade to force PDF download in Safari": "https://www.drupal.org/files/issues/force_download_content_type_header-2883481-2.patch"
             }
         },
         "_readme": [

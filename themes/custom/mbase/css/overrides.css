@@ -1,5 +1,5 @@
 body {
-    background: url(../../../../sites/default/files/wallpaper/eugene.jpg) fixed bottom no-repeat;
+    background: url(../../../../sites/default/files/wallpaper/eugene-autumn.jpg) fixed top no-repeat;
     background-size: cover;
 }
 body.toolbar-horizontal.user-logged-in {
@@ -186,7 +186,104 @@ div.main-container.container {
     font-size: 0.9em;
     margin: 0;
 }
+#block-customfooter a {
+    color: #666;
+}
+#block-customfooter a:hover {
+    color: #ff5c01;
+}
 
+.path-user .group-left,
+.path-user .group-right {
+    width: 50%;
+    padding-top: 2%;
+}
+
+.path-user .group-left {
+    padding-right: 3%;
+    border-right: 1px solid #ccc;
+}
+
+.path-user .group-right {
+    padding-left: 3%;
+}
+
+.path-user .group-left .field-name-field-profile-name {
+    font-size: 2rem;
+    font-weight: 600;
+}
+.path-user .group-left .field-name-field-profile-owner .field-item {
+    float: left;
+    padding-right: 4px;
+}
+
+.path-user .group-left .field-name-field-profile-phone {
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.path-user .group-left .field-name-field-profile-email {
+    margin-top: 12px;
+    font-weight: 600;
+}
+.path-user .group-left h4.label {
+    background: #aaa;
+    border-radius: 3px;
+    padding: 4px;
+    margin-right: 10px;
+}
+
+.path-user .group-right .field-name-field-profile-park .field-label {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size:1rem;
+}
+.path-user .group-right .field-name-field-profile-park .field-item {
+    font-weight: 600;
+    font-size:2rem;
+    margin-bottom:6px;
+}
+.path-user .group-right .field-name-field-profile-location {
+    float: left;
+}
+.path-user .group-right .field-name-field-profile-location .field-item::after {
+    content: ", ";
+    padding-right:4px;
+}
+
+.path-user .group-right .field-name-field-profile-parkspaces {
+    margin-top: 12px;
+}
+.path-user .group-right .field-name-field-profile-parkspaces .field-item::before {
+    content: "Number of spaces: ";
+}
+
+/* orders  */
+
+.order-total-line {
+  padding: 0 0 0 50%;
+  text-align:left;
+}
+.order-total-line__total {
+  padding-top: 5px;
+  font-weight: bold;
+}
+.order-total-line-label {
+ /*  display: inline-block; */
+}
+.order-total-line-value {
+ /*  display: inline-block; */
+  text-align: left;
+}
+.commerce-order div.field {padding:1rem;border-bottom: 1px solid #ccc;}
+.commerce-order div.field:nth-child(odd) {background:#f0f0f0;}
+.commerce-order div.field--name-address {border-bottom:0 ;}
+.commerce-order div.field__label {width:50%; float: left; padding-right:0 !important;}
+.commerce-order div.field__items {padding-left: 50%;}
+.commerce-order div.field--name-order-items {background: #fff !important; border:0 !important;}
+.commerce-order div.field--name-order-items .field__label {width:25%; }
+.commerce-order div.field--name-order-items .field__items {width:75%; padding-left: 25%;}
+.commerce-order div.field--name-billing-profile p {padding-left: 50%;}
 
 html.overlay-open .navbar-fixed-top {
     z-index: 400;
@@ -1342,9 +1439,17 @@ main.mainmain {
     margin-top: 130px;
 }
 
+form.commerce-checkout-flow label.form-required {    color: #d9534f;}
+
+form.commerce-checkout-flow input.required {background: #dcc9d057;}
+
 .form-item span.form-required {
     font-size: 1.5em;
     color: #d9534f;
+}
+#payment-errors {  padding: 1rem;
+  margin: 1rem 0;
+  color: #d9534f;
 }
 
 .form-required:after {
@@ -1568,7 +1673,7 @@ header.navbar-static-top {
     left: 10px;
     /* right: 0px; */
     background: black;
-    padding: 0;
+    padding: 8px 0px;
     top: 50px;
 
 
@@ -1583,19 +1688,19 @@ header.navbar-static-top {
 #navbar .dropdown-menu li.menu-item a:visited {
     width: 100%;
     display: block;
-    padding: 3px 20px;
+    padding: 6px 20px;
     clear: both;
     font-weight: normal;
-    line-height: 1.428571429;
+    /* line-height: 1.428571429; */
     color: #333333;
     white-space: nowrap;
     background: #fff;
 }
 
 #navbar .dropdown-menu li.menu-item a:hover {
-    background: #ccc;
+    /* background: #0079cf; */
     display: block;
-    color: #95511f;
+    color: #0079cf;
 }
 
 #navbar .nav > li {
@@ -2142,3 +2247,7 @@ div.views-field.views-field-field-form-number a:hover {
 div.view.view-mhco-forms div.views-field-title {
     text-align: center;
     font-size: 1.15em;
+}
+div.view.view-mhco-forms div.views-field-title a {
+   color: black;
+}

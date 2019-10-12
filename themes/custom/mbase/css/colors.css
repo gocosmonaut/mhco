@@ -2,7 +2,7 @@
 
 a,
 a:visited {
-    color: #473223;
+    color: #0079cf;
 }
 
 a:hover {
@@ -13,12 +13,13 @@ a:hover {
 .btn {
     background: green;
     float: right;
-    border: navajowhite;
+    border: 0;
     margin: 12px;
+    color: #fff !important;
 }
 
 .btn#edit-checkout {
-    color: #fff;
+      color: #fff !important;
     font-weight: 600;
 }
 
@@ -482,7 +483,7 @@ a:hover {
 
 #block-utilitynav {
     width: 100%;
-    background: #0079cf;
+    background: #3f542d;
     text-align: center;
     height: 28px;
     position: fixed;
@@ -550,7 +551,7 @@ a:hover {
 }
 
 header#navbar {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     top: 28px;
 }
 
